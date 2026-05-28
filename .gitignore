@@ -1,69 +1,62 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
+# Build folders
 build/
-Build/
-build-*/
+cmake-build-debug/
+cmake-build-release/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
 
 # CMake generated files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
-install_manifest.txt
 compile_commands.json
 
-# Temporary files
-*.tmp
+# Executables and binaries
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.pdb
+*.ilk
+
+# Dataset and generated results
+data/
+dataset/
+datasets/
+results/
+output/
+outputs/
+
+# Logs and temporary files
 *.log
-*.bak
-*.swp
+*.tmp
+*.temp
 
-# vcpkg
-vcpkg_installed/
+# IDE / editors
+.vscode/
+.idea/
+*.user
+*.suo
+*.vcxproj.user
 
-# debug information files
-*.dwo
+# OS files
+.DS_Store
+Thumbs.db
 
-# test output & cache
-Testing/
-.cache/
+# Python optional experiments
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
