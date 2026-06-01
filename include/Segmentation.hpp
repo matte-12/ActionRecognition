@@ -5,5 +5,7 @@
 
 class Segmentation {
 public:
-    std::vector<cv::Rect> extractBoundingBoxes(const std::vector<cv::Mat>& frames);
+    std::vector<cv::Rect> extractBBox(const std::vector<cv::Mat>& frames);
+
+private: 
 };

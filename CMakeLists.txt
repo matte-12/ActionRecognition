@@ -23,6 +23,14 @@ add_executable(ActionRecognition
     src/Metrics.cpp
 )
 
+add_executable(annotate_gt
+    tools/annotate_gt.cpp
+)
+
+target_link_libraries(annotate_gt
+    ${OpenCV_LIBS}
+)
+
 target_link_libraries(ActionRecognition
     ${OpenCV_LIBS}
 )

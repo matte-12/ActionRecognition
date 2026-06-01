@@ -7,8 +7,9 @@
 struct SequenceData {
     std::string name;
     std::vector<cv::Mat> frames;
-    int trueLabel = -1;
-    cv::Rect groundTruthBoxFrame20;
+    //int trueLabel = -1;
+    //cv::Rect gtBBoxFrame20;
+    
 };
 
 struct PredictionResult {
