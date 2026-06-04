@@ -1,0 +1,226 @@
+[MOG2] Frame: 0 | nonZero: 0 | ratio: 0
+[MOG2] Frame: 1 | nonZero: 1 | ratio: 5.20833e-05
+[MOG2] Frame: 2 | nonZero: 0 | ratio: 0
+[MOG2] Frame: 3 | nonZero: 1 | ratio: 5.20833e-05
+[MOG2] Frame: 4 | nonZero: 2 | ratio: 0.000104167
+[MOG2] Frame: 5 | nonZero: 277 | ratio: 0.0144271
+[MOG2] Frame: 6 | nonZero: 248 | ratio: 0.0129167
+[MOG2] Frame: 7 | nonZero: 267 | ratio: 0.0139063
+[MOG2] Frame: 8 | nonZero: 233 | ratio: 0.0121354
+[MOG2] Frame: 9 | nonZero: 162 | ratio: 0.0084375
+[MOG2] Frame: 10 | nonZero: 238 | ratio: 0.0123958
+[MOG2] Frame: 11 | nonZero: 230 | ratio: 0.0119792
+[MOG2] Frame: 12 | nonZero: 232 | ratio: 0.0120833
+[MOG2] Frame: 13 | nonZero: 163 | ratio: 0.00848958
+[MOG2] Frame: 14 | nonZero: 184 | ratio: 0.00958333
+[MOG2] Frame: 15 | nonZero: 215 | ratio: 0.0111979
+[MOG2] Frame: 16 | nonZero: 286 | ratio: 0.0148958
+[MOG2] Frame: 17 | nonZero: 222 | ratio: 0.0115625
+[MOG2] Frame: 18 | nonZero: 207 | ratio: 0.0107812
+[MOG2] Frame: 19 | nonZero: 208 | ratio: 0.0108333
+[MOG2] Frame: 20 | nonZero: 204 | ratio: 0.010625
+[MOG2] Frame: 21 | nonZero: 127 | ratio: 0.00661458
+[MOG2] Frame: 22 | nonZero: 71 | ratio: 0.00369792
+[MOG2] Frame: 23 | nonZero: 63 | ratio: 0.00328125
+[MOG2] Frame: 24 | nonZero: 101 | ratio: 0.00526042
+[MOG2] Frame: 25 | nonZero: 292 | ratio: 0.0152083
+[MOG2] Frame: 26 | nonZero: 431 | ratio: 0.0224479
+[MOG2] Frame: 27 | nonZero: 512 | ratio: 0.0266667
+[MOG2] Frame: 28 | nonZero: 524 | ratio: 0.0272917
+[MOG2] Frame: 29 | nonZero: 445 | ratio: 0.0231771
+[MOG2] Frame: 30 | nonZero: 434 | ratio: 0.0226042
+[MOG2] Frame: 31 | nonZero: 342 | ratio: 0.0178125
+[MOG2] Frame: 32 | nonZero: 357 | ratio: 0.0185937
+[MOG2] Frame: 33 | nonZero: 412 | ratio: 0.0214583
+[MOG2] Frame: 34 | nonZero: 432 | ratio: 0.0225
+[MOG2] Frame: 35 | nonZero: 422 | ratio: 0.0219792
+[MOG2] Frame: 36 | nonZero: 451 | ratio: 0.0234896
+[MOG2] Frame: 37 | nonZero: 419 | ratio: 0.0218229
+[MOG2] Frame: 38 | nonZero: 427 | ratio: 0.0222396
+[MOG2] Frame: 39 | nonZero: 473 | ratio: 0.0246354
+----------------------------------------
+===== NEW SEQUENCE: data/sequences/person02_handwaving_d1 =====
+ | Frame: 0 | nonZero BEFORE GrabCut: 159
+ | Frame: 0 | nonZero AFTER GrabCut: 2278
+----------------------------------------
+ | Frame: 1 | nonZero BEFORE GrabCut: 159
+ | Frame: 1 | nonZero AFTER GrabCut: 2384
+----------------------------------------
+ | Frame: 2 | nonZero BEFORE GrabCut: 159
+ | Frame: 2 | nonZero AFTER GrabCut: 2469
+----------------------------------------
+ | Frame: 3 | nonZero BEFORE GrabCut: 159
+ | Frame: 3 | nonZero AFTER GrabCut: 2421
+----------------------------------------
+ | Frame: 4 | nonZero BEFORE GrabCut: 159
+ | Frame: 4 | nonZero AFTER GrabCut: 2233
+----------------------------------------
+ | Frame: 5 | nonZero BEFORE GrabCut: 159
+ | Frame: 5 | nonZero AFTER GrabCut: 2070
+----------------------------------------
+ | Frame: 6 | nonZero BEFORE GrabCut: 143
+ | Frame: 6 | nonZero AFTER GrabCut: 2104
+----------------------------------------
+ | Frame: 7 | nonZero BEFORE GrabCut: 141
+ | Frame: 7 | nonZero AFTER GrabCut: 2158
+----------------------------------------
+ | Frame: 8 | nonZero BEFORE GrabCut: 106
+ | Frame: 8 | nonZero AFTER GrabCut: 2134
+----------------------------------------
+ | Frame: 9 | nonZero BEFORE GrabCut: 91
+ | Frame: 9 | nonZero AFTER GrabCut: 2152
+----------------------------------------
+ | Frame: 10 | nonZero BEFORE GrabCut: 140
+ | Frame: 10 | nonZero AFTER GrabCut: 2093
+----------------------------------------
+ | Frame: 11 | nonZero BEFORE GrabCut: 107
+ | Frame: 11 | nonZero AFTER GrabCut: 2035
+----------------------------------------
+ | Frame: 12 | nonZero BEFORE GrabCut: 90
+ | Frame: 12 | nonZero AFTER GrabCut: 2008
+----------------------------------------
+ | Frame: 13 | nonZero BEFORE GrabCut: 65
+ | Frame: 13 | nonZero AFTER GrabCut: 1977
+----------------------------------------
+ | Frame: 14 | nonZero BEFORE GrabCut: 70
+ | Frame: 14 | nonZero AFTER GrabCut: 1938
+----------------------------------------
+ | Frame: 15 | nonZero BEFORE GrabCut: 100
+ | Frame: 15 | nonZero AFTER GrabCut: 1940
+----------------------------------------
+ | Frame: 16 | nonZero BEFORE GrabCut: 117
+ | Frame: 16 | nonZero AFTER GrabCut: 1995
+----------------------------------------
+ | Frame: 17 | nonZero BEFORE GrabCut: 89
+ | Frame: 17 | nonZero AFTER GrabCut: 1954
+----------------------------------------
+ | Frame: 18 | nonZero BEFORE GrabCut: 73
+ | Frame: 18 | nonZero AFTER GrabCut: 1954
+----------------------------------------
+ | Frame: 19 | nonZero BEFORE GrabCut: 25
+ | Frame: 19 | nonZero AFTER GrabCut: 1945
+----------------------------------------
+ | Frame: 20 | nonZero BEFORE GrabCut: 22
+ | Frame: 20 | nonZero AFTER GrabCut: 1935
+----------------------------------------
+ | Frame: 21 | nonZero BEFORE GrabCut: 22
+ | Frame: 21 | nonZero AFTER GrabCut: 1977
+----------------------------------------
+ | Frame: 22 | nonZero BEFORE GrabCut: 22
+ | Frame: 22 | nonZero AFTER GrabCut: 1995
+----------------------------------------
+ | Frame: 23 | nonZero BEFORE GrabCut: 33
+ | Frame: 23 | nonZero AFTER GrabCut: 2047
+----------------------------------------
+ | Frame: 24 | nonZero BEFORE GrabCut: 33
+ | Frame: 24 | nonZero AFTER GrabCut: 2034
+----------------------------------------
+ | Frame: 25 | nonZero BEFORE GrabCut: 33
+ | Frame: 25 | nonZero AFTER GrabCut: 1977
+----------------------------------------
+ | Frame: 26 | nonZero BEFORE GrabCut: 38
+ | Frame: 26 | nonZero AFTER GrabCut: 1989
+----------------------------------------
+ | Frame: 27 | nonZero BEFORE GrabCut: 73
+ | Frame: 27 | nonZero AFTER GrabCut: 2003
+----------------------------------------
+ | Frame: 28 | nonZero BEFORE GrabCut: 89
+ | Frame: 28 | nonZero AFTER GrabCut: 2028
+----------------------------------------
+ | Frame: 29 | nonZero BEFORE GrabCut: 128
+ | Frame: 29 | nonZero AFTER GrabCut: 2119
+----------------------------------------
+ | Frame: 30 | nonZero BEFORE GrabCut: 132
+ | Frame: 30 | nonZero AFTER GrabCut: 2101
+----------------------------------------
+ | Frame: 31 | nonZero BEFORE GrabCut: 149
+ | Frame: 31 | nonZero AFTER GrabCut: 2121
+----------------------------------------
+ | Frame: 32 | nonZero BEFORE GrabCut: 143
+ | Frame: 32 | nonZero AFTER GrabCut: 2101
+----------------------------------------
+ | Frame: 33 | nonZero BEFORE GrabCut: 159
+ | Frame: 33 | nonZero AFTER GrabCut: 2098
+----------------------------------------
+ | Frame: 34 | nonZero BEFORE GrabCut: 138
+ | Frame: 34 | nonZero AFTER GrabCut: 2090
+----------------------------------------
+ | Frame: 35 | nonZero BEFORE GrabCut: 154
+ | Frame: 35 | nonZero AFTER GrabCut: 2068
+----------------------------------------
+ | Frame: 36 | nonZero BEFORE GrabCut: 139
+ | Frame: 36 | nonZero AFTER GrabCut: 2016
+----------------------------------------
+ | Frame: 37 | nonZero BEFORE GrabCut: 112
+ | Frame: 37 | nonZero AFTER GrabCut: 1988
+----------------------------------------
+ | Frame: 38 | nonZero BEFORE GrabCut: 83
+ | Frame: 38 | nonZero AFTER GrabCut: 1963
+----------------------------------------
+ | Frame: 39 | nonZero BEFORE GrabCut: 62
+ | Frame: 39 | nonZero AFTER GrabCut: 1927
+----------------------------------------
+=========== SUMMARY ===========
+Sequence: data/sequences/person02_handwaving_d1
+Empty masks after GrabCut: 0
+MediaPipe fallback used: 0
+================================
+
+[MOG2] Frame: 0 | nonZero: 0 | ratio: 0
+[MOG2] Frame: 1 | nonZero: 1 | ratio: 5.20833e-05
+[MOG2] Frame: 2 | nonZero: 0 | ratio: 0
+[MOG2] Frame: 3 | nonZero: 0 | ratio: 0
+[MOG2] Frame: 4 | nonZero: 8 | ratio: 0.000416667
+[MOG2] Frame: 5 | nonZero: 242 | ratio: 0.0126042
+[MOG2] Frame: 6 | nonZero: 211 | ratio: 0.0109896
+[MOG2] Frame: 7 | nonZero: 245 | ratio: 0.0127604
+[MOG2] Frame: 8 | nonZero: 207 | ratio: 0.0107812
+[MOG2] Frame: 9 | nonZero: 162 | ratio: 0.0084375
+[MOG2] Frame: 10 | nonZero: 313 | ratio: 0.0163021
+[MOG2] Frame: 11 | nonZero: 334 | ratio: 0.0173958
+[MOG2] Frame: 12 | nonZero: 356 | ratio: 0.0185417
+[MOG2] Frame: 13 | nonZero: 226 | ratio: 0.0117708
+[MOG2] Frame: 14 | nonZero: 50 | ratio: 0.00260417
+[MOG2] Frame: 15 | nonZero: 58 | ratio: 0.00302083
+[MOG2] Frame: 16 | nonZero: 135 | ratio: 0.00703125
+[MOG2] Frame: 17 | nonZero: 132 | ratio: 0.006875
+[MOG2] Frame: 18 | nonZero: 98 | ratio: 0.00510417
+[MOG2] Frame: 19 | nonZero: 94 | ratio: 0.00489583
+[MOG2] Frame: 20 | nonZero: 96 | ratio: 0.005
+[MOG2] Frame: 21 | nonZero: 88 | ratio: 0.00458333
+[MOG2] Frame: 22 | nonZero: 114 | ratio: 0.0059375
+[MOG2] Frame: 23 | nonZero: 128 | ratio: 0.00666667
+[MOG2] Frame: 24 | nonZero: 139 | ratio: 0.00723958
+[MOG2] Frame: 25 | nonZero: 123 | ratio: 0.00640625
+[MOG2] Frame: 26 | nonZero: 82 | ratio: 0.00427083
+[MOG2] Frame: 27 | nonZero: 70 | ratio: 0.00364583
+[MOG2] Frame: 28 | nonZero: 97 | ratio: 0.00505208
+[MOG2] Frame: 29 | nonZero: 110 | ratio: 0.00572917
+[MOG2] Frame: 30 | nonZero: 109 | ratio: 0.00567708
+[MOG2] Frame: 31 | nonZero: 105 | ratio: 0.00546875
+[MOG2] Frame: 32 | nonZero: 91 | ratio: 0.00473958
+[MOG2] Frame: 33 | nonZero: 74 | ratio: 0.00385417
+[MOG2] Frame: 34 | nonZero: 77 | ratio: 0.00401042
+[MOG2] Frame: 35 | nonZero: 68 | ratio: 0.00354167
+[MOG2] Frame: 36 | nonZero: 67 | ratio: 0.00348958
+[MOG2] Frame: 37 | nonZero: 88 | ratio: 0.00458333
+[MOG2] Frame: 38 | nonZero: 84 | ratio: 0.004375
+[MOG2] Frame: 39 | nonZero: 72 | ratio: 0.00375
+----------------------------------------
+===== NEW SEQUENCE: data/sequences/person02_handwaving_d2 =====
+ | Frame: 0 | nonZero BEFORE GrabCut: 30
+ | Frame: 0 | nonZero AFTER GrabCut: 1486
+----------------------------------------
+ | Frame: 1 | nonZero BEFORE GrabCut: 30
+ | Frame: 1 | nonZero AFTER GrabCut: 1376
+----------------------------------------
+ | Frame: 2 | nonZero BEFORE GrabCut: 30
+ | Frame: 2 | nonZero AFTER GrabCut: 1288
+----------------------------------------
+ | Frame: 3 | nonZero BEFORE GrabCut: 30
+ | Frame: 3 | nonZero AFTER GrabCut: 1192
+----------------------------------------
+ | Frame: 4 | nonZero BEFORE GrabCut: 30
+ | Frame: 4 | nonZero AFTER GrabCut: 1084
+----------------------------------------
+ | Frame: 5 | nonZero BEFORE GrabCut: 30

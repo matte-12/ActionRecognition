@@ -7,12 +7,16 @@
 struct SequenceData {
     std::string name;
     std::vector<cv::Mat> frames;
-    //int trueLabel = -1;
-    //cv::Rect gtBBoxFrame20;
+    int trueLabel = -1; // label del tipo di azione: 1= WALKING  2= ... --> ricavate con FeatureExtraction
+    cv::Rect gtBBox20; // nella groundTruth.txt ho i valori x_medio, y_medio. Li converto in x, y del BBox
+    bool hasGT= false; // mi dice se è presente la groundtrouth.txt
     
+    std::vector<cv::Rect> BBoxes; // contiene tutti i boundig box della sequenza
+    std::vector<cv::Mat> finalMasks; // contiene tutte le mask risultanti della sequenza
+    std::vector<cv::Mat> motionMasks; // puo servire per featureExtraction
 };
 
-struct PredictionResult {
+struct Prediction {
     std::string sequenceName;
     int trueLabel = -1;
     int predictedLabel = -1;

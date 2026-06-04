@@ -3,12 +3,12 @@
 #include <opencv2/opencv.hpp>
 #include <string>
 #include <vector>
+#include "Types.hpp"
 
 class Visualizer {
 public:
     void saveSequenceOutput(
-        const std::vector<cv::Mat>& frames,
-        const std::vector<cv::Rect>& boxes,
+        const SequenceData& sequenza,
         int predictedLabel,
         const std::string& outputFolder
     );
