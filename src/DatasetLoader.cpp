@@ -1,12 +1,54 @@
 #include "DatasetLoader.hpp"
+#include <fstream>
 
+namespace fs = std::filesystem;
+
+bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData& sequence) {
+    std::string gtPath = datasetPath + "/gt.txt";
+
+    if (!fs::exists(gtPath)) {
+        sequence.hasGT= false;
+        return false;
+    }
+
+    std::ifstream file(gtPath);
+
+    if (!file.is_open()) {
+        std::cerr << "Could not open gt file: " << gtPath << std::endl;
+        sequence.hasGT = false;
+        return false;
+    }
+
+    int classId;
+    int xCenter;
+    int yCenter;
+    int width;
+    int height;
+
+    file >> classId >> xCenter >> yCenter >> width >> height;
+
+    if (file.fail()) {
+        std::cerr << "Invalid gt format in: " << gtPath << std::endl;
+        std::cerr << "Expected: <class_id> <x_center> <y_center> <width> <height>" << std::endl;
+        sequence.hasGT = false;
+        return false;
+    }
+
+    int x = xCenter - width / 2;
+    int y = yCenter - height / 2;
+
+    sequence.trueLabel = classId;
+    sequence.gtBBox20 = cv::Rect(x, y, width, height);
+    sequence.hasGT= true;
+
+    return true;
+}
 
 // funzione privata che divide il rootpath data/sequences nelle sottocartelle
 
 std::vector<std::string> DatasetLoader:: getSubfolderPath(const std::string& rootPath){
 
     std::vector<std::string> folders;
-    namespace fs = std::filesystem;
 
     for (const auto& entry : fs::directory_iterator(rootPath)) {
         if (entry.is_directory()) {
@@ -59,10 +101,14 @@ std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath
 
     seq.name = path;
     seq.frames = getFrames(path);
+    sequenza.push_back(seq);
 //
 //mancano gtBox20 e label
 //
-    sequenza.push_back(seq);
+    bool flag = DatasetLoader:: getGroundTruth(seq.name, seq);
+    if(!flag){
+        std::cout<< "subfolder"<< seq.name << "non ha caricato correttamente la groundTruth" << std::endl;
+    }
 }
 
 
