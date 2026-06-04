@@ -18,7 +18,7 @@ make
 cd ..
 ./build/ActionRecognition data/sequences results
 
-//----------------------------------------------------------
+
 Codice da usare per killare mediapipe:
 
 pkill -9 -f ActionRecognition
