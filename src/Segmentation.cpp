@@ -128,6 +128,7 @@ void showBBoxes(
             );
         }
 
+        // salva il rettangolo in sequence
         cv::imshow("Bounding Boxes", display);
 
         int key = cv::waitKey(30);

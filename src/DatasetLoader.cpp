@@ -3,6 +3,11 @@
 
 namespace fs = std::filesystem;
 
+//---------------------------------------------------------------------------------------------
+
+// IMPOSTA LA SesquenceData sequence .trueLabel, .gtBBox20, .hasGT.
+// ricava questi valori dalla groundtruth.txt
+
 bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData& sequence) {
     std::string gtPath = datasetPath + "/gt.txt";
 
@@ -44,6 +49,9 @@ bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData&
     return true;
 }
 
+
+//---------------------------------------------------------------------------------------------
+
 // funzione privata che divide il rootpath data/sequences nelle sottocartelle
 
 std::vector<std::string> DatasetLoader:: getSubfolderPath(const std::string& rootPath){
@@ -59,6 +67,9 @@ std::vector<std::string> DatasetLoader:: getSubfolderPath(const std::string& roo
     return folders;
 }
 
+//---------------------------------------------------------------------------------------------
+
+// RICAVO I FRAME DALLA CARTELLA
 
 std::vector<cv::Mat> DatasetLoader :: getFrames(const std::string& datasetPath)
 {
@@ -88,6 +99,10 @@ std::vector<cv::Mat> DatasetLoader :: getFrames(const std::string& datasetPath)
     return images;
 }
 
+//---------------------------------------------------------------------------------------------
+
+// METODO PUBLIC PRINCIPALE
+
 // devo restituire un vettore di SequenceData (structure definita in Types)
 
 std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath) {
@@ -97,18 +112,20 @@ std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath
     //imposto gli elementi della stucture: .name, .frames, .gtBBox20
     for (const auto& path : subfolderPath)
 {
+
     SequenceData seq;
 
     seq.name = path;
     seq.frames = getFrames(path);
     sequenza.push_back(seq);
-//
-//mancano gtBox20 e label
-//
+
+// funzione che imposta .trueLabel, .gtBBox20, .hasGT. Sempre che sia presente la gt.txt
+
     bool flag = DatasetLoader:: getGroundTruth(seq.name, seq);
     if(!flag){
         std::cout<< "subfolder"<< seq.name << "non ha caricato correttamente la groundTruth" << std::endl;
     }
+
 }
 
 
