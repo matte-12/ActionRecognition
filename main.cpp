@@ -3,7 +3,7 @@
 #include <string>
 #include <filesystem>
 #include "DatasetLoader.hpp"
-#include "Segmentation.hpp"
+#include "segmentation/Segmentation.hpp"
 #include "Visualizer.hpp"
 #include "Classifier.hpp"
 #include "FeatureExtractor.hpp"

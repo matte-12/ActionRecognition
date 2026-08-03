@@ -5,7 +5,7 @@ cmake-build-release/
 cmake-build-relwithdebinfo/
 cmake-build-minsizerel/
 
-# CMake generated files
+# CMake 
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
@@ -54,7 +54,7 @@ outputs/
 .DS_Store
 Thumbs.db
 
-# Python optional experiments
+# Python opzionali
 __pycache__/
 *.pyc
 .venv/

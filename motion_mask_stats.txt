@@ -218,10 +218,10 @@ MediaPipe fallback used: 0
  | Frame: 2 | nonZero AFTER GrabCut: 1288
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 30
- | Frame: 3 | nonZero AFTER GrabCut: 1192
+ | Frame: 3 | nonZero AFTER GrabCut: 1189
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 30
- | Frame: 4 | nonZero AFTER GrabCut: 1084
+ | Frame: 4 | nonZero AFTER GrabCut: 1092
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 30
  | Frame: 5 | nonZero AFTER GrabCut: 971
@@ -251,7 +251,7 @@ MediaPipe fallback used: 0
  | Frame: 13 | nonZero AFTER GrabCut: 600
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 15
- | Frame: 14 | nonZero AFTER GrabCut: 569
+ | Frame: 14 | nonZero AFTER GrabCut: 576
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 15
  | Frame: 15 | nonZero AFTER GrabCut: 579
@@ -260,7 +260,7 @@ MediaPipe fallback used: 0
  | Frame: 16 | nonZero AFTER GrabCut: 565
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 16
- | Frame: 17 | nonZero AFTER GrabCut: 548
+ | Frame: 17 | nonZero AFTER GrabCut: 549
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 16
  | Frame: 18 | nonZero AFTER GrabCut: 540
@@ -287,7 +287,7 @@ MediaPipe fallback used: 0
  | Frame: 25 | nonZero AFTER GrabCut: 568
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 19
- | Frame: 26 | nonZero AFTER GrabCut: 577
+ | Frame: 26 | nonZero AFTER GrabCut: 572
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 13
  | Frame: 27 | nonZero AFTER GrabCut: 574
@@ -296,7 +296,7 @@ MediaPipe fallback used: 0
  | Frame: 28 | nonZero AFTER GrabCut: 597
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 13
- | Frame: 29 | nonZero AFTER GrabCut: 619
+ | Frame: 29 | nonZero AFTER GrabCut: 613
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 13
  | Frame: 30 | nonZero AFTER GrabCut: 633
@@ -311,7 +311,7 @@ MediaPipe fallback used: 0
  | Frame: 33 | nonZero AFTER GrabCut: 646
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 24
- | Frame: 34 | nonZero AFTER GrabCut: 678
+ | Frame: 34 | nonZero AFTER GrabCut: 677
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 24
  | Frame: 35 | nonZero AFTER GrabCut: 686
@@ -380,13 +380,13 @@ MediaPipe fallback used: 0
  | Frame: 0 | nonZero AFTER GrabCut: 1772
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 108
- | Frame: 1 | nonZero AFTER GrabCut: 1833
+ | Frame: 1 | nonZero AFTER GrabCut: 1837
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 108
  | Frame: 2 | nonZero AFTER GrabCut: 1922
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 108
- | Frame: 3 | nonZero AFTER GrabCut: 1864
+ | Frame: 3 | nonZero AFTER GrabCut: 1862
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 108
  | Frame: 4 | nonZero AFTER GrabCut: 1766
@@ -401,16 +401,16 @@ MediaPipe fallback used: 0
  | Frame: 7 | nonZero AFTER GrabCut: 1760
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 56
- | Frame: 8 | nonZero AFTER GrabCut: 1720
+ | Frame: 8 | nonZero AFTER GrabCut: 1721
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 60
  | Frame: 9 | nonZero AFTER GrabCut: 1703
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 84
- | Frame: 10 | nonZero AFTER GrabCut: 1714
+ | Frame: 10 | nonZero AFTER GrabCut: 1715
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 73
- | Frame: 11 | nonZero AFTER GrabCut: 1708
+ | Frame: 11 | nonZero AFTER GrabCut: 1709
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 28
  | Frame: 12 | nonZero AFTER GrabCut: 1695
@@ -428,13 +428,13 @@ MediaPipe fallback used: 0
  | Frame: 16 | nonZero AFTER GrabCut: 1691
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 15
- | Frame: 17 | nonZero AFTER GrabCut: 1704
+ | Frame: 17 | nonZero AFTER GrabCut: 1711
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 20
  | Frame: 18 | nonZero AFTER GrabCut: 1701
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 20
- | Frame: 19 | nonZero AFTER GrabCut: 1686
+ | Frame: 19 | nonZero AFTER GrabCut: 1687
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 20
  | Frame: 20 | nonZero AFTER GrabCut: 1673
@@ -443,7 +443,7 @@ MediaPipe fallback used: 0
  | Frame: 21 | nonZero AFTER GrabCut: 1677
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 20
- | Frame: 22 | nonZero AFTER GrabCut: 1673
+ | Frame: 22 | nonZero AFTER GrabCut: 1676
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 42
  | Frame: 23 | nonZero AFTER GrabCut: 1692
@@ -452,7 +452,7 @@ MediaPipe fallback used: 0
  | Frame: 24 | nonZero AFTER GrabCut: 1660
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 57
- | Frame: 25 | nonZero AFTER GrabCut: 1731
+ | Frame: 25 | nonZero AFTER GrabCut: 1726
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 56
  | Frame: 26 | nonZero AFTER GrabCut: 1642
@@ -482,10 +482,10 @@ MediaPipe fallback used: 0
  | Frame: 34 | nonZero AFTER GrabCut: 1692
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 67
- | Frame: 35 | nonZero AFTER GrabCut: 1629
+ | Frame: 35 | nonZero AFTER GrabCut: 1631
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 43
- | Frame: 36 | nonZero AFTER GrabCut: 1643
+ | Frame: 36 | nonZero AFTER GrabCut: 1646
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 52
  | Frame: 37 | nonZero AFTER GrabCut: 1646
@@ -494,7 +494,7 @@ MediaPipe fallback used: 0
  | Frame: 38 | nonZero AFTER GrabCut: 1659
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 21
- | Frame: 39 | nonZero AFTER GrabCut: 1642
+ | Frame: 39 | nonZero AFTER GrabCut: 1647
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person02_handwaving_d3
@@ -545,13 +545,13 @@ MediaPipe fallback used: 0
 ----------------------------------------
 ===== NEW SEQUENCE: data/sequences/person02_handwaving_d4 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 155
- | Frame: 0 | nonZero AFTER GrabCut: 2931
+ | Frame: 0 | nonZero AFTER GrabCut: 2929
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 155
  | Frame: 1 | nonZero AFTER GrabCut: 3227
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 155
- | Frame: 2 | nonZero AFTER GrabCut: 1328
+ | Frame: 2 | nonZero AFTER GrabCut: 2962
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 155
  | Frame: 3 | nonZero AFTER GrabCut: 1280
@@ -566,13 +566,13 @@ MediaPipe fallback used: 0
  | Frame: 6 | nonZero AFTER GrabCut: 882
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 156
- | Frame: 7 | nonZero AFTER GrabCut: 1029
+ | Frame: 7 | nonZero AFTER GrabCut: 3374
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 144
  | Frame: 8 | nonZero AFTER GrabCut: 3743
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 120
- | Frame: 9 | nonZero AFTER GrabCut: 992
+ | Frame: 9 | nonZero AFTER GrabCut: 3689
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 163
  | Frame: 10 | nonZero AFTER GrabCut: 3883
@@ -590,7 +590,7 @@ MediaPipe fallback used: 0
  | Frame: 14 | nonZero AFTER GrabCut: 817
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 58
- | Frame: 15 | nonZero AFTER GrabCut: 808
+ | Frame: 15 | nonZero AFTER GrabCut: 811
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 45
  | Frame: 16 | nonZero AFTER GrabCut: 833
@@ -611,7 +611,7 @@ MediaPipe fallback used: 0
  | Frame: 21 | nonZero AFTER GrabCut: 998
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 19
- | Frame: 22 | nonZero AFTER GrabCut: 848
+ | Frame: 22 | nonZero AFTER GrabCut: 850
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 19
  | Frame: 23 | nonZero AFTER GrabCut: 834
@@ -632,7 +632,7 @@ MediaPipe fallback used: 0
  | Frame: 28 | nonZero AFTER GrabCut: 946
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 168
- | Frame: 29 | nonZero AFTER GrabCut: 3529
+ | Frame: 29 | nonZero AFTER GrabCut: 3528
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 191
  | Frame: 30 | nonZero AFTER GrabCut: 1038
@@ -644,25 +644,25 @@ MediaPipe fallback used: 0
  | Frame: 32 | nonZero AFTER GrabCut: 1386
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 99
- | Frame: 33 | nonZero AFTER GrabCut: 862
+ | Frame: 33 | nonZero AFTER GrabCut: 865
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 128
  | Frame: 34 | nonZero AFTER GrabCut: 847
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 101
- | Frame: 35 | nonZero AFTER GrabCut: 841
+ | Frame: 35 | nonZero AFTER GrabCut: 844
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 62
  | Frame: 36 | nonZero AFTER GrabCut: 834
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 26
- | Frame: 37 | nonZero AFTER GrabCut: 822
+ | Frame: 37 | nonZero AFTER GrabCut: 821
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 19
- | Frame: 38 | nonZero AFTER GrabCut: 837
+ | Frame: 38 | nonZero AFTER GrabCut: 849
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 79
- | Frame: 39 | nonZero AFTER GrabCut: 835
+ | Frame: 39 | nonZero AFTER GrabCut: 836
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person02_handwaving_d4
@@ -716,7 +716,7 @@ MediaPipe fallback used: 0
  | Frame: 0 | nonZero AFTER GrabCut: 1202
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 18
- | Frame: 1 | nonZero AFTER GrabCut: 1263
+ | Frame: 1 | nonZero AFTER GrabCut: 1257
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 18
  | Frame: 2 | nonZero AFTER GrabCut: 1275
@@ -743,7 +743,7 @@ MediaPipe fallback used: 0
  | Frame: 9 | nonZero AFTER GrabCut: 1245
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 18
- | Frame: 10 | nonZero AFTER GrabCut: 1277
+ | Frame: 10 | nonZero AFTER GrabCut: 1269
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 18
  | Frame: 11 | nonZero AFTER GrabCut: 1182
@@ -770,7 +770,7 @@ MediaPipe fallback used: 0
  | Frame: 18 | nonZero AFTER GrabCut: 1055
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 13
- | Frame: 19 | nonZero AFTER GrabCut: 1041
+ | Frame: 19 | nonZero AFTER GrabCut: 1040
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 13
  | Frame: 20 | nonZero AFTER GrabCut: 1057
@@ -782,13 +782,13 @@ MediaPipe fallback used: 0
  | Frame: 22 | nonZero AFTER GrabCut: 1106
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 13
- | Frame: 23 | nonZero AFTER GrabCut: 1141
+ | Frame: 23 | nonZero AFTER GrabCut: 1142
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 29
  | Frame: 24 | nonZero AFTER GrabCut: 1150
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 29
- | Frame: 25 | nonZero AFTER GrabCut: 1227
+ | Frame: 25 | nonZero AFTER GrabCut: 1222
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 29
  | Frame: 26 | nonZero AFTER GrabCut: 1279
@@ -803,16 +803,16 @@ MediaPipe fallback used: 0
  | Frame: 29 | nonZero AFTER GrabCut: 1322
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 47
- | Frame: 30 | nonZero AFTER GrabCut: 1283
+ | Frame: 30 | nonZero AFTER GrabCut: 1282
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 30
- | Frame: 31 | nonZero AFTER GrabCut: 1260
+ | Frame: 31 | nonZero AFTER GrabCut: 1255
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 30
  | Frame: 32 | nonZero AFTER GrabCut: 1262
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 34
- | Frame: 33 | nonZero AFTER GrabCut: 1225
+ | Frame: 33 | nonZero AFTER GrabCut: 1233
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 27
  | Frame: 34 | nonZero AFTER GrabCut: 1251
@@ -827,10 +827,10 @@ MediaPipe fallback used: 0
  | Frame: 37 | nonZero AFTER GrabCut: 1234
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 15
- | Frame: 38 | nonZero AFTER GrabCut: 1298
+ | Frame: 38 | nonZero AFTER GrabCut: 1291
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 15
- | Frame: 39 | nonZero AFTER GrabCut: 1339
+ | Frame: 39 | nonZero AFTER GrabCut: 1341
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person07_handclapping_d1
@@ -884,7 +884,7 @@ MediaPipe fallback used: 0
  | Frame: 0 | nonZero AFTER GrabCut: 1040
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 13
- | Frame: 1 | nonZero AFTER GrabCut: 1170
+ | Frame: 1 | nonZero AFTER GrabCut: 1178
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 13
  | Frame: 2 | nonZero AFTER GrabCut: 1267
@@ -902,16 +902,16 @@ MediaPipe fallback used: 0
  | Frame: 6 | nonZero AFTER GrabCut: 1329
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 13
- | Frame: 7 | nonZero AFTER GrabCut: 1217
+ | Frame: 7 | nonZero AFTER GrabCut: 1373
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 13
- | Frame: 8 | nonZero AFTER GrabCut: 1247
+ | Frame: 8 | nonZero AFTER GrabCut: 1259
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 13
- | Frame: 9 | nonZero AFTER GrabCut: 1360
+ | Frame: 9 | nonZero AFTER GrabCut: 1461
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 13
- | Frame: 10 | nonZero AFTER GrabCut: 1443
+ | Frame: 10 | nonZero AFTER GrabCut: 1425
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 15
  | Frame: 11 | nonZero AFTER GrabCut: 1460
@@ -920,10 +920,10 @@ MediaPipe fallback used: 0
  | Frame: 12 | nonZero AFTER GrabCut: 1358
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 17
- | Frame: 13 | nonZero AFTER GrabCut: 1324
+ | Frame: 13 | nonZero AFTER GrabCut: 1328
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 22
- | Frame: 14 | nonZero AFTER GrabCut: 1431
+ | Frame: 14 | nonZero AFTER GrabCut: 1438
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 22
  | Frame: 15 | nonZero AFTER GrabCut: 1479
@@ -932,7 +932,7 @@ MediaPipe fallback used: 0
  | Frame: 16 | nonZero AFTER GrabCut: 1426
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 22
- | Frame: 17 | nonZero AFTER GrabCut: 1422
+ | Frame: 17 | nonZero AFTER GrabCut: 1429
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 13
  | Frame: 18 | nonZero AFTER GrabCut: 1478
@@ -944,16 +944,16 @@ MediaPipe fallback used: 0
  | Frame: 20 | nonZero AFTER GrabCut: 1537
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 18
- | Frame: 21 | nonZero AFTER GrabCut: 1572
+ | Frame: 21 | nonZero AFTER GrabCut: 1573
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 18
- | Frame: 22 | nonZero AFTER GrabCut: 1649
+ | Frame: 22 | nonZero AFTER GrabCut: 1659
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 32
- | Frame: 23 | nonZero AFTER GrabCut: 1581
+ | Frame: 23 | nonZero AFTER GrabCut: 1576
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 34
- | Frame: 24 | nonZero AFTER GrabCut: 1833
+ | Frame: 24 | nonZero AFTER GrabCut: 1834
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 69
  | Frame: 25 | nonZero AFTER GrabCut: 1749
@@ -962,37 +962,37 @@ MediaPipe fallback used: 0
  | Frame: 26 | nonZero AFTER GrabCut: 2051
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 65
- | Frame: 27 | nonZero AFTER GrabCut: 1924
+ | Frame: 27 | nonZero AFTER GrabCut: 1923
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 87
- | Frame: 28 | nonZero AFTER GrabCut: 2007
+ | Frame: 28 | nonZero AFTER GrabCut: 1959
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 110
- | Frame: 29 | nonZero AFTER GrabCut: 2143
+ | Frame: 29 | nonZero AFTER GrabCut: 2144
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 120
- | Frame: 30 | nonZero AFTER GrabCut: 2110
+ | Frame: 30 | nonZero AFTER GrabCut: 2102
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 105
- | Frame: 31 | nonZero AFTER GrabCut: 2006
+ | Frame: 31 | nonZero AFTER GrabCut: 2069
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 62
- | Frame: 32 | nonZero AFTER GrabCut: 2041
+ | Frame: 32 | nonZero AFTER GrabCut: 2051
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 31
- | Frame: 33 | nonZero AFTER GrabCut: 2219
+ | Frame: 33 | nonZero AFTER GrabCut: 1997
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 31
- | Frame: 34 | nonZero AFTER GrabCut: 2203
+ | Frame: 34 | nonZero AFTER GrabCut: 1962
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 28
  | Frame: 35 | nonZero AFTER GrabCut: 1931
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 36
- | Frame: 36 | nonZero AFTER GrabCut: 1931
+ | Frame: 36 | nonZero AFTER GrabCut: 1933
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 25
- | Frame: 37 | nonZero AFTER GrabCut: 1887
+ | Frame: 37 | nonZero AFTER GrabCut: 1877
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 27
  | Frame: 38 | nonZero AFTER GrabCut: 1925
@@ -1055,7 +1055,7 @@ MediaPipe fallback used: 0
  | Frame: 1 | nonZero AFTER GrabCut: 1440
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 31
- | Frame: 2 | nonZero AFTER GrabCut: 1462
+ | Frame: 2 | nonZero AFTER GrabCut: 1457
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 31
  | Frame: 3 | nonZero AFTER GrabCut: 1490
@@ -1064,10 +1064,10 @@ MediaPipe fallback used: 0
  | Frame: 4 | nonZero AFTER GrabCut: 1504
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 31
- | Frame: 5 | nonZero AFTER GrabCut: 1531
+ | Frame: 5 | nonZero AFTER GrabCut: 1528
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 31
- | Frame: 6 | nonZero AFTER GrabCut: 1563
+ | Frame: 6 | nonZero AFTER GrabCut: 1565
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 31
  | Frame: 7 | nonZero AFTER GrabCut: 1626
@@ -1079,7 +1079,7 @@ MediaPipe fallback used: 0
  | Frame: 9 | nonZero AFTER GrabCut: 1540
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 31
- | Frame: 10 | nonZero AFTER GrabCut: 1489
+ | Frame: 10 | nonZero AFTER GrabCut: 1488
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 22
  | Frame: 11 | nonZero AFTER GrabCut: 1409
@@ -1088,7 +1088,7 @@ MediaPipe fallback used: 0
  | Frame: 12 | nonZero AFTER GrabCut: 1365
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 14
- | Frame: 13 | nonZero AFTER GrabCut: 1262
+ | Frame: 13 | nonZero AFTER GrabCut: 1265
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 20
  | Frame: 14 | nonZero AFTER GrabCut: 1203
@@ -1100,7 +1100,7 @@ MediaPipe fallback used: 0
  | Frame: 16 | nonZero AFTER GrabCut: 1180
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 34
- | Frame: 17 | nonZero AFTER GrabCut: 1190
+ | Frame: 17 | nonZero AFTER GrabCut: 1192
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 34
  | Frame: 18 | nonZero AFTER GrabCut: 1190
@@ -1112,7 +1112,7 @@ MediaPipe fallback used: 0
  | Frame: 20 | nonZero AFTER GrabCut: 1205
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 34
- | Frame: 21 | nonZero AFTER GrabCut: 1262
+ | Frame: 21 | nonZero AFTER GrabCut: 1260
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 15
  | Frame: 22 | nonZero AFTER GrabCut: 1307
@@ -1127,10 +1127,10 @@ MediaPipe fallback used: 0
  | Frame: 25 | nonZero AFTER GrabCut: 1485
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 15
- | Frame: 26 | nonZero AFTER GrabCut: 1523
+ | Frame: 26 | nonZero AFTER GrabCut: 1520
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 15
- | Frame: 27 | nonZero AFTER GrabCut: 1561
+ | Frame: 27 | nonZero AFTER GrabCut: 1560
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 15
  | Frame: 28 | nonZero AFTER GrabCut: 1534
@@ -1151,7 +1151,7 @@ MediaPipe fallback used: 0
  | Frame: 33 | nonZero AFTER GrabCut: 1403
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 15
- | Frame: 34 | nonZero AFTER GrabCut: 1406
+ | Frame: 34 | nonZero AFTER GrabCut: 1407
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 15
  | Frame: 35 | nonZero AFTER GrabCut: 1433
@@ -1160,7 +1160,7 @@ MediaPipe fallback used: 0
  | Frame: 36 | nonZero AFTER GrabCut: 1470
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 15
- | Frame: 37 | nonZero AFTER GrabCut: 1500
+ | Frame: 37 | nonZero AFTER GrabCut: 1499
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 15
  | Frame: 38 | nonZero AFTER GrabCut: 1523
@@ -1217,25 +1217,25 @@ MediaPipe fallback used: 0
 ----------------------------------------
 ===== NEW SEQUENCE: data/sequences/person07_handclapping_d4 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 38
- | Frame: 0 | nonZero AFTER GrabCut: 1540
+ | Frame: 0 | nonZero AFTER GrabCut: 1539
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 38
- | Frame: 1 | nonZero AFTER GrabCut: 1552
+ | Frame: 1 | nonZero AFTER GrabCut: 1553
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 38
- | Frame: 2 | nonZero AFTER GrabCut: 1556
+ | Frame: 2 | nonZero AFTER GrabCut: 1557
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 38
- | Frame: 3 | nonZero AFTER GrabCut: 1576
+ | Frame: 3 | nonZero AFTER GrabCut: 1577
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 38
- | Frame: 4 | nonZero AFTER GrabCut: 1589
+ | Frame: 4 | nonZero AFTER GrabCut: 1592
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 38
- | Frame: 5 | nonZero AFTER GrabCut: 1513
+ | Frame: 5 | nonZero AFTER GrabCut: 1532
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 40
- | Frame: 6 | nonZero AFTER GrabCut: 1613
+ | Frame: 6 | nonZero AFTER GrabCut: 1599
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 21
  | Frame: 7 | nonZero AFTER GrabCut: 1633
@@ -1244,52 +1244,52 @@ MediaPipe fallback used: 0
  | Frame: 8 | nonZero AFTER GrabCut: 1650
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 64
- | Frame: 9 | nonZero AFTER GrabCut: 1665
+ | Frame: 9 | nonZero AFTER GrabCut: 1668
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 64
- | Frame: 10 | nonZero AFTER GrabCut: 1644
+ | Frame: 10 | nonZero AFTER GrabCut: 1646
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 61
- | Frame: 11 | nonZero AFTER GrabCut: 1603
+ | Frame: 11 | nonZero AFTER GrabCut: 1604
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 36
- | Frame: 12 | nonZero AFTER GrabCut: 1576
+ | Frame: 12 | nonZero AFTER GrabCut: 1564
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 30
  | Frame: 13 | nonZero AFTER GrabCut: 1510
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 28
- | Frame: 14 | nonZero AFTER GrabCut: 1457
+ | Frame: 14 | nonZero AFTER GrabCut: 1462
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 30
  | Frame: 15 | nonZero AFTER GrabCut: 1424
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 13
- | Frame: 16 | nonZero AFTER GrabCut: 1349
+ | Frame: 16 | nonZero AFTER GrabCut: 1368
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 11
- | Frame: 17 | nonZero AFTER GrabCut: 1310
+ | Frame: 17 | nonZero AFTER GrabCut: 1311
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 26
- | Frame: 18 | nonZero AFTER GrabCut: 1284
+ | Frame: 18 | nonZero AFTER GrabCut: 1309
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 41
  | Frame: 19 | nonZero AFTER GrabCut: 1299
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 50
- | Frame: 20 | nonZero AFTER GrabCut: 1268
+ | Frame: 20 | nonZero AFTER GrabCut: 1269
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 20
  | Frame: 21 | nonZero AFTER GrabCut: 1270
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 20
- | Frame: 22 | nonZero AFTER GrabCut: 1268
+ | Frame: 22 | nonZero AFTER GrabCut: 1267
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 20
  | Frame: 23 | nonZero AFTER GrabCut: 1310
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 20
- | Frame: 24 | nonZero AFTER GrabCut: 1343
+ | Frame: 24 | nonZero AFTER GrabCut: 1342
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 20
  | Frame: 25 | nonZero AFTER GrabCut: 1393
@@ -1298,25 +1298,25 @@ MediaPipe fallback used: 0
  | Frame: 26 | nonZero AFTER GrabCut: 1455
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 20
- | Frame: 27 | nonZero AFTER GrabCut: 1488
+ | Frame: 27 | nonZero AFTER GrabCut: 1508
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 30
  | Frame: 28 | nonZero AFTER GrabCut: 1532
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 44
- | Frame: 29 | nonZero AFTER GrabCut: 1462
+ | Frame: 29 | nonZero AFTER GrabCut: 1435
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 42
  | Frame: 30 | nonZero AFTER GrabCut: 1603
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 30
- | Frame: 31 | nonZero AFTER GrabCut: 1625
+ | Frame: 31 | nonZero AFTER GrabCut: 1617
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 18
  | Frame: 32 | nonZero AFTER GrabCut: 1656
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 18
- | Frame: 33 | nonZero AFTER GrabCut: 1629
+ | Frame: 33 | nonZero AFTER GrabCut: 1630
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 18
  | Frame: 34 | nonZero AFTER GrabCut: 1600
@@ -1331,10 +1331,10 @@ MediaPipe fallback used: 0
  | Frame: 37 | nonZero AFTER GrabCut: 1635
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 18
- | Frame: 38 | nonZero AFTER GrabCut: 1542
+ | Frame: 38 | nonZero AFTER GrabCut: 1543
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 18
- | Frame: 39 | nonZero AFTER GrabCut: 1571
+ | Frame: 39 | nonZero AFTER GrabCut: 1579
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person07_handclapping_d4
@@ -1391,7 +1391,7 @@ MediaPipe fallback used: 0
  | Frame: 1 | nonZero AFTER GrabCut: 556
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 18
- | Frame: 2 | nonZero AFTER GrabCut: 556
+ | Frame: 2 | nonZero AFTER GrabCut: 582
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 18
  | Frame: 3 | nonZero AFTER GrabCut: 655
@@ -1463,25 +1463,25 @@ MediaPipe fallback used: 0
  | Frame: 25 | nonZero AFTER GrabCut: 647
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 81
- | Frame: 26 | nonZero AFTER GrabCut: 637
+ | Frame: 26 | nonZero AFTER GrabCut: 674
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 131
  | Frame: 27 | nonZero AFTER GrabCut: 1092
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 140
- | Frame: 28 | nonZero AFTER GrabCut: 1411
+ | Frame: 28 | nonZero AFTER GrabCut: 1326
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 185
- | Frame: 29 | nonZero AFTER GrabCut: 887
+ | Frame: 29 | nonZero AFTER GrabCut: 764
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 168
- | Frame: 30 | nonZero AFTER GrabCut: 815
+ | Frame: 30 | nonZero AFTER GrabCut: 819
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 139
- | Frame: 31 | nonZero AFTER GrabCut: 777
+ | Frame: 31 | nonZero AFTER GrabCut: 782
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 79
- | Frame: 32 | nonZero AFTER GrabCut: 415
+ | Frame: 32 | nonZero AFTER GrabCut: 451
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 86
  | Frame: 33 | nonZero AFTER GrabCut: 73
@@ -1631,7 +1631,7 @@ MediaPipe fallback used: 0
  | Frame: 25 | nonZero AFTER GrabCut: 37
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 236
- | Frame: 26 | nonZero AFTER GrabCut: 144
+ | Frame: 26 | nonZero AFTER GrabCut: 154
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 237
  | Frame: 27 | nonZero AFTER GrabCut: 232
@@ -1643,7 +1643,7 @@ MediaPipe fallback used: 0
  | Frame: 29 | nonZero AFTER GrabCut: 508
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 196
- | Frame: 30 | nonZero AFTER GrabCut: 570
+ | Frame: 30 | nonZero AFTER GrabCut: 568
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 185
  | Frame: 31 | nonZero AFTER GrabCut: 624
@@ -1667,7 +1667,7 @@ MediaPipe fallback used: 0
  | Frame: 37 | nonZero AFTER GrabCut: 414
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 307
- | Frame: 38 | nonZero AFTER GrabCut: 473
+ | Frame: 38 | nonZero AFTER GrabCut: 563
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 328
  | Frame: 39 | nonZero AFTER GrabCut: 703
@@ -1787,7 +1787,7 @@ MediaPipe fallback used: 0
  | Frame: 21 | nonZero AFTER GrabCut: 948
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 281
- | Frame: 22 | nonZero AFTER GrabCut: 1113
+ | Frame: 22 | nonZero AFTER GrabCut: 1107
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 270
  | Frame: 23 | nonZero AFTER GrabCut: 1101
@@ -1799,13 +1799,13 @@ MediaPipe fallback used: 0
  | Frame: 25 | nonZero AFTER GrabCut: 1122
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 373
- | Frame: 26 | nonZero AFTER GrabCut: 1160
+ | Frame: 26 | nonZero AFTER GrabCut: 1229
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 350
  | Frame: 27 | nonZero AFTER GrabCut: 1255
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 310
- | Frame: 28 | nonZero AFTER GrabCut: 1041
+ | Frame: 28 | nonZero AFTER GrabCut: 1015
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 251
  | Frame: 29 | nonZero AFTER GrabCut: 834
@@ -1814,13 +1814,13 @@ MediaPipe fallback used: 0
  | Frame: 30 | nonZero AFTER GrabCut: 1023
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 301
- | Frame: 31 | nonZero AFTER GrabCut: 1161
+ | Frame: 31 | nonZero AFTER GrabCut: 1231
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 326
  | Frame: 32 | nonZero AFTER GrabCut: 1536
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 293
- | Frame: 33 | nonZero AFTER GrabCut: 526
+ | Frame: 33 | nonZero AFTER GrabCut: 524
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 284
  | Frame: 34 | nonZero AFTER GrabCut: 427
@@ -1940,49 +1940,49 @@ MediaPipe fallback used: 0
  | Frame: 16 | nonZero AFTER GrabCut: 91
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 410
- | Frame: 17 | nonZero AFTER GrabCut: 242
+ | Frame: 17 | nonZero AFTER GrabCut: 237
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 294
- | Frame: 18 | nonZero AFTER GrabCut: 398
+ | Frame: 18 | nonZero AFTER GrabCut: 408
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 421
  | Frame: 19 | nonZero AFTER GrabCut: 759
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 480
- | Frame: 20 | nonZero AFTER GrabCut: 962
+ | Frame: 20 | nonZero AFTER GrabCut: 965
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 620
- | Frame: 21 | nonZero AFTER GrabCut: 1282
+ | Frame: 21 | nonZero AFTER GrabCut: 1281
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 799
  | Frame: 22 | nonZero AFTER GrabCut: 1973
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 796
- | Frame: 23 | nonZero AFTER GrabCut: 2135
+ | Frame: 23 | nonZero AFTER GrabCut: 2132
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 875
  | Frame: 24 | nonZero AFTER GrabCut: 2211
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 896
- | Frame: 25 | nonZero AFTER GrabCut: 2035
+ | Frame: 25 | nonZero AFTER GrabCut: 2041
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 800
  | Frame: 26 | nonZero AFTER GrabCut: 1561
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 898
- | Frame: 27 | nonZero AFTER GrabCut: 1570
+ | Frame: 27 | nonZero AFTER GrabCut: 1573
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1099
  | Frame: 28 | nonZero AFTER GrabCut: 1756
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1155
- | Frame: 29 | nonZero AFTER GrabCut: 1832
+ | Frame: 29 | nonZero AFTER GrabCut: 1831
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 1204
  | Frame: 30 | nonZero AFTER GrabCut: 1833
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1235
- | Frame: 31 | nonZero AFTER GrabCut: 1856
+ | Frame: 31 | nonZero AFTER GrabCut: 1860
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1296
  | Frame: 32 | nonZero AFTER GrabCut: 1876
@@ -1994,16 +1994,16 @@ MediaPipe fallback used: 0
  | Frame: 34 | nonZero AFTER GrabCut: 1516
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 1058
- | Frame: 35 | nonZero AFTER GrabCut: 1494
+ | Frame: 35 | nonZero AFTER GrabCut: 1493
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 1207
- | Frame: 36 | nonZero AFTER GrabCut: 1754
+ | Frame: 36 | nonZero AFTER GrabCut: 1755
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 1327
  | Frame: 37 | nonZero AFTER GrabCut: 1189
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 1334
- | Frame: 38 | nonZero AFTER GrabCut: 776
+ | Frame: 38 | nonZero AFTER GrabCut: 775
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 1138
  | Frame: 39 | nonZero AFTER GrabCut: 305
@@ -2093,19 +2093,19 @@ MediaPipe fallback used: 0
  | Frame: 11 | nonZero AFTER GrabCut: 1225
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 469
- | Frame: 12 | nonZero AFTER GrabCut: 1335
+ | Frame: 12 | nonZero AFTER GrabCut: 1336
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 552
- | Frame: 13 | nonZero AFTER GrabCut: 1546
+ | Frame: 13 | nonZero AFTER GrabCut: 1549
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 609
  | Frame: 14 | nonZero AFTER GrabCut: 1731
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 806
- | Frame: 15 | nonZero AFTER GrabCut: 1502
+ | Frame: 15 | nonZero AFTER GrabCut: 1504
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 862
- | Frame: 16 | nonZero AFTER GrabCut: 1483
+ | Frame: 16 | nonZero AFTER GrabCut: 1486
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 868
  | Frame: 17 | nonZero AFTER GrabCut: 1519
@@ -2114,10 +2114,10 @@ MediaPipe fallback used: 0
  | Frame: 18 | nonZero AFTER GrabCut: 1520
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 887
- | Frame: 19 | nonZero AFTER GrabCut: 1442
+ | Frame: 19 | nonZero AFTER GrabCut: 1441
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 973
- | Frame: 20 | nonZero AFTER GrabCut: 1327
+ | Frame: 20 | nonZero AFTER GrabCut: 1329
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 909
  | Frame: 21 | nonZero AFTER GrabCut: 1302
@@ -2126,10 +2126,10 @@ MediaPipe fallback used: 0
  | Frame: 22 | nonZero AFTER GrabCut: 1342
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 972
- | Frame: 23 | nonZero AFTER GrabCut: 1408
+ | Frame: 23 | nonZero AFTER GrabCut: 1410
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 1117
- | Frame: 24 | nonZero AFTER GrabCut: 1482
+ | Frame: 24 | nonZero AFTER GrabCut: 1483
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 1193
  | Frame: 25 | nonZero AFTER GrabCut: 1677
@@ -2138,10 +2138,10 @@ MediaPipe fallback used: 0
  | Frame: 26 | nonZero AFTER GrabCut: 1570
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 1189
- | Frame: 27 | nonZero AFTER GrabCut: 1593
+ | Frame: 27 | nonZero AFTER GrabCut: 1590
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1285
- | Frame: 28 | nonZero AFTER GrabCut: 1592
+ | Frame: 28 | nonZero AFTER GrabCut: 1590
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1315
  | Frame: 29 | nonZero AFTER GrabCut: 1546
@@ -2150,10 +2150,10 @@ MediaPipe fallback used: 0
  | Frame: 30 | nonZero AFTER GrabCut: 1466
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1233
- | Frame: 31 | nonZero AFTER GrabCut: 1440
+ | Frame: 31 | nonZero AFTER GrabCut: 1430
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1103
- | Frame: 32 | nonZero AFTER GrabCut: 1310
+ | Frame: 32 | nonZero AFTER GrabCut: 1307
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 1012
  | Frame: 33 | nonZero AFTER GrabCut: 1178
@@ -2318,19 +2318,19 @@ MediaPipe fallback used: 0
  | Frame: 30 | nonZero AFTER GrabCut: 159
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 188
- | Frame: 31 | nonZero AFTER GrabCut: 223
+ | Frame: 31 | nonZero AFTER GrabCut: 225
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 223
- | Frame: 32 | nonZero AFTER GrabCut: 231
+ | Frame: 32 | nonZero AFTER GrabCut: 226
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 265
- | Frame: 33 | nonZero AFTER GrabCut: 300
+ | Frame: 33 | nonZero AFTER GrabCut: 288
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 295
- | Frame: 34 | nonZero AFTER GrabCut: 356
+ | Frame: 34 | nonZero AFTER GrabCut: 339
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 279
- | Frame: 35 | nonZero AFTER GrabCut: 379
+ | Frame: 35 | nonZero AFTER GrabCut: 384
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 265
  | Frame: 36 | nonZero AFTER GrabCut: 282
@@ -2429,16 +2429,16 @@ MediaPipe fallback used: 0
  | Frame: 11 | nonZero AFTER GrabCut: 1414
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 455
- | Frame: 12 | nonZero AFTER GrabCut: 1401
+ | Frame: 12 | nonZero AFTER GrabCut: 1398
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 411
  | Frame: 13 | nonZero AFTER GrabCut: 1489
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 553
- | Frame: 14 | nonZero AFTER GrabCut: 1558
+ | Frame: 14 | nonZero AFTER GrabCut: 1562
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 750
- | Frame: 15 | nonZero AFTER GrabCut: 1696
+ | Frame: 15 | nonZero AFTER GrabCut: 1703
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 810
  | Frame: 16 | nonZero AFTER GrabCut: 1969
@@ -2447,10 +2447,10 @@ MediaPipe fallback used: 0
  | Frame: 17 | nonZero AFTER GrabCut: 1564
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 854
- | Frame: 18 | nonZero AFTER GrabCut: 1582
+ | Frame: 18 | nonZero AFTER GrabCut: 1574
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 933
- | Frame: 19 | nonZero AFTER GrabCut: 1589
+ | Frame: 19 | nonZero AFTER GrabCut: 1645
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 1144
  | Frame: 20 | nonZero AFTER GrabCut: 1711
@@ -2462,7 +2462,7 @@ MediaPipe fallback used: 0
  | Frame: 22 | nonZero AFTER GrabCut: 1680
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 981
- | Frame: 23 | nonZero AFTER GrabCut: 1562
+ | Frame: 23 | nonZero AFTER GrabCut: 1563
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 906
  | Frame: 24 | nonZero AFTER GrabCut: 1458
@@ -2495,7 +2495,7 @@ MediaPipe fallback used: 0
  | Frame: 33 | nonZero AFTER GrabCut: 169
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 885
- | Frame: 34 | nonZero AFTER GrabCut: 84
+ | Frame: 34 | nonZero AFTER GrabCut: 80
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 681
  | Frame: 35 | nonZero AFTER GrabCut: 0
@@ -2618,7 +2618,7 @@ MediaPipe fallback used: 0
  | Frame: 18 | nonZero AFTER GrabCut: 26
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 229
- | Frame: 19 | nonZero AFTER GrabCut: 107
+ | Frame: 19 | nonZero AFTER GrabCut: 123
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 304
  | Frame: 20 | nonZero AFTER GrabCut: 227
@@ -2630,10 +2630,10 @@ MediaPipe fallback used: 0
  | Frame: 22 | nonZero AFTER GrabCut: 351
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 370
- | Frame: 23 | nonZero AFTER GrabCut: 466
+ | Frame: 23 | nonZero AFTER GrabCut: 465
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 496
- | Frame: 24 | nonZero AFTER GrabCut: 617
+ | Frame: 24 | nonZero AFTER GrabCut: 610
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 833
  | Frame: 25 | nonZero AFTER GrabCut: 757
@@ -2642,43 +2642,43 @@ MediaPipe fallback used: 0
  | Frame: 26 | nonZero AFTER GrabCut: 1000
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 1319
- | Frame: 27 | nonZero AFTER GrabCut: 1131
+ | Frame: 27 | nonZero AFTER GrabCut: 1135
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1466
  | Frame: 28 | nonZero AFTER GrabCut: 1405
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1459
- | Frame: 29 | nonZero AFTER GrabCut: 8361
+ | Frame: 29 | nonZero AFTER GrabCut: 8367
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 1464
  | Frame: 30 | nonZero AFTER GrabCut: 8719
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1505
- | Frame: 31 | nonZero AFTER GrabCut: 8741
+ | Frame: 31 | nonZero AFTER GrabCut: 8740
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1453
- | Frame: 32 | nonZero AFTER GrabCut: 8579
+ | Frame: 32 | nonZero AFTER GrabCut: 8095
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 1366
  | Frame: 33 | nonZero AFTER GrabCut: 4465
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 1295
- | Frame: 34 | nonZero AFTER GrabCut: 4697
+ | Frame: 34 | nonZero AFTER GrabCut: 4730
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 1459
- | Frame: 35 | nonZero AFTER GrabCut: 8303
+ | Frame: 35 | nonZero AFTER GrabCut: 5013
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 1480
- | Frame: 36 | nonZero AFTER GrabCut: 3177
+ | Frame: 36 | nonZero AFTER GrabCut: 3178
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 1590
  | Frame: 37 | nonZero AFTER GrabCut: 3000
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 1592
- | Frame: 38 | nonZero AFTER GrabCut: 2516
+ | Frame: 38 | nonZero AFTER GrabCut: 2513
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 1623
- | Frame: 39 | nonZero AFTER GrabCut: 2240
+ | Frame: 39 | nonZero AFTER GrabCut: 2296
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person21_jogging_d4

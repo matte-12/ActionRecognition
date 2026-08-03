@@ -7,18 +7,18 @@ NB: il dataset andrebbe messo in locale, siccome però non è ancora stato caric
 
 Codici che uso per runnare:
 
-> motion_mask_stats.txt
-rm -rf build
-mkdir build
-cd build
+>> motion_mask_stats.txt
+> rm -rf build
+> mkdir build
+> cd build
 
-cmake ..
-make
+> cmake ..
+> make
 
-cd ..
-./build/ActionRecognition data/sequences results
+> cd ..
+> ./build/ActionRecognition data/sequences results
 
 
 Codice da usare per killare mediapipe:
 
-pkill -9 -f ActionRecognition
+> pkill -9 -f ActionRecognition
