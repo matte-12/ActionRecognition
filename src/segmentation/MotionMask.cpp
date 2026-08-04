@@ -105,27 +105,25 @@ std::vector<cv::Mat> filterMorphology(const std::vector<cv::Mat>& frames)
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(3,3));
 
     for (const auto& frame : frames){
-        cv::Mat temp;
-
-        cv::threshold(frame, temp, 200, 255, cv::THRESH_BINARY);
+ 
     // sarebbe meglio fare close e poi open?
     // Rimuove piccoli rumori bianchi
         cv::morphologyEx(
-            temp,
-            temp,
+            frame,
+            frame,
             cv::MORPH_OPEN,
             kernel
         );
 
         // Chiude piccoli buchi negli oggetti
         cv::morphologyEx(
-            temp,
-            temp,
+            frame,
+            frame,
             cv::MORPH_CLOSE,
             kernel
         );
 
-        result.push_back(temp);
+        result.push_back(frame);
     }
  
     return result;
@@ -135,17 +133,8 @@ std::vector<cv::Mat> filterMorphology(const std::vector<cv::Mat>& frames)
 
 //FUNZIONE PER TOGLIERE CAMBI DI LUCE
 
-bool isLightChangeMask(const cv::Mat& mask, double threshold)
+bool isLightChangeMask(double ratio, double threshold)
 {
-    if (mask.empty())
-        return false;
-
-    int nonZero = cv::countNonZero(mask);
-
-    double ratio =
-        static_cast<double>(nonZero) /
-        static_cast<double>(mask.total());
-
     return ratio > threshold;
 }
 
@@ -165,7 +154,8 @@ bool isLightChangeMask(const cv::Mat& mask, double threshold)
             16.0,
             true
         );
-
+        
+    // trick per riempire i cambi di luce. Uso l'ultima mask buona.
     cv::Mat lastGoodMask;
     bool hasLastGoodMask = false;
 
@@ -178,7 +168,7 @@ bool isLightChangeMask(const cv::Mat& mask, double threshold)
             foreground.push_back(cv::Mat());
             continue;
         }
-
+        // ottengo foregroung grezzo 
         cv::Mat rawMask;
         mog2->apply(frame, rawMask);
 
@@ -187,6 +177,8 @@ bool isLightChangeMask(const cv::Mat& mask, double threshold)
         // Tengo solo foreground vero, escludendo shadow = 127
         cv::inRange(rawMask, 254, 255, mask);
 
+        // conta numero pixel non neri, se il numero è basso allora 
+        //o non c'è la persona oppure lo rileva male.In questo caso uso la mask dell'ultimo frame buono, se c'è
         int nonZero = cv::countNonZero(mask);
 
         double ratio =
@@ -197,8 +189,8 @@ bool isLightChangeMask(const cv::Mat& mask, double threshold)
                 << " | nonZero: " << nonZero
                 << " | ratio: " << ratio
                 << std::endl;
-
-        bool lightChange = isLightChangeMask(mask, 0.35);
+// nota che per ora non viene mai usata, valori tutti sotto allo 0.12. Vedo di usare una BBox ratio
+        bool lightChange = isLightChangeMask(ratio, 0.35);
 
         if (lightChange)
         {

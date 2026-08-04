@@ -12,7 +12,6 @@
 
 // NB HA ANCORA PROBLEMI CON OMBRE E CAMBI DI LUCE
 
-// FUNZIONE PRINCIPALE DA GUARDARE !!
 // funzione public che estrae le BBox finali 
 
 void Segmentation::extractBBox( SequenceData& sequence) {
@@ -26,10 +25,12 @@ void Segmentation::extractBBox( SequenceData& sequence) {
 
 //applico morphology
 // NB: HO NOTATO CHE CON KERNEL (3,3) PRENDE ANCHE HANDCLAPPING, CON KERNEL (5,5) NON CI RIESCE
-// IN QUESTO MODO NON TROVA USA FALLBACK, PER0' E' UN PO' PIU' IMPRECISO CON I CAMBI DI ILLUMINAZIONE
+// IN QUESTO MODO NON USA FALLBACK, PER0' E' UN PO' PIU' IMPRECISO CON I CAMBI DI ILLUMINAZIONE
 // NB: CAMBIO LA THRESHOLD PER EFFETTI SULL'ILLUMINAZIONE
 
     filteredImgs = (filterMorphology(filteredImgs));
+
+  //  showMasks(filteredImgs); 
 
 // Salvo la motion mask (seeds) in sequence.motionMasks (utile per feature extraction)
 
@@ -67,7 +68,7 @@ void Segmentation::extractBBox( SequenceData& sequence) {
 
 //mostra se funziona maschera
 
-    showMasks(finalImgsMask);  
+   // showMasks(finalImgsMask);  
 
 // ritorna vettore di Rect
 
@@ -95,7 +96,7 @@ void Segmentation::extractBBox( SequenceData& sequence) {
 
 // mostra bbox
 
-    showBBoxes(sequence.frames, bboxes);
+  //  showBBoxes(sequence.frames, bboxes);
 
 }
 //---------------------------------------------------------------------------------------
