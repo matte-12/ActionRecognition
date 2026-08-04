@@ -42,7 +42,13 @@ outputs/
 *.log
 *.tmp
 *.temp
-*.txt
+
+# txt da escludere
+motion_mask_stats.txt
+pose_landmarker_lite.task
+shadow_switch_stats.txt
+temp_mediapipe_frame.jpg
+temp_mediapipe_roi.txt
 
 # IDE / editors
 .vscode/
