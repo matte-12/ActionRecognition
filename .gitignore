@@ -42,7 +42,7 @@ outputs/
 *.log
 *.tmp
 *.temp
-
+*.txt
 # IDE / editors
 .vscode/
 .idea/
