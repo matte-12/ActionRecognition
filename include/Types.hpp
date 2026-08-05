@@ -16,6 +16,30 @@ struct SequenceData {
     std::vector<cv::Mat> motionMasks; // puo servire per featureExtraction
 };
 
+struct SequenceFeatures
+{
+    std::string sequenceName;
+
+    double meanArea = 0.0;
+    double areaVariation = 0.0;
+
+    double meanAspectRatio = 0.0;
+
+    double totalDisplacementX = 0.0;
+    double totalDisplacementY = 0.0;
+    double totalDisplacement = 0.0;
+
+    double meanVelocity = 0.0;
+
+    double motionEnergy = 0.0;
+
+    double upperMotion = 0.0;
+    double middleMotion = 0.0;
+    double lowerMotion = 0.0;
+
+    int trueLabel = -1;
+};
+
 struct Prediction {
     std::string sequenceName;
     int trueLabel = -1;

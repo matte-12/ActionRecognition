@@ -39,12 +39,12 @@ int main(int argc, char** argv) {
 
 //-------------------------------------------------------------------------------------
 // passo da DatasetLoader per creare vettore di SequenceData
-// cioè carico i frame in data/sequences
+// cioè prendo i frame da data/sequences o local_sequences (cartella locale completa)
 // ottengo elementi del tipo struct SequenceData
 //-------------------------------------------------------------------------------------
 
     std::string sequencesPath = argv[1];
-    //std::string sequencesPath = "data/sequences/";
+    //std::string sequencesPath = "local_sequences/";
 
     DatasetLoader loader;
     std::vector<SequenceData> sequenze = loader.loadDataset(sequencesPath);

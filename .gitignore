@@ -31,12 +31,13 @@ compile_commands.json
 *.ilk
 
 # Dataset and generated results
-# data/
+data/
 dataset/
 datasets/
 results/
 output/
 outputs/
+local_sequences/
 
 # Logs and temporary files
 *.log

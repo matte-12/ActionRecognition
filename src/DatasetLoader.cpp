@@ -8,8 +8,10 @@ namespace fs = std::filesystem;
 // IMPOSTA LA SesquenceData sequence .trueLabel, .gtBBox20, .hasGT.
 // ricava questi valori dalla groundtruth.txt
 
-bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData& sequence) {
-    std::string gtPath = datasetPath + "/gt.txt";
+bool DatasetLoader::getGroundTruth( SequenceData& sequence ) {
+
+    auto datasetPath = sequence.name;
+    std::string gtPath = datasetPath + "/labels/ground_truth.txt";
 
     if (!fs::exists(gtPath)) {
         sequence.hasGT= false;
@@ -25,10 +27,10 @@ bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData&
     }
 
     int classId;
-    int xCenter;
-    int yCenter;
-    int width;
-    int height;
+    double xCenter;
+    double yCenter;
+    double width;
+    double height;
 
     file >> classId >> xCenter >> yCenter >> width >> height;
 
@@ -39,11 +41,13 @@ bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData&
         return false;
     }
 
-    int x = xCenter - width / 2;
-    int y = yCenter - height / 2;
+    int x = static_cast<int>(std::round(xCenter - width / 2.0));
+    int y = static_cast<int>(std::round(yCenter - height / 2.0));
+    int w = static_cast<int>(std::round(width));
+    int h = static_cast<int>(std::round(height));
 
     sequence.trueLabel = classId;
-    sequence.gtBBox20 = cv::Rect(x, y, width, height);
+    sequence.gtBBox20 = cv::Rect(x, y, w, h);
     sequence.hasGT= true;
 
     return true;
@@ -52,19 +56,30 @@ bool DatasetLoader::getGroundTruth(const std::string& datasetPath, SequenceData&
 
 //---------------------------------------------------------------------------------------------
 
-// funzione privata che divide il rootpath data/sequences nelle sottocartelle
+// restituisce il nome del path fino a prima di data e labels
 
-std::vector<std::string> DatasetLoader:: getSubfolderPath(const std::string& rootPath){
+std::vector<std::string> DatasetLoader::getSubfolderPath(const std::string& rootPath)
+{
+    std::vector<std::string> sequenceFolders;
 
-    std::vector<std::string> folders;
+    for (const auto& entry : fs::recursive_directory_iterator(rootPath))
+    {
+        if (!entry.is_directory())
+            continue;
 
-    for (const auto& entry : fs::directory_iterator(rootPath)) {
-        if (entry.is_directory()) {
-            folders.push_back(entry.path().string());
+        fs::path currentPath = entry.path();
+
+        fs::path dataPath = currentPath / "data";
+        fs::path labelsPath = currentPath / "labels";
+
+        if (fs::exists(dataPath) && fs::is_directory(dataPath) &&
+            fs::exists(labelsPath) && fs::is_directory(labelsPath))
+        {
+            sequenceFolders.push_back(currentPath.string());
         }
     }
 
-    return folders;
+    return sequenceFolders;
 }
 
 //---------------------------------------------------------------------------------------------
@@ -73,18 +88,22 @@ std::vector<std::string> DatasetLoader:: getSubfolderPath(const std::string& roo
 
 std::vector<cv::Mat> DatasetLoader :: getFrames(const std::string& datasetPath)
 {
+    // entro nella cartella data
+    auto data = datasetPath + "/data";
+
     std::vector<cv::String> filenames;
     std::vector<cv::Mat> images;
 
     // Prende tutti i file jpg 
-    cv::glob(datasetPath + "/*.jpg", filenames, false);
+    cv::glob(data + "/*.jpg", filenames, false);
     
     // mette i png:
     std::vector<cv::String> pngFiles;
-    cv::glob(datasetPath + "/*.png", pngFiles, false);
+    cv::glob(data + "/*.png", pngFiles, false);
 
     // unisce tutto
     filenames.insert(filenames.end(), pngFiles.begin(), pngFiles.end());
+    std::sort(filenames.begin(), filenames.end());
 
     // Carica le immagini + le converto in grigi
     for (const auto& file : filenames)
@@ -107,7 +126,9 @@ std::vector<cv::Mat> DatasetLoader :: getFrames(const std::string& datasetPath)
 
 std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath) {
     std::vector<SequenceData> sequenza;
-    auto subfolderPath =  getSubfolderPath(rootPath); // creo un vettore contenente le sottocartelle di data/sequences
+
+    // creo un vettore contenente le sottocartelle di local_sequences/
+    auto subfolderPath =  getSubfolderPath(rootPath); 
 
     //imposto gli elementi della stucture: .name, .frames, .gtBBox20
     for (const auto& path : subfolderPath)
@@ -121,7 +142,7 @@ std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath
 
 // funzione che imposta .trueLabel, .gtBBox20, .hasGT. Sempre che sia presente la gt.txt
 
-    bool flag = DatasetLoader:: getGroundTruth(seq.name, seq);
+    bool flag = DatasetLoader:: getGroundTruth(seq);
     if(!flag){
         std::cout<< "subfolder"<< seq.name << "non ha caricato correttamente la groundTruth" << std::endl;
     }

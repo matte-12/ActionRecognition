@@ -4,7 +4,14 @@
 #include <opencv2/opencv.hpp>
 #include <vector>
 
-class FeatureExtractor {
+
+class FeatureExtractor
+{
 public:
-    SequenceData dummy();
+    SequenceFeatures extract(const SequenceData& sequence);
+
+private:
+    double computeMean(const std::vector<double>& values);
+    double computeVariation(const std::vector<double>& values, double mean);
 };
+
