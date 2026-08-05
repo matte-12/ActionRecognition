@@ -4,7 +4,7 @@
 #include <cmath>
 //--------------------------------------------------------------------------------------
 
-// FUNZIONE PER STABILIRE SE DOVREI USARE MEDIAPIPE O NO, IN BASE ALLA % DI SEEDS BUONI
+// FUNZIONE PER STABILIRE SE DOVREI USARE MEDIAPIPE O NO, IN BASE ALLA % DI SEEDS BUONI per cartella di farames
 
 bool shouldUseMediaPipeForSequence(
     const std::vector<cv::Mat>& seeds,
@@ -24,8 +24,7 @@ bool shouldUseMediaPipeForSequence(
     }
 
     double zeroRatio =
-        static_cast<double>(zeroCount) /
-        static_cast<double>(seeds.size());
+        static_cast<double>(zeroCount) / static_cast<double>(seeds.size());
 
     return zeroRatio >= zeroRatioThreshold;
 }

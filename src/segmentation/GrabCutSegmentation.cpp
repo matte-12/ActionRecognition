@@ -9,12 +9,12 @@
 #include <fstream>
 #include <iostream>
 
-//CREO ROI INIZIALE CENTRALE (SOLO CASO DEL MOVIMENTO MANI)
+//CREO ROI INIZIALE CENTRALE (SOLO CASO DEL MOVIMENTO MANI, altrimenti crea mask nere)
 // Roi grande quasi come l'immagine
 
 cv::Rect getCentralROI(const cv::Mat& img)
 {
-    int roiWidth  = static_cast<int>(img.cols * 0.8);
+    int roiWidth  = static_cast<int>(img.cols * 0.9);
     int roiHeight = static_cast<int>(img.rows * 0.9);
 
     int x = (img.cols - roiWidth) / 2;
@@ -25,30 +25,121 @@ cv::Rect getCentralROI(const cv::Mat& img)
 
 //---------------------------------------------------------------------------------------
 
-//  GRABCUT DA USARE SOLO NEL CASO SIA RICHIAMATO MEDIA PIPE (E' RIDONDANTE)
+// determino se assegnare GC_PR_BGD o GC_PR_FGD alla safeRoi
 
-cv::Mat GrabCutMediaPipe(const cv::Mat& frame, const cv::Rect& roi)
+bool useBGDseed(const cv::Mat& seedInRoi, const cv::Rect& roi)
 {
-    cv::Mat imgForGrabCut;
+    int nonZero = cv::countNonZero(seedInRoi);
+
+    double ratio =
+        static_cast<double>(nonZero) / static_cast<double>(roi.area());
+
+    bool conservative = ratio < 0.08;
+
+    std::ofstream logFile("motion_mask_stats.txt", std::ios::app);
+    logFile << "[GC seed] seedRatioInRoi: "
+          << ratio
+          << " | mode: "
+          << (conservative ? "PR_FGD": "PR_BGD" )
+          << std::endl;
+    logFile.close();
+    return conservative;
+}
+
+//---------------------------------------------------------------------------------------
+
+// determino se assegnare GC_PR_BGD o GC_PR_FGD alla finalMask
+
+bool useBGDfinalMask(const cv::Mat& finalMask, const cv::Rect& roi)
+{
+    int nonZero = cv::countNonZero(finalMask(roi));
+
+    double finalRatio =
+        static_cast<double>(nonZero) / static_cast<double>(roi.area());
+
+    bool redo = finalRatio > 0.18;
+
+    std::ofstream logFile("motion_mask_stats.txt", std::ios::app);
+    logFile << "[GC finalMask] final ratio: "
+          << finalRatio
+          << " | mode: "
+          << (redo ? "PR_BGD" : "PR_FGD")
+          << std::endl;
+    logFile.close();
+    return redo;
+}
+
+//---------------------------------------------------------------------------------------
+
+// trovo la final mask. Esegue il vero GrabCut
+
+cv::Mat runGrabCut(
+    const cv::Mat& img,
+    const cv::Rect& roi,
+    const cv::Mat& seedInRoi,
+    bool flag)
+{
+    cv::Mat grabcutMask(img.size(), CV_8UC1, cv::Scalar(cv::GC_BGD));
+
+    if (flag)
+        grabcutMask(roi).setTo(cv::GC_PR_FGD);
+    else
+        grabcutMask(roi).setTo(cv::GC_PR_BGD);
+
+    grabcutMask.setTo(cv::GC_FGD, seedInRoi > 0);
+
+    cv::Mat bgModel, fgModel;
+
+    cv::grabCut(
+        img,
+        grabcutMask,
+        roi,
+        bgModel,
+        fgModel,
+        5,
+        cv::GC_INIT_WITH_MASK
+    );
+
+    cv::Mat finalMask =
+        (grabcutMask == cv::GC_FGD) |
+        (grabcutMask == cv::GC_PR_FGD);
+
+    finalMask.convertTo(finalMask, CV_8UC1, 255);
+
+    return finalMask;
+}
+
+//---------------------------------------------------------------------------------------
+
+// grabcut mediapipe
+
+cv::Mat GrabCutMediaPipe(
+    const cv::Mat& frame,
+    const cv::Rect& roi)
+{
+    cv::Mat img;
 
     if (frame.channels() == 1)
-        cv::cvtColor(frame, imgForGrabCut, cv::COLOR_GRAY2BGR);
+        cv::cvtColor(frame, img, cv::COLOR_GRAY2BGR);
     else
-        imgForGrabCut = frame.clone();
+        img = frame.clone();
 
-    cv::Rect imgRect(0, 0, imgForGrabCut.cols, imgForGrabCut.rows);
-    cv::Rect safeRoi = roi & imgRect;
+    if (img.empty())
+        return cv::Mat();
+
+    cv::Rect imageRect(0, 0, img.cols, img.rows);
+    cv::Rect safeRoi = roi & imageRect;
 
     if (safeRoi.area() < 50)
         return cv::Mat::zeros(frame.size(), CV_8UC1);
 
-    cv::Mat grabcutMask(imgForGrabCut.size(), CV_8UC1, cv::Scalar(cv::GC_BGD));
+    cv::Mat grabcutMask(img.size(), CV_8UC1, cv::Scalar(cv::GC_BGD));
 
     cv::Mat bgModel;
     cv::Mat fgModel;
 
     cv::grabCut(
-        imgForGrabCut,
+        img,
         grabcutMask,
         safeRoi,
         bgModel,
@@ -63,13 +154,17 @@ cv::Mat GrabCutMediaPipe(const cv::Mat& frame, const cv::Rect& roi)
 
     finalMask.convertTo(finalMask, CV_8UC1, 255);
 
-    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5));
-    cv::morphologyEx(finalMask, finalMask, cv::MORPH_OPEN, kernel);
+    cv::Mat kernel =
+        cv::getStructuringElement(
+            cv::MORPH_ELLIPSE,
+            cv::Size(3, 3)
+        );
+
     cv::morphologyEx(finalMask, finalMask, cv::MORPH_CLOSE, kernel);
+    cv::morphologyEx(finalMask, finalMask, cv::MORPH_OPEN, kernel);
 
     return finalMask;
 }
-
 
 //---------------------------------------------------------------------------------------
 
@@ -79,66 +174,70 @@ cv::Mat GrabCutMediaPipe(const cv::Mat& frame, const cv::Rect& roi)
 
 cv::Mat GrabCut(const cv::Mat& frame, const cv::Rect& roi, const cv::Mat& motionMask)
 {
-    cv::Mat imgForGrabCut;
+    cv::Mat img;
 
     if (frame.channels() == 1)
-        cv::cvtColor(frame, imgForGrabCut, cv::COLOR_GRAY2BGR);
+        cv::cvtColor(frame, img, cv::COLOR_GRAY2BGR);
     else
-        imgForGrabCut = frame.clone();
+        img = frame.clone();
 
-    cv::Rect imgRect(0, 0, imgForGrabCut.cols, imgForGrabCut.rows);
-    cv::Rect safeRoi = roi & imgRect;
+     cv::Rect imgRect(0, 0, img.cols, img.rows);
+     cv::Rect safeRoi = roi & imgRect;
 
-    if (safeRoi.area() < 50)
+     if (safeRoi.area() < 50)
         return cv::Mat::zeros(frame.size(), CV_8UC1);
 
     if (motionMask.empty() || cv::countNonZero(motionMask) == 0)
         return cv::Mat::zeros(frame.size(), CV_8UC1);
 
-    cv::Mat grabcutMask(imgForGrabCut.size(), CV_8UC1, cv::Scalar(cv::GC_BGD));
+    cv::Mat grabcutMask(img.size(), CV_8UC1, cv::Scalar(cv::GC_BGD));
+
+
+
+    cv::Mat seedInRoi = cv::Mat::zeros(img.size(), CV_8UC1);
+    motionMask(safeRoi).copyTo(seedInRoi(safeRoi));
+
+        // pugni/braccia mossi = foreground sicuro
+    grabcutMask.setTo(cv::GC_FGD, seedInRoi > 0);
+
+    if (cv::countNonZero(seedInRoi) == 0)
+        return cv::Mat::zeros(frame.size(), CV_8UC1);
 
     // fuori ROI = background sicuro
     // dentro ROI = probabile persona
-    grabcutMask(safeRoi).setTo(cv::GC_PR_FGD);
+    // lo determino in modo dinamico con il ratio
 
-    cv::Mat cleanSeed;
-    motionMask.copyTo(cleanSeed);
-
-    cv::Mat seedInRoi = cv::Mat::zeros(imgForGrabCut.size(), CV_8UC1);
-    cleanSeed(safeRoi).copyTo(seedInRoi(safeRoi));
-
-    if (cv::countNonZero(seedInRoi) == 0)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    // pugni/braccia mossi = foreground sicuro
-    grabcutMask.setTo(cv::GC_FGD, seedInRoi > 0);
-
-    int fgCount = cv::countNonZero(grabcutMask == cv::GC_FGD);
-    int bgCount = cv::countNonZero(grabcutMask == cv::GC_BGD);
-
-    if (fgCount == 0 || bgCount == 0)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    cv::Mat bgModel;
-    cv::Mat fgModel;
-
-    cv::grabCut(
-        imgForGrabCut,
-        grabcutMask,
-        safeRoi,
-        bgModel,
-        fgModel,
-        5,
-        cv::GC_INIT_WITH_MASK
-    );
+    //bool conservative = useBGDseed(seedInRoi, safeRoi);
+    bool conservative = true;
 
     cv::Mat finalMask =
-        (grabcutMask == cv::GC_FGD) |
-        (grabcutMask == cv::GC_PR_FGD);
+        runGrabCut(
+            img,
+            safeRoi,
+            seedInRoi,
+            conservative
+        );
+    
+    // bool che mi dice se i punti bianchi della final mask sono elevati
+     bool redo = useBGDfinalMask(finalMask, safeRoi);
+       // bool redo = false;
 
-    finalMask.convertTo(finalMask, CV_8UC1, 255);
 
-    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5));
+        
+    //
+    if (redo && conservative)
+    {
+        finalMask =
+            runGrabCut(
+                img,
+                safeRoi,
+                seedInRoi,
+                false
+            );
+    }
+
+
+    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(3, 3));
 
     cv::morphologyEx(finalMask, finalMask, cv::MORPH_CLOSE, kernel);
     cv::morphologyEx(finalMask, finalMask, cv::MORPH_OPEN, kernel);
@@ -146,86 +245,6 @@ cv::Mat GrabCut(const cv::Mat& frame, const cv::Rect& roi, const cv::Mat& motion
     return finalMask;
 }
 
-
-
-
-//---------------------------------------------------------------------------------------
-// da rivedere:
-
-cv::Mat GrabCutModifiedOnlyForShadow(const cv::Mat& frame, const cv::Rect& roi, const cv::Mat& motionMask)
-{
-    cv::Mat imgForGrabCut;
-
-    if (frame.channels() == 1)
-        cv::cvtColor(frame, imgForGrabCut, cv::COLOR_GRAY2BGR);
-    else
-        imgForGrabCut = frame.clone();
-
-    cv::Rect imgRect(0, 0, imgForGrabCut.cols, imgForGrabCut.rows);
-    cv::Rect safeRoi = roi & imgRect;
-
-    if (safeRoi.area() < 50)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    if (motionMask.empty() || cv::countNonZero(motionMask) == 0)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    cv::Mat foregroundSeed = createCleanForegroundSeedModified(frame, motionMask);
-
-    if (foregroundSeed.empty() || cv::countNonZero(foregroundSeed) == 0)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    cv::Mat grabcutMask(imgForGrabCut.size(), CV_8UC1, cv::Scalar(cv::GC_BGD));
-
-    grabcutMask(safeRoi).setTo(cv::GC_PR_BGD);
-
-    cv::Mat darkMask = createDarkMask(frame);
-
-    cv::Mat darkInRoi = cv::Mat::zeros(imgForGrabCut.size(), CV_8UC1);
-    darkMask(safeRoi).copyTo(darkInRoi(safeRoi));
-
-    grabcutMask.setTo(cv::GC_PR_FGD, darkInRoi > 0);
-
-    cv::Mat seedInRoi = cv::Mat::zeros(imgForGrabCut.size(), CV_8UC1);
-    foregroundSeed(safeRoi).copyTo(seedInRoi(safeRoi));
-
-    if (cv::countNonZero(seedInRoi) == 0)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    grabcutMask.setTo(cv::GC_FGD, seedInRoi > 0);
-
-    int fgCount = cv::countNonZero(grabcutMask == cv::GC_FGD);
-    int bgCount = cv::countNonZero(grabcutMask == cv::GC_BGD);
-
-    if (fgCount == 0 || bgCount == 0)
-        return cv::Mat::zeros(frame.size(), CV_8UC1);
-
-    cv::Mat bgModel;
-    cv::Mat fgModel;
-
-    cv::grabCut(
-        imgForGrabCut,
-        grabcutMask,
-        safeRoi,
-        bgModel,
-        fgModel,
-        5,
-        cv::GC_INIT_WITH_MASK
-    );
-
-    cv::Mat finalMask =
-        (grabcutMask == cv::GC_FGD) |
-        (grabcutMask == cv::GC_PR_FGD);
-
-    finalMask.convertTo(finalMask, CV_8UC1, 255);
-
-    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5));
-
-    cv::morphologyEx(finalMask, finalMask, cv::MORPH_CLOSE, kernel);
-    cv::morphologyEx(finalMask, finalMask, cv::MORPH_OPEN, kernel);
-
-    return finalMask;
-}
 
 //---------------------------------------------------------------------------------------
 
@@ -233,7 +252,7 @@ cv::Mat GrabCutModifiedOnlyForShadow(const cv::Mat& frame, const cv::Rect& roi, 
 // CREO UN FILE DI LOG PER VEDERE QUALI FRAME DANNO PROBLEMI CON LE MOTION MASK
 // spostato
 
-std::vector<cv::Mat> finalMask(
+std::vector<cv::Mat> getFinalMask(
     const std::vector<cv::Mat>& frames,
     const std::vector<cv::Mat>& seeds,
     const std::string& sequenceName,
@@ -247,13 +266,16 @@ std::vector<cv::Mat> finalMask(
     int emptyMaskCount = 0;
 
 
-    if (frames.size() != seeds.size())
-    {
-        std::cerr << "Error: frames and seeds must have the same size." << std::endl;
-        return result;
-    }
+ if (frames.size() != seeds.size())
+{
+    std::cerr << "Error: frames and seeds must have the same size." << std::endl;
+    std::cerr << "frames.size() = " << frames.size() << std::endl;
+    std::cerr << "seeds.size()  = " << seeds.size() << std::endl;
 
-    logFile << "===== NEW SEQUENCE: " << sequenceName << " =====" << std::endl;
+    return result;
+}
+
+    logFile << "===== SEQUENCE: " << sequenceName << " =====" << std::endl;
 
     for (size_t i = 0; i < frames.size(); ++i)
     {
@@ -273,8 +295,10 @@ std::vector<cv::Mat> finalMask(
                 << nonZeroBefore
                 << std::endl;
 
+        // ROI = regione entro l'immagine in cui si presume ci sia qualcuno
         cv::Rect roi = getCentralROI(frame);
 
+        // applico algoritmo GrabCut
         cv::Mat mask = GrabCut(frame, roi, motionMask);
 
         int nonZeroAfter = mask.empty() ? 0 : cv::countNonZero(mask);
@@ -284,21 +308,9 @@ std::vector<cv::Mat> finalMask(
                 << nonZeroAfter
                 << std::endl;
 
+        // se maschere nere allora usa mediapipe
         if ((mask.empty() || nonZeroAfter == 0) && useMediaPipeForSequence)
         {
-            // emptyMaskCount++;
-
-            // logFile 
-            //         << " | Frame: " << i
-            //         << " | GrabCut produced EMPTY mask"
-            //         << std::endl;
-
-            //     mediaPipeCount++;
-
-            //     logFile << "Sequence: " << sequenceName
-            //             << " | Frame: " << i
-            //             << " | MediaPipe fallback USED"
-            //             << std::endl;
 
            cv::Rect mediaPipeROI = getMediaPipeROI(frame);
 

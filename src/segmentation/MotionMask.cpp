@@ -1,8 +1,10 @@
 #include "segmentation/MotionMask.hpp"
 #include "segmentation/ShadowRemoval.hpp"
+
 #include <fstream>
 #include <cstdlib>
 #include <cmath>
+
 //--------------------------------------------------------------------------------------
 
 // FILL TEMPORALE: RIEMPIO LE MOTION MASK NERE CON MOTION MASK BUONE NELLA STESSA SEQUENZA
@@ -61,41 +63,6 @@ std::vector<cv::Mat> fillEmptySeedsTemporal(
 
 
 //---------------------------------------------------------------------------------------
-// da rivedere: 
-
-cv::Mat createCleanForegroundSeedModified(
-    const cv::Mat& frame,
-    const cv::Mat& motionMask)
-{
-    if (frame.empty() || motionMask.empty())
-        return cv::Mat();
-
-    cv::Mat cleanMotion;
-
-    if (motionMask.channels() == 3)
-        cv::cvtColor(motionMask, cleanMotion, cv::COLOR_BGR2GRAY);
-    else
-        cleanMotion = motionMask.clone();
-
-    cv::threshold(cleanMotion, cleanMotion, 200, 255, cv::THRESH_BINARY);
-
-    cv::Mat darkMask = createDarkMask(frame);
-
-    cv::Mat foregroundSeed;
-    cv::bitwise_and(cleanMotion, darkMask, foregroundSeed);
-
-    cv::Mat kernel = cv::getStructuringElement(
-        cv::MORPH_ELLIPSE,
-        cv::Size(3, 3)
-    );
-
-    cv::morphologyEx(foregroundSeed, foregroundSeed, cv::MORPH_OPEN, kernel);
-    cv::morphologyEx(foregroundSeed, foregroundSeed, cv::MORPH_DILATE, kernel);
-
-    return foregroundSeed;
-}
-
-//---------------------------------------------------------------------------------------
 // filtro con morfologia
 
 std::vector<cv::Mat> filterMorphology(const std::vector<cv::Mat>& frames)
@@ -127,15 +94,6 @@ std::vector<cv::Mat> filterMorphology(const std::vector<cv::Mat>& frames)
     }
  
     return result;
-}
-
-//---------------------------------------------------------------------------------------
-
-//FUNZIONE PER TOGLIERE CAMBI DI LUCE
-
-bool isLightChangeMask(double ratio, double threshold)
-{
-    return ratio > threshold;
 }
 
 //---------------------------------------------------------------------------------------
@@ -189,32 +147,7 @@ bool isLightChangeMask(double ratio, double threshold)
                 << " | nonZero: " << nonZero
                 << " | ratio: " << ratio
                 << std::endl;
-// nota che per ora non viene mai usata, valori tutti sotto allo 0.12. Vedo di usare una BBox ratio
-        bool lightChange = isLightChangeMask(ratio, 0.35);
 
-        if (lightChange)
-        {
-            logFile << "[MOG2] Frame: " << i
-                    << " | LIGHT CHANGE DETECTED"
-                    << std::endl;
-
-            if (hasLastGoodMask)
-            {
-                foreground.push_back(lastGoodMask.clone());
-            }
-            else
-            {
-                foreground.push_back(cv::Mat::zeros(mask.size(), CV_8UC1));
-            }
-
-            continue;
-        }
-
-        if (nonZero > 0)
-        {
-            lastGoodMask = mask.clone();
-            hasLastGoodMask = true;
-        }
 
         foreground.push_back(mask);
     }

@@ -16,33 +16,35 @@
 
 void Segmentation::extractBBox( SequenceData& sequence) {
 
+
+
     std::vector<cv::Mat> filteredImgs; //vettore con immagini che vengo modificate e filtrate
 
-// applico mog2 per ricavare foreground
+    // applico mog2 per ricavare foreground
     
     filteredImgs = (filterMOG2(sequence.frames)) ; 
-    
 
-//applico morphology
-// NB: HO NOTATO CHE CON KERNEL (3,3) PRENDE ANCHE HANDCLAPPING, CON KERNEL (5,5) NON CI RIESCE
-// IN QUESTO MODO NON USA FALLBACK, PER0' E' UN PO' PIU' IMPRECISO CON I CAMBI DI ILLUMINAZIONE
-// NB: CAMBIO LA THRESHOLD PER EFFETTI SULL'ILLUMINAZIONE
+
+    //applico morphology
+    // NB: HO NOTATO CHE CON KERNEL (3,3) PRENDE ANCHE HANDCLAPPING, CON KERNEL (5,5) NON CI RIESCE
+    // IN QUESTO MODO NON USA FALLBACK, PER0' E' UN PO' PIU' IMPRECISO CON I CAMBI DI ILLUMINAZIONE
+    // NB: CAMBIO LA THRESHOLD PER EFFETTI SULL'ILLUMINAZIONE
 
     filteredImgs = (filterMorphology(filteredImgs));
 
-  //  showMasks(filteredImgs); 
 
-// Salvo la motion mask (seeds) in sequence.motionMasks (utile per feature extraction)
+    //  showMasks(filteredImgs); 
+
+    // Salvo la motion mask (seeds) in sequence.motionMasks (utile per feature extraction)
 
     sequence.motionMasks = filteredImgs;
 
-//  Decido se la sequenza è da MediaPipe
+    //  Decido se la sequenza è da MediaPipe
 
-    bool useMediaPipeForSequence =
-        shouldUseMediaPipeForSequence(filteredImgs, 0.80);
+    bool useMediaPipeForSequence = shouldUseMediaPipeForSequence(filteredImgs, 0.80);
 
-// Se NON è una sequenza da MediaPipe,
-// allora riempio temporalmente i seed vuoti
+    // Se NON è una sequenza da MediaPipe,
+    // allora riempio temporalmente i seed vuoti. TRICK!
 
     if (!useMediaPipeForSequence)
     {
@@ -50,53 +52,40 @@ void Segmentation::extractBBox( SequenceData& sequence) {
     }       
 
 
-// Cerco maschera finale: applico GrabCut, se maschera ancora nera uso GrabcutMediaPipe
+    // Cerco maschera finale: applico GrabCut, se maschera ancora nera uso GrabcutMediaPipe
 
     std::vector<cv::Mat> finalImgsMask; 
 
-    finalImgsMask = finalMask(
+    finalImgsMask = getFinalMask(
         sequence.frames,
         filteredImgs,
         sequence.name,
         useMediaPipeForSequence
         );
 
-// Salvo nella struct sequences le final mask
+    // Salvo nella struct sequences le final mask
 
     sequence.finalMasks = finalImgsMask;
 
 
-//mostra se funziona maschera
+    //mostra se funziona maschera
+    // showMasks(finalImgsMask);  
 
-   // showMasks(finalImgsMask);  
-
-// ritorna vettore di Rect
+    // ritorna vettore di Rect
 
     std::vector<cv::Rect> bboxes = findBBox(finalImgsMask);
 
-    finalImgsMask =
-        correctOnlyShadowFramesWithModifiedSegmentation(
-            sequence.frames,
-            filteredImgs,
-            finalImgsMask,
-            bboxes,
-            sequence.name
-        );
-
-    sequence.finalMasks = finalImgsMask;
-
-// Salvo nella struct sequences le BBoxes
-
+    // Salvo nella struct sequences le BBoxes
+    
     sequence.BBoxes = bboxes;
 
-// SMOOTH BBOX
-// lo smoothing non risponde benissimo quando i soggetti corrono
+    // SMOOTH BBOX
+    // lo smoothing non risponde benissimo quando i soggetti corrono
 
-//    bboxes = smoothBBoxes(bboxes, 0.50, 3);
+    // bboxes = smoothBBoxes(bboxes, 0.50, 3);
 
-// mostra bbox
-
-  //  showBBoxes(sequence.frames, bboxes);
+    // mostra bbox
+    //  showBBoxes(sequence.frames, bboxes);
 
 }
 //---------------------------------------------------------------------------------------

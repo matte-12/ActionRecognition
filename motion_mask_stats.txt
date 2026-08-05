@@ -39,126 +39,166 @@
 [MOG2] Frame: 38 | nonZero: 427 | ratio: 0.0222396
 [MOG2] Frame: 39 | nonZero: 473 | ratio: 0.0246354
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person02_handwaving_d1 =====
+===== SEQUENCE: data/sequences/person02_handwaving_d1 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 159
- | Frame: 0 | nonZero AFTER GrabCut: 2278
+[GC finalMask] final ratio: 0.14249 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 2214
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 159
- | Frame: 1 | nonZero AFTER GrabCut: 2384
+[GC finalMask] final ratio: 0.149113 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 2321
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 159
- | Frame: 2 | nonZero AFTER GrabCut: 2469
+[GC finalMask] final ratio: 0.154192 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 2393
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 159
- | Frame: 3 | nonZero AFTER GrabCut: 2421
+[GC finalMask] final ratio: 0.15072 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 2330
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 159
- | Frame: 4 | nonZero AFTER GrabCut: 2233
+[GC finalMask] final ratio: 0.139982 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 2172
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 159
- | Frame: 5 | nonZero AFTER GrabCut: 2070
+[GC finalMask] final ratio: 0.131559 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 2049
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 143
- | Frame: 6 | nonZero AFTER GrabCut: 2104
+[GC finalMask] final ratio: 0.13233 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 2062
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 141
- | Frame: 7 | nonZero AFTER GrabCut: 2158
+[GC finalMask] final ratio: 0.135545 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 2106
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 106
- | Frame: 8 | nonZero AFTER GrabCut: 2134
+[GC finalMask] final ratio: 0.136253 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 2133
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 91
- | Frame: 9 | nonZero AFTER GrabCut: 2152
+[GC finalMask] final ratio: 0.13651 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 2117
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 140
- | Frame: 10 | nonZero AFTER GrabCut: 2093
+[GC finalMask] final ratio: 0.132909 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 2081
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 107
- | Frame: 11 | nonZero AFTER GrabCut: 2035
+[GC finalMask] final ratio: 0.130594 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 2016
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 90
- | Frame: 12 | nonZero AFTER GrabCut: 2008
+[GC finalMask] final ratio: 0.129051 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 2007
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 65
- | Frame: 13 | nonZero AFTER GrabCut: 1977
+[GC finalMask] final ratio: 0.126736 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1976
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 70
- | Frame: 14 | nonZero AFTER GrabCut: 1938
+[GC finalMask] final ratio: 0.123264 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1916
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 100
- | Frame: 15 | nonZero AFTER GrabCut: 1940
+[GC finalMask] final ratio: 0.123714 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1925
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 117
- | Frame: 16 | nonZero AFTER GrabCut: 1995
+[GC finalMask] final ratio: 0.127122 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1987
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 89
- | Frame: 17 | nonZero AFTER GrabCut: 1954
+[GC finalMask] final ratio: 0.125386 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1960
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 73
- | Frame: 18 | nonZero AFTER GrabCut: 1954
+[GC finalMask] final ratio: 0.121528 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1901
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 25
- | Frame: 19 | nonZero AFTER GrabCut: 1945
+[GC finalMask] final ratio: 0.125 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1947
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 22
- | Frame: 20 | nonZero AFTER GrabCut: 1935
+[GC finalMask] final ratio: 0.124357 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1939
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 22
- | Frame: 21 | nonZero AFTER GrabCut: 1977
+[GC finalMask] final ratio: 0.124035 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1944
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 22
- | Frame: 22 | nonZero AFTER GrabCut: 1995
+[GC finalMask] final ratio: 0.126029 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1978
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 33
- | Frame: 23 | nonZero AFTER GrabCut: 2047
+[GC finalMask] final ratio: 0.128472 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 2022
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 33
- | Frame: 24 | nonZero AFTER GrabCut: 2034
+[GC finalMask] final ratio: 0.129565 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 2028
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 33
- | Frame: 25 | nonZero AFTER GrabCut: 1977
+[GC finalMask] final ratio: 0.123071 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1930
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 38
- | Frame: 26 | nonZero AFTER GrabCut: 1989
+[GC finalMask] final ratio: 0.126736 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1972
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 73
- | Frame: 27 | nonZero AFTER GrabCut: 2003
+[GC finalMask] final ratio: 0.129758 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 2010
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 89
- | Frame: 28 | nonZero AFTER GrabCut: 2028
+[GC finalMask] final ratio: 0.130723 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 2033
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 128
- | Frame: 29 | nonZero AFTER GrabCut: 2119
+[GC finalMask] final ratio: 0.134324 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 2092
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 132
+[GC finalMask] final ratio: 0.135224 | mode: PR_FGD
  | Frame: 30 | nonZero AFTER GrabCut: 2101
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 149
- | Frame: 31 | nonZero AFTER GrabCut: 2121
+[GC finalMask] final ratio: 0.138182 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 2157
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 143
- | Frame: 32 | nonZero AFTER GrabCut: 2101
+[GC finalMask] final ratio: 0.135352 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 2114
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 159
- | Frame: 33 | nonZero AFTER GrabCut: 2098
+[GC finalMask] final ratio: 0.134581 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 2096
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 138
- | Frame: 34 | nonZero AFTER GrabCut: 2090
+[GC finalMask] final ratio: 0.133102 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 2080
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 154
- | Frame: 35 | nonZero AFTER GrabCut: 2068
+[GC finalMask] final ratio: 0.130144 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 2024
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 139
- | Frame: 36 | nonZero AFTER GrabCut: 2016
+[GC finalMask] final ratio: 0.114905 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1806
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 112
- | Frame: 37 | nonZero AFTER GrabCut: 1988
+[GC finalMask] final ratio: 0.124486 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1943
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 83
- | Frame: 38 | nonZero AFTER GrabCut: 1963
+[GC finalMask] final ratio: 0.122749 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1917
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 62
- | Frame: 39 | nonZero AFTER GrabCut: 1927
+[GC finalMask] final ratio: 0.122492 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 1920
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person02_handwaving_d1
@@ -207,126 +247,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 84 | ratio: 0.004375
 [MOG2] Frame: 39 | nonZero: 72 | ratio: 0.00375
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person02_handwaving_d2 =====
+===== SEQUENCE: data/sequences/person02_handwaving_d2 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 30
- | Frame: 0 | nonZero AFTER GrabCut: 1486
+[GC finalMask] final ratio: 0.0932356 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 1449
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 30
- | Frame: 1 | nonZero AFTER GrabCut: 1376
+[GC finalMask] final ratio: 0.0870628 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 1355
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 30
- | Frame: 2 | nonZero AFTER GrabCut: 1288
+[GC finalMask] final ratio: 0.0812114 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1265
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 30
- | Frame: 3 | nonZero AFTER GrabCut: 1189
+[GC finalMask] final ratio: 0.0752958 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 1188
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 30
- | Frame: 4 | nonZero AFTER GrabCut: 1092
+[GC finalMask] final ratio: 0.0678369 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1063
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 30
- | Frame: 5 | nonZero AFTER GrabCut: 971
+[GC finalMask] final ratio: 0.0636574 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1003
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 30
- | Frame: 6 | nonZero AFTER GrabCut: 902
+[GC finalMask] final ratio: 0.0588349 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 907
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 30
- | Frame: 7 | nonZero AFTER GrabCut: 841
+[GC finalMask] final ratio: 0.0553627 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 865
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 23
- | Frame: 8 | nonZero AFTER GrabCut: 749
+[GC finalMask] final ratio: 0.0489326 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 752
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 23
- | Frame: 9 | nonZero AFTER GrabCut: 675
+[GC finalMask] final ratio: 0.0458462 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 709
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 23
- | Frame: 10 | nonZero AFTER GrabCut: 663
+[GC finalMask] final ratio: 0.0432099 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 677
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 44
- | Frame: 11 | nonZero AFTER GrabCut: 626
+[GC finalMask] final ratio: 0.0422454 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 662
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 15
- | Frame: 12 | nonZero AFTER GrabCut: 580
+[GC finalMask] final ratio: 0.0392233 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 621
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 15
- | Frame: 13 | nonZero AFTER GrabCut: 600
+[GC finalMask] final ratio: 0.0386445 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 601
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 15
- | Frame: 14 | nonZero AFTER GrabCut: 576
+[GC finalMask] final ratio: 0.0372942 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 588
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 15
- | Frame: 15 | nonZero AFTER GrabCut: 579
+[GC finalMask] final ratio: 0.0371656 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 569
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 15
- | Frame: 16 | nonZero AFTER GrabCut: 565
+[GC finalMask] final ratio: 0.0372299 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 591
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 16
- | Frame: 17 | nonZero AFTER GrabCut: 549
+[GC finalMask] final ratio: 0.0355581 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 539
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 16
- | Frame: 18 | nonZero AFTER GrabCut: 540
+[GC finalMask] final ratio: 0.0362011 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 550
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 16
- | Frame: 19 | nonZero AFTER GrabCut: 545
+[GC finalMask] final ratio: 0.0362011 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 554
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 16
- | Frame: 20 | nonZero AFTER GrabCut: 547
+[GC finalMask] final ratio: 0.0364583 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 563
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 16
- | Frame: 21 | nonZero AFTER GrabCut: 545
+[GC finalMask] final ratio: 0.0372942 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 576
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 15
- | Frame: 22 | nonZero AFTER GrabCut: 547
+[GC finalMask] final ratio: 0.036394 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 560
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 15
- | Frame: 23 | nonZero AFTER GrabCut: 555
+[GC finalMask] final ratio: 0.0355581 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 548
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 19
- | Frame: 24 | nonZero AFTER GrabCut: 574
+[GC finalMask] final ratio: 0.0356224 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 554
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 19
- | Frame: 25 | nonZero AFTER GrabCut: 568
+[GC finalMask] final ratio: 0.0353652 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 545
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 19
- | Frame: 26 | nonZero AFTER GrabCut: 572
+[GC finalMask] final ratio: 0.0354938 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 553
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 13
- | Frame: 27 | nonZero AFTER GrabCut: 574
+[GC finalMask] final ratio: 0.0336934 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 524
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 13
- | Frame: 28 | nonZero AFTER GrabCut: 597
+[GC finalMask] final ratio: 0.0373585 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 574
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 13
- | Frame: 29 | nonZero AFTER GrabCut: 613
+[GC finalMask] final ratio: 0.0396091 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 610
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 13
+[GC finalMask] final ratio: 0.0412809 | mode: PR_FGD
  | Frame: 30 | nonZero AFTER GrabCut: 633
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 13
- | Frame: 31 | nonZero AFTER GrabCut: 663
+[GC finalMask] final ratio: 0.043017 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 662
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 13
- | Frame: 32 | nonZero AFTER GrabCut: 673
+[GC finalMask] final ratio: 0.0450746 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 689
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 24
- | Frame: 33 | nonZero AFTER GrabCut: 646
+[GC finalMask] final ratio: 0.0435314 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 676
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 24
- | Frame: 34 | nonZero AFTER GrabCut: 677
+[GC finalMask] final ratio: 0.0460391 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 723
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 24
- | Frame: 35 | nonZero AFTER GrabCut: 686
+[GC finalMask] final ratio: 0.0444959 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 692
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 24
- | Frame: 36 | nonZero AFTER GrabCut: 690
+[GC finalMask] final ratio: 0.0434671 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 672
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 24
- | Frame: 37 | nonZero AFTER GrabCut: 650
+[GC finalMask] final ratio: 0.0429527 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 667
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 29
- | Frame: 38 | nonZero AFTER GrabCut: 701
+[GC finalMask] final ratio: 0.0443673 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 693
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 25
- | Frame: 39 | nonZero AFTER GrabCut: 709
+[GC finalMask] final ratio: 0.0442387 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 680
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person02_handwaving_d2
@@ -375,126 +455,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 239 | ratio: 0.0124479
 [MOG2] Frame: 39 | nonZero: 218 | ratio: 0.0113542
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person02_handwaving_d3 =====
+===== SEQUENCE: data/sequences/person02_handwaving_d3 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 108
- | Frame: 0 | nonZero AFTER GrabCut: 1772
+[GC finalMask] final ratio: 0.114519 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 1786
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 108
- | Frame: 1 | nonZero AFTER GrabCut: 1837
+[GC finalMask] final ratio: 0.117991 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 1852
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 108
- | Frame: 2 | nonZero AFTER GrabCut: 1922
+[GC finalMask] final ratio: 0.120049 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1856
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 108
- | Frame: 3 | nonZero AFTER GrabCut: 1862
+[GC finalMask] final ratio: 0.111754 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 1752
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 108
- | Frame: 4 | nonZero AFTER GrabCut: 1766
+[GC finalMask] final ratio: 0.10706 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1682
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 108
- | Frame: 5 | nonZero AFTER GrabCut: 1744
+[GC finalMask] final ratio: 0.110211 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1728
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 81
- | Frame: 6 | nonZero AFTER GrabCut: 1758
+[GC finalMask] final ratio: 0.108218 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 1699
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 67
- | Frame: 7 | nonZero AFTER GrabCut: 1760
+[GC finalMask] final ratio: 0.108282 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1700
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 56
- | Frame: 8 | nonZero AFTER GrabCut: 1721
+[GC finalMask] final ratio: 0.105838 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1657
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 60
- | Frame: 9 | nonZero AFTER GrabCut: 1703
+[GC finalMask] final ratio: 0.106031 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1674
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 84
- | Frame: 10 | nonZero AFTER GrabCut: 1715
+[GC finalMask] final ratio: 0.106996 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1677
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 73
- | Frame: 11 | nonZero AFTER GrabCut: 1709
+[GC finalMask] final ratio: 0.105453 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1656
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 28
- | Frame: 12 | nonZero AFTER GrabCut: 1695
+[GC finalMask] final ratio: 0.104488 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1644
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 16
- | Frame: 13 | nonZero AFTER GrabCut: 1698
+[GC finalMask] final ratio: 0.10436 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1642
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 15
- | Frame: 14 | nonZero AFTER GrabCut: 1691
+[GC finalMask] final ratio: 0.104488 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1644
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 15
- | Frame: 15 | nonZero AFTER GrabCut: 1698
+[GC finalMask] final ratio: 0.103266 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1627
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 15
- | Frame: 16 | nonZero AFTER GrabCut: 1691
+[GC finalMask] final ratio: 0.107639 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1692
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 15
- | Frame: 17 | nonZero AFTER GrabCut: 1711
+[GC finalMask] final ratio: 0.108539 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1696
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 20
- | Frame: 18 | nonZero AFTER GrabCut: 1701
+[GC finalMask] final ratio: 0.109375 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1710
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 20
- | Frame: 19 | nonZero AFTER GrabCut: 1687
+[GC finalMask] final ratio: 0.10796 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1701
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 20
- | Frame: 20 | nonZero AFTER GrabCut: 1673
+[GC finalMask] final ratio: 0.106996 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1681
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 29
- | Frame: 21 | nonZero AFTER GrabCut: 1677
+[GC finalMask] final ratio: 0.106932 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1661
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 20
- | Frame: 22 | nonZero AFTER GrabCut: 1676
+[GC finalMask] final ratio: 0.10661 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1667
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 42
- | Frame: 23 | nonZero AFTER GrabCut: 1692
+[GC finalMask] final ratio: 0.106481 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1672
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 57
- | Frame: 24 | nonZero AFTER GrabCut: 1660
+[GC finalMask] final ratio: 0.106674 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1665
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 57
- | Frame: 25 | nonZero AFTER GrabCut: 1726
+[GC finalMask] final ratio: 0.108475 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1703
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 56
- | Frame: 26 | nonZero AFTER GrabCut: 1642
+[GC finalMask] final ratio: 0.103266 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1607
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 56
- | Frame: 27 | nonZero AFTER GrabCut: 1550
+[GC finalMask] final ratio: 0.0971579 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1512
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 73
- | Frame: 28 | nonZero AFTER GrabCut: 1542
+[GC finalMask] final ratio: 0.0965149 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1497
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 58
- | Frame: 29 | nonZero AFTER GrabCut: 1546
+[GC finalMask] final ratio: 0.0973508 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1521
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 30
- | Frame: 30 | nonZero AFTER GrabCut: 1602
+[GC finalMask] final ratio: 0.0999871 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1548
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 30
- | Frame: 31 | nonZero AFTER GrabCut: 1646
+[GC finalMask] final ratio: 0.103266 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1623
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 21
- | Frame: 32 | nonZero AFTER GrabCut: 1650
+[GC finalMask] final ratio: 0.103074 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1612
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 61
- | Frame: 33 | nonZero AFTER GrabCut: 1661
+[GC finalMask] final ratio: 0.10481 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1638
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 84
- | Frame: 34 | nonZero AFTER GrabCut: 1692
+[GC finalMask] final ratio: 0.106546 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 1678
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 67
- | Frame: 35 | nonZero AFTER GrabCut: 1631
+[GC finalMask] final ratio: 0.0992155 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1545
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 43
- | Frame: 36 | nonZero AFTER GrabCut: 1646
+[GC finalMask] final ratio: 0.0988297 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1543
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 52
- | Frame: 37 | nonZero AFTER GrabCut: 1646
+[GC finalMask] final ratio: 0.0992798 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1567
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 32
- | Frame: 38 | nonZero AFTER GrabCut: 1659
+[GC finalMask] final ratio: 0.0999228 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1565
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 21
- | Frame: 39 | nonZero AFTER GrabCut: 1647
+[GC finalMask] final ratio: 0.0989583 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 1558
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person02_handwaving_d3
@@ -543,126 +663,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 140 | ratio: 0.00729167
 [MOG2] Frame: 39 | nonZero: 235 | ratio: 0.0122396
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person02_handwaving_d4 =====
+===== SEQUENCE: data/sequences/person02_handwaving_d4 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 155
- | Frame: 0 | nonZero AFTER GrabCut: 2929
+[GC finalMask] final ratio: 0.184992 | mode: PR_BGD
+ | Frame: 0 | nonZero AFTER GrabCut: 416
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 155
- | Frame: 1 | nonZero AFTER GrabCut: 3227
+[GC finalMask] final ratio: 0.206404 | mode: PR_BGD
+ | Frame: 1 | nonZero AFTER GrabCut: 386
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 155
- | Frame: 2 | nonZero AFTER GrabCut: 2962
+[GC finalMask] final ratio: 0.0838477 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1316
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 155
- | Frame: 3 | nonZero AFTER GrabCut: 1280
+[GC finalMask] final ratio: 0.0812757 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 1272
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 155
- | Frame: 4 | nonZero AFTER GrabCut: 1142
+[GC finalMask] final ratio: 0.072981 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1141
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 155
+[GC finalMask] final ratio: 0.0649434 | mode: PR_FGD
  | Frame: 5 | nonZero AFTER GrabCut: 1012
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 137
- | Frame: 6 | nonZero AFTER GrabCut: 882
+[GC finalMask] final ratio: 0.0572917 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 886
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 156
- | Frame: 7 | nonZero AFTER GrabCut: 3374
+[GC finalMask] final ratio: 0.0670653 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1040
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 144
- | Frame: 8 | nonZero AFTER GrabCut: 3743
+[GC finalMask] final ratio: 0.242284 | mode: PR_BGD
+ | Frame: 8 | nonZero AFTER GrabCut: 988
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 120
- | Frame: 9 | nonZero AFTER GrabCut: 3689
+[GC finalMask] final ratio: 0.0646219 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 999
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 163
- | Frame: 10 | nonZero AFTER GrabCut: 3883
+[GC finalMask] final ratio: 0.250129 | mode: PR_BGD
+ | Frame: 10 | nonZero AFTER GrabCut: 988
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 117
- | Frame: 11 | nonZero AFTER GrabCut: 933
+[GC finalMask] final ratio: 0.0616641 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 955
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 53
- | Frame: 12 | nonZero AFTER GrabCut: 866
+[GC finalMask] final ratio: 0.0578061 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 896
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 56
- | Frame: 13 | nonZero AFTER GrabCut: 857
+[GC finalMask] final ratio: 0.0569702 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 884
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 49
- | Frame: 14 | nonZero AFTER GrabCut: 817
+[GC finalMask] final ratio: 0.0551698 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 853
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 58
- | Frame: 15 | nonZero AFTER GrabCut: 811
+[GC finalMask] final ratio: 0.0549126 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 849
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 45
- | Frame: 16 | nonZero AFTER GrabCut: 833
+[GC finalMask] final ratio: 0.0545267 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 846
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 50
- | Frame: 17 | nonZero AFTER GrabCut: 836
+[GC finalMask] final ratio: 0.057999 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 880
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 33
- | Frame: 18 | nonZero AFTER GrabCut: 845
+[GC finalMask] final ratio: 0.0558771 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 867
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 33
- | Frame: 19 | nonZero AFTER GrabCut: 1019
+[GC finalMask] final ratio: 0.0642361 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 988
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 33
- | Frame: 20 | nonZero AFTER GrabCut: 1040
+[GC finalMask] final ratio: 0.0688014 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1067
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 33
- | Frame: 21 | nonZero AFTER GrabCut: 998
+[GC finalMask] final ratio: 0.0662294 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1031
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 19
- | Frame: 22 | nonZero AFTER GrabCut: 850
+[GC finalMask] final ratio: 0.0569702 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 872
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 19
- | Frame: 23 | nonZero AFTER GrabCut: 834
+[GC finalMask] final ratio: 0.0546553 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 852
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 19
- | Frame: 24 | nonZero AFTER GrabCut: 806
+[GC finalMask] final ratio: 0.054591 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 833
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 40
- | Frame: 25 | nonZero AFTER GrabCut: 834
+[GC finalMask] final ratio: 0.0552341 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 851
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 78
- | Frame: 26 | nonZero AFTER GrabCut: 837
+[GC finalMask] final ratio: 0.0558128 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 870
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 133
- | Frame: 27 | nonZero AFTER GrabCut: 916
+[GC finalMask] final ratio: 0.0601209 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 917
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 155
- | Frame: 28 | nonZero AFTER GrabCut: 946
+[GC finalMask] final ratio: 0.0622428 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 956
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 168
- | Frame: 29 | nonZero AFTER GrabCut: 3528
+[GC finalMask] final ratio: 0.227623 | mode: PR_BGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1004
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 191
- | Frame: 30 | nonZero AFTER GrabCut: 1038
+[GC finalMask] final ratio: 0.0674511 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1035
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 181
- | Frame: 31 | nonZero AFTER GrabCut: 1026
+[GC finalMask] final ratio: 0.0671939 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1033
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 171
- | Frame: 32 | nonZero AFTER GrabCut: 1386
+[GC finalMask] final ratio: 0.0894419 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1393
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 99
- | Frame: 33 | nonZero AFTER GrabCut: 865
+[GC finalMask] final ratio: 0.0594779 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 910
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 128
- | Frame: 34 | nonZero AFTER GrabCut: 847
+[GC finalMask] final ratio: 0.0578061 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 885
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 101
- | Frame: 35 | nonZero AFTER GrabCut: 844
+[GC finalMask] final ratio: 0.0565201 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 865
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 62
- | Frame: 36 | nonZero AFTER GrabCut: 834
+[GC finalMask] final ratio: 0.0541409 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 836
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 26
- | Frame: 37 | nonZero AFTER GrabCut: 821
+[GC finalMask] final ratio: 0.0540766 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 833
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 19
- | Frame: 38 | nonZero AFTER GrabCut: 849
+[GC finalMask] final ratio: 0.0551055 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 846
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 79
- | Frame: 39 | nonZero AFTER GrabCut: 836
+[GC finalMask] final ratio: 0.0552984 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 842
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person02_handwaving_d4
@@ -711,126 +871,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 83 | ratio: 0.00432292
 [MOG2] Frame: 39 | nonZero: 90 | ratio: 0.0046875
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person07_handclapping_d1 =====
+===== SEQUENCE: data/sequences/person07_handclapping_d1 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 18
- | Frame: 0 | nonZero AFTER GrabCut: 1202
+[GC finalMask] final ratio: 0.0773534 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 1232
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 18
- | Frame: 1 | nonZero AFTER GrabCut: 1257
+[GC finalMask] final ratio: 0.0782536 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 1250
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 18
- | Frame: 2 | nonZero AFTER GrabCut: 1275
+[GC finalMask] final ratio: 0.0805684 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1288
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 18
- | Frame: 3 | nonZero AFTER GrabCut: 1318
+[GC finalMask] final ratio: 0.083269 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 1298
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 18
- | Frame: 4 | nonZero AFTER GrabCut: 1326
+[GC finalMask] final ratio: 0.0859053 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1345
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 18
- | Frame: 5 | nonZero AFTER GrabCut: 1349
+[GC finalMask] final ratio: 0.0865484 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1355
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 18
- | Frame: 6 | nonZero AFTER GrabCut: 1302
+[GC finalMask] final ratio: 0.0850051 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 1337
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 18
- | Frame: 7 | nonZero AFTER GrabCut: 1278
+[GC finalMask] final ratio: 0.0840406 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1321
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 18
- | Frame: 8 | nonZero AFTER GrabCut: 1316
+[GC finalMask] final ratio: 0.0837834 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1324
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 18
- | Frame: 9 | nonZero AFTER GrabCut: 1245
+[GC finalMask] final ratio: 0.0793467 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1297
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 18
- | Frame: 10 | nonZero AFTER GrabCut: 1269
+[GC finalMask] final ratio: 0.0788966 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1288
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 18
- | Frame: 11 | nonZero AFTER GrabCut: 1182
+[GC finalMask] final ratio: 0.0740741 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1213
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 18
- | Frame: 12 | nonZero AFTER GrabCut: 1179
+[GC finalMask] final ratio: 0.0758102 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1182
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 18
- | Frame: 13 | nonZero AFTER GrabCut: 1185
+[GC finalMask] final ratio: 0.0713092 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1155
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 18
- | Frame: 14 | nonZero AFTER GrabCut: 1144
+[GC finalMask] final ratio: 0.070216 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1147
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 27
- | Frame: 15 | nonZero AFTER GrabCut: 1115
+[GC finalMask] final ratio: 0.0679012 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1103
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 37
- | Frame: 16 | nonZero AFTER GrabCut: 1116
+[GC finalMask] final ratio: 0.0713735 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1122
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 49
+[GC finalMask] final ratio: 0.0690586 | mode: PR_FGD
  | Frame: 17 | nonZero AFTER GrabCut: 1080
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 34
- | Frame: 18 | nonZero AFTER GrabCut: 1055
+[GC finalMask] final ratio: 0.0677083 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1052
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 13
- | Frame: 19 | nonZero AFTER GrabCut: 1040
+[GC finalMask] final ratio: 0.0645576 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1046
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 13
- | Frame: 20 | nonZero AFTER GrabCut: 1057
+[GC finalMask] final ratio: 0.0653935 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1055
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 13
- | Frame: 21 | nonZero AFTER GrabCut: 1077
+[GC finalMask] final ratio: 0.0662937 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1063
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 13
- | Frame: 22 | nonZero AFTER GrabCut: 1106
+[GC finalMask] final ratio: 0.0703447 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1092
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 13
- | Frame: 23 | nonZero AFTER GrabCut: 1142
+[GC finalMask] final ratio: 0.0718879 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1110
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 29
- | Frame: 24 | nonZero AFTER GrabCut: 1150
+[GC finalMask] final ratio: 0.0762603 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1173
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 29
- | Frame: 25 | nonZero AFTER GrabCut: 1222
+[GC finalMask] final ratio: 0.0814043 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1278
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 29
- | Frame: 26 | nonZero AFTER GrabCut: 1279
+[GC finalMask] final ratio: 0.0821116 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1294
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 29
- | Frame: 27 | nonZero AFTER GrabCut: 1299
+[GC finalMask] final ratio: 0.0837834 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1314
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 43
- | Frame: 28 | nonZero AFTER GrabCut: 1315
+[GC finalMask] final ratio: 0.0843621 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1322
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 47
- | Frame: 29 | nonZero AFTER GrabCut: 1322
+[GC finalMask] final ratio: 0.0844907 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1318
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 47
- | Frame: 30 | nonZero AFTER GrabCut: 1282
+[GC finalMask] final ratio: 0.0803755 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1273
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 30
- | Frame: 31 | nonZero AFTER GrabCut: 1255
+[GC finalMask] final ratio: 0.0796039 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1248
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 30
- | Frame: 32 | nonZero AFTER GrabCut: 1262
+[GC finalMask] final ratio: 0.0817258 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1272
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 34
- | Frame: 33 | nonZero AFTER GrabCut: 1233
+[GC finalMask] final ratio: 0.078125 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1206
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 27
- | Frame: 34 | nonZero AFTER GrabCut: 1251
+[GC finalMask] final ratio: 0.0791538 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 1238
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 15
- | Frame: 35 | nonZero AFTER GrabCut: 1235
+[GC finalMask] final ratio: 0.0779321 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1222
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 15
- | Frame: 36 | nonZero AFTER GrabCut: 1229
+[GC finalMask] final ratio: 0.0763246 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1237
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 15
- | Frame: 37 | nonZero AFTER GrabCut: 1234
+[GC finalMask] final ratio: 0.0781893 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1256
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 15
- | Frame: 38 | nonZero AFTER GrabCut: 1291
+[GC finalMask] final ratio: 0.0837191 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1308
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 15
- | Frame: 39 | nonZero AFTER GrabCut: 1341
+[GC finalMask] final ratio: 0.086034 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 1343
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person07_handclapping_d1
@@ -879,126 +1079,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 358 | ratio: 0.0186458
 [MOG2] Frame: 39 | nonZero: 387 | ratio: 0.0201563
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person07_handclapping_d2 =====
+===== SEQUENCE: data/sequences/person07_handclapping_d2 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 13
- | Frame: 0 | nonZero AFTER GrabCut: 1040
+[GC finalMask] final ratio: 0.0684156 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 1083
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 13
- | Frame: 1 | nonZero AFTER GrabCut: 1178
+[GC finalMask] final ratio: 0.0796039 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 1248
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 13
- | Frame: 2 | nonZero AFTER GrabCut: 1267
+[GC finalMask] final ratio: 0.0826903 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1288
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 13
- | Frame: 3 | nonZero AFTER GrabCut: 1267
+[GC finalMask] final ratio: 0.0818544 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 1268
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 13
- | Frame: 4 | nonZero AFTER GrabCut: 1287
+[GC finalMask] final ratio: 0.0832047 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1299
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 13
- | Frame: 5 | nonZero AFTER GrabCut: 1331
+[GC finalMask] final ratio: 0.0870628 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1374
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 13
- | Frame: 6 | nonZero AFTER GrabCut: 1329
+[GC finalMask] final ratio: 0.0873843 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 1355
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 13
- | Frame: 7 | nonZero AFTER GrabCut: 1373
+[GC finalMask] final ratio: 0.0786394 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1243
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 13
- | Frame: 8 | nonZero AFTER GrabCut: 1259
+[GC finalMask] final ratio: 0.0831404 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1302
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 13
- | Frame: 9 | nonZero AFTER GrabCut: 1461
+[GC finalMask] final ratio: 0.0942001 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1467
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 13
- | Frame: 10 | nonZero AFTER GrabCut: 1425
+[GC finalMask] final ratio: 0.0938143 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1468
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 15
- | Frame: 11 | nonZero AFTER GrabCut: 1460
+[GC finalMask] final ratio: 0.0949717 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1483
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 30
- | Frame: 12 | nonZero AFTER GrabCut: 1358
+[GC finalMask] final ratio: 0.0866127 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1355
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 17
- | Frame: 13 | nonZero AFTER GrabCut: 1328
+[GC finalMask] final ratio: 0.0822402 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1283
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 22
- | Frame: 14 | nonZero AFTER GrabCut: 1438
+[GC finalMask] final ratio: 0.0929784 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1446
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 22
- | Frame: 15 | nonZero AFTER GrabCut: 1479
+[GC finalMask] final ratio: 0.0946502 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1491
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 22
- | Frame: 16 | nonZero AFTER GrabCut: 1426
+[GC finalMask] final ratio: 0.0931713 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1449
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 22
- | Frame: 17 | nonZero AFTER GrabCut: 1429
+[GC finalMask] final ratio: 0.0932999 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1450
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 13
- | Frame: 18 | nonZero AFTER GrabCut: 1478
+[GC finalMask] final ratio: 0.0936857 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1470
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 13
- | Frame: 19 | nonZero AFTER GrabCut: 1497
+[GC finalMask] final ratio: 0.0959362 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1498
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 13
- | Frame: 20 | nonZero AFTER GrabCut: 1537
+[GC finalMask] final ratio: 0.0972222 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1508
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 18
- | Frame: 21 | nonZero AFTER GrabCut: 1573
+[GC finalMask] final ratio: 0.101402 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1576
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 18
- | Frame: 22 | nonZero AFTER GrabCut: 1659
+[GC finalMask] final ratio: 0.10706 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1665
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 32
- | Frame: 23 | nonZero AFTER GrabCut: 1576
+[GC finalMask] final ratio: 0.0979295 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1528
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 34
- | Frame: 24 | nonZero AFTER GrabCut: 1834
+[GC finalMask] final ratio: 0.101595 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1576
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 69
- | Frame: 25 | nonZero AFTER GrabCut: 1749
+[GC finalMask] final ratio: 0.108218 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1685
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 34
- | Frame: 26 | nonZero AFTER GrabCut: 2051
+[GC finalMask] final ratio: 0.130787 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 2046
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 65
- | Frame: 27 | nonZero AFTER GrabCut: 1923
+[GC finalMask] final ratio: 0.119856 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1889
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 87
- | Frame: 28 | nonZero AFTER GrabCut: 1959
+[GC finalMask] final ratio: 0.128279 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 2000
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 110
- | Frame: 29 | nonZero AFTER GrabCut: 2144
+[GC finalMask] final ratio: 0.148727 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 2307
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 120
- | Frame: 30 | nonZero AFTER GrabCut: 2102
+[GC finalMask] final ratio: 0.126865 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1981
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 105
- | Frame: 31 | nonZero AFTER GrabCut: 2069
+[GC finalMask] final ratio: 0.130337 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 2040
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 62
- | Frame: 32 | nonZero AFTER GrabCut: 2051
+[GC finalMask] final ratio: 0.125707 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1976
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 31
- | Frame: 33 | nonZero AFTER GrabCut: 1997
+[GC finalMask] final ratio: 0.142747 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 2232
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 31
- | Frame: 34 | nonZero AFTER GrabCut: 1962
+[GC finalMask] final ratio: 0.139468 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 2170
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 28
- | Frame: 35 | nonZero AFTER GrabCut: 1931
+[GC finalMask] final ratio: 0.121013 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1888
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 36
- | Frame: 36 | nonZero AFTER GrabCut: 1933
+[GC finalMask] final ratio: 0.12037 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1892
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 25
- | Frame: 37 | nonZero AFTER GrabCut: 1877
+[GC finalMask] final ratio: 0.119727 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1851
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 27
- | Frame: 38 | nonZero AFTER GrabCut: 1925
+[GC finalMask] final ratio: 0.120306 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1872
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 43
- | Frame: 39 | nonZero AFTER GrabCut: 1994
+[GC finalMask] final ratio: 0.122685 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 1923
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person07_handclapping_d2
@@ -1047,126 +1287,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 35 | ratio: 0.00182292
 [MOG2] Frame: 39 | nonZero: 35 | ratio: 0.00182292
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person07_handclapping_d3 =====
+===== SEQUENCE: data/sequences/person07_handclapping_d3 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 31
- | Frame: 0 | nonZero AFTER GrabCut: 1378
+[GC finalMask] final ratio: 0.0891847 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 1397
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 31
- | Frame: 1 | nonZero AFTER GrabCut: 1440
+[GC finalMask] final ratio: 0.0940715 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 1462
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 31
- | Frame: 2 | nonZero AFTER GrabCut: 1457
+[GC finalMask] final ratio: 0.0946502 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1472
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 31
+[GC finalMask] final ratio: 0.0958719 | mode: PR_FGD
  | Frame: 3 | nonZero AFTER GrabCut: 1490
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 31
- | Frame: 4 | nonZero AFTER GrabCut: 1504
+[GC finalMask] final ratio: 0.0974794 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1527
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 31
- | Frame: 5 | nonZero AFTER GrabCut: 1528
+[GC finalMask] final ratio: 0.0996656 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1552
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 31
- | Frame: 6 | nonZero AFTER GrabCut: 1565
+[GC finalMask] final ratio: 0.101402 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 1578
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 31
- | Frame: 7 | nonZero AFTER GrabCut: 1626
+[GC finalMask] final ratio: 0.104038 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1619
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 31
- | Frame: 8 | nonZero AFTER GrabCut: 1594
+[GC finalMask] final ratio: 0.101788 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1595
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 31
- | Frame: 9 | nonZero AFTER GrabCut: 1540
+[GC finalMask] final ratio: 0.0986368 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1544
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 31
- | Frame: 10 | nonZero AFTER GrabCut: 1488
+[GC finalMask] final ratio: 0.0962577 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1503
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 22
- | Frame: 11 | nonZero AFTER GrabCut: 1409
+[GC finalMask] final ratio: 0.089892 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1414
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 23
- | Frame: 12 | nonZero AFTER GrabCut: 1365
+[GC finalMask] final ratio: 0.0874486 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1363
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 14
- | Frame: 13 | nonZero AFTER GrabCut: 1265
+[GC finalMask] final ratio: 0.08134 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1276
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 20
- | Frame: 14 | nonZero AFTER GrabCut: 1203
+[GC finalMask] final ratio: 0.077482 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1221
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 38
- | Frame: 15 | nonZero AFTER GrabCut: 1188
+[GC finalMask] final ratio: 0.0774177 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1210
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 34
- | Frame: 16 | nonZero AFTER GrabCut: 1180
+[GC finalMask] final ratio: 0.0751672 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1186
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 34
- | Frame: 17 | nonZero AFTER GrabCut: 1192
+[GC finalMask] final ratio: 0.0762603 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1200
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 34
- | Frame: 18 | nonZero AFTER GrabCut: 1190
+[GC finalMask] final ratio: 0.0771605 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1206
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 34
- | Frame: 19 | nonZero AFTER GrabCut: 1190
+[GC finalMask] final ratio: 0.0763246 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1196
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 34
- | Frame: 20 | nonZero AFTER GrabCut: 1205
+[GC finalMask] final ratio: 0.0767747 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1207
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 34
+[GC finalMask] final ratio: 0.0798611 | mode: PR_FGD
  | Frame: 21 | nonZero AFTER GrabCut: 1260
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 15
- | Frame: 22 | nonZero AFTER GrabCut: 1307
+[GC finalMask] final ratio: 0.0837834 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1316
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 15
- | Frame: 23 | nonZero AFTER GrabCut: 1366
+[GC finalMask] final ratio: 0.0894419 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1397
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 15
- | Frame: 24 | nonZero AFTER GrabCut: 1435
+[GC finalMask] final ratio: 0.0936214 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1465
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 15
- | Frame: 25 | nonZero AFTER GrabCut: 1485
+[GC finalMask] final ratio: 0.0956147 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1490
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 15
- | Frame: 26 | nonZero AFTER GrabCut: 1520
+[GC finalMask] final ratio: 0.0973508 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1523
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 15
- | Frame: 27 | nonZero AFTER GrabCut: 1560
+[GC finalMask] final ratio: 0.100051 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1553
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 15
- | Frame: 28 | nonZero AFTER GrabCut: 1534
+[GC finalMask] final ratio: 0.0987011 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1538
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 15
- | Frame: 29 | nonZero AFTER GrabCut: 1529
+[GC finalMask] final ratio: 0.097608 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1533
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 15
- | Frame: 30 | nonZero AFTER GrabCut: 1494
+[GC finalMask] final ratio: 0.0954861 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1498
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 15
- | Frame: 31 | nonZero AFTER GrabCut: 1459
+[GC finalMask] final ratio: 0.0933642 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1455
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 15
- | Frame: 32 | nonZero AFTER GrabCut: 1424
+[GC finalMask] final ratio: 0.0920139 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1438
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 15
- | Frame: 33 | nonZero AFTER GrabCut: 1403
+[GC finalMask] final ratio: 0.0913066 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1420
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 15
- | Frame: 34 | nonZero AFTER GrabCut: 1407
+[GC finalMask] final ratio: 0.0912423 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 1418
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 15
- | Frame: 35 | nonZero AFTER GrabCut: 1433
+[GC finalMask] final ratio: 0.0933642 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1454
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 15
- | Frame: 36 | nonZero AFTER GrabCut: 1470
+[GC finalMask] final ratio: 0.0956147 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1498
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 15
- | Frame: 37 | nonZero AFTER GrabCut: 1499
+[GC finalMask] final ratio: 0.0961934 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1511
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 15
- | Frame: 38 | nonZero AFTER GrabCut: 1523
+[GC finalMask] final ratio: 0.0973508 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1525
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 15
- | Frame: 39 | nonZero AFTER GrabCut: 1572
+[GC finalMask] final ratio: 0.100502 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 1573
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person07_handclapping_d3
@@ -1215,126 +1495,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 24 | ratio: 0.00125
 [MOG2] Frame: 39 | nonZero: 28 | ratio: 0.00145833
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person07_handclapping_d4 =====
+===== SEQUENCE: data/sequences/person07_handclapping_d4 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 38
- | Frame: 0 | nonZero AFTER GrabCut: 1539
+[GC finalMask] final ratio: 0.0970293 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 1523
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 38
- | Frame: 1 | nonZero AFTER GrabCut: 1553
+[GC finalMask] final ratio: 0.0973508 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 1528
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 38
- | Frame: 2 | nonZero AFTER GrabCut: 1557
+[GC finalMask] final ratio: 0.0980581 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 1542
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 38
- | Frame: 3 | nonZero AFTER GrabCut: 1577
+[GC finalMask] final ratio: 0.0994084 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 1564
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 38
- | Frame: 4 | nonZero AFTER GrabCut: 1592
+[GC finalMask] final ratio: 0.0999228 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1564
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 38
- | Frame: 5 | nonZero AFTER GrabCut: 1532
+[GC finalMask] final ratio: 0.096965 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1517
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 40
- | Frame: 6 | nonZero AFTER GrabCut: 1599
+[GC finalMask] final ratio: 0.10153 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 1590
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 21
- | Frame: 7 | nonZero AFTER GrabCut: 1633
+[GC finalMask] final ratio: 0.103395 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1615
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 21
- | Frame: 8 | nonZero AFTER GrabCut: 1650
+[GC finalMask] final ratio: 0.103395 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1627
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 64
- | Frame: 9 | nonZero AFTER GrabCut: 1668
+[GC finalMask] final ratio: 0.105517 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1656
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 64
- | Frame: 10 | nonZero AFTER GrabCut: 1646
+[GC finalMask] final ratio: 0.104552 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1628
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 61
- | Frame: 11 | nonZero AFTER GrabCut: 1604
+[GC finalMask] final ratio: 0.102109 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1598
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 36
- | Frame: 12 | nonZero AFTER GrabCut: 1564
+[GC finalMask] final ratio: 0.100309 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1570
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 30
- | Frame: 13 | nonZero AFTER GrabCut: 1510
+[GC finalMask] final ratio: 0.0964506 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1508
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 28
- | Frame: 14 | nonZero AFTER GrabCut: 1462
+[GC finalMask] final ratio: 0.0925283 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1452
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 30
- | Frame: 15 | nonZero AFTER GrabCut: 1424
+[GC finalMask] final ratio: 0.0900849 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1408
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 13
- | Frame: 16 | nonZero AFTER GrabCut: 1368
+[GC finalMask] final ratio: 0.0855195 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1341
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 11
- | Frame: 17 | nonZero AFTER GrabCut: 1311
+[GC finalMask] final ratio: 0.0830761 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1310
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 26
- | Frame: 18 | nonZero AFTER GrabCut: 1309
+[GC finalMask] final ratio: 0.08134 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1282
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 41
- | Frame: 19 | nonZero AFTER GrabCut: 1299
+[GC finalMask] final ratio: 0.0821759 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1293
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 50
- | Frame: 20 | nonZero AFTER GrabCut: 1269
+[GC finalMask] final ratio: 0.0810185 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1275
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 20
- | Frame: 21 | nonZero AFTER GrabCut: 1270
+[GC finalMask] final ratio: 0.080054 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1261
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 20
- | Frame: 22 | nonZero AFTER GrabCut: 1267
+[GC finalMask] final ratio: 0.0804398 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1261
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 20
- | Frame: 23 | nonZero AFTER GrabCut: 1310
+[GC finalMask] final ratio: 0.0814686 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1282
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 20
- | Frame: 24 | nonZero AFTER GrabCut: 1342
+[GC finalMask] final ratio: 0.0836548 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1320
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 20
- | Frame: 25 | nonZero AFTER GrabCut: 1393
+[GC finalMask] final ratio: 0.0888632 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1392
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 20
- | Frame: 26 | nonZero AFTER GrabCut: 1455
+[GC finalMask] final ratio: 0.0912423 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1440
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 20
- | Frame: 27 | nonZero AFTER GrabCut: 1508
+[GC finalMask] final ratio: 0.0942644 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1472
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 30
- | Frame: 28 | nonZero AFTER GrabCut: 1532
+[GC finalMask] final ratio: 0.0963863 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1510
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 44
- | Frame: 29 | nonZero AFTER GrabCut: 1435
+[GC finalMask] final ratio: 0.0929784 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1459
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 42
- | Frame: 30 | nonZero AFTER GrabCut: 1603
+[GC finalMask] final ratio: 0.101916 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1592
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 30
+[GC finalMask] final ratio: 0.103266 | mode: PR_FGD
  | Frame: 31 | nonZero AFTER GrabCut: 1617
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 18
- | Frame: 32 | nonZero AFTER GrabCut: 1656
+[GC finalMask] final ratio: 0.103845 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1624
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 18
- | Frame: 33 | nonZero AFTER GrabCut: 1630
+[GC finalMask] final ratio: 0.102945 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1607
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 18
- | Frame: 34 | nonZero AFTER GrabCut: 1600
+[GC finalMask] final ratio: 0.102688 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 1612
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 18
- | Frame: 35 | nonZero AFTER GrabCut: 1641
+[GC finalMask] final ratio: 0.103202 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1619
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 18
- | Frame: 36 | nonZero AFTER GrabCut: 1604
+[GC finalMask] final ratio: 0.102238 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1597
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 18
- | Frame: 37 | nonZero AFTER GrabCut: 1635
+[GC finalMask] final ratio: 0.103331 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1620
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 18
- | Frame: 38 | nonZero AFTER GrabCut: 1543
+[GC finalMask] final ratio: 0.0999871 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1565
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 18
- | Frame: 39 | nonZero AFTER GrabCut: 1579
+[GC finalMask] final ratio: 0.100244 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 1572
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person07_handclapping_d4
@@ -1383,114 +1703,150 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 47 | ratio: 0.00244792
 [MOG2] Frame: 39 | nonZero: 60 | ratio: 0.003125
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person16_running_d1 =====
+===== SEQUENCE: data/sequences/person16_running_d1 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 18
- | Frame: 0 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0412166 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 637
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 18
- | Frame: 1 | nonZero AFTER GrabCut: 556
+[GC finalMask] final ratio: 0.0447531 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 692
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 18
- | Frame: 2 | nonZero AFTER GrabCut: 582
+[GC finalMask] final ratio: 0.0473251 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 730
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 18
- | Frame: 3 | nonZero AFTER GrabCut: 655
+[GC finalMask] final ratio: 0.0493184 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 757
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 18
- | Frame: 4 | nonZero AFTER GrabCut: 664
+[GC finalMask] final ratio: 0.0492541 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 750
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 18
- | Frame: 5 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0543981 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 856
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 18
- | Frame: 6 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0575489 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 905
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 18
- | Frame: 7 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0600566 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 938
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 16
- | Frame: 8 | nonZero AFTER GrabCut: 848
+[GC finalMask] final ratio: 0.0576775 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 889
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 16
- | Frame: 9 | nonZero AFTER GrabCut: 864
+[GC finalMask] final ratio: 0.063786 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 983
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 16
- | Frame: 10 | nonZero AFTER GrabCut: 924
+[GC finalMask] final ratio: 0.0654578 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1014
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 51
- | Frame: 11 | nonZero AFTER GrabCut: 994
+[GC finalMask] final ratio: 0.0686085 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1067
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 48
- | Frame: 12 | nonZero AFTER GrabCut: 84
+[GC finalMask] final ratio: 0.0689943 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1072
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 78
- | Frame: 13 | nonZero AFTER GrabCut: 41
+[GC finalMask] final ratio: 0.00334362 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 50
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 162
- | Frame: 14 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0196759 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 276
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 167
- | Frame: 15 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0328575 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 505
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 161
- | Frame: 16 | nonZero AFTER GrabCut: 336
+[GC finalMask] final ratio: 0.0358153 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 554
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 226
- | Frame: 17 | nonZero AFTER GrabCut: 279
+[GC finalMask] final ratio: 0.0334362 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 506
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 222
- | Frame: 18 | nonZero AFTER GrabCut: 345
+[GC finalMask] final ratio: 0.0578704 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 907
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 269
- | Frame: 19 | nonZero AFTER GrabCut: 414
+[GC finalMask] final ratio: 0.0448817 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 682
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 274
- | Frame: 20 | nonZero AFTER GrabCut: 632
+[GC finalMask] final ratio: 0.041731 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 669
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 277
- | Frame: 21 | nonZero AFTER GrabCut: 674
+[GC finalMask] final ratio: 0.0438529 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 679
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 301
- | Frame: 22 | nonZero AFTER GrabCut: 720
+[GC finalMask] final ratio: 0.0480967 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 751
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 227
- | Frame: 23 | nonZero AFTER GrabCut: 288
+[GC finalMask] final ratio: 0.0212834 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 316
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 147
- | Frame: 24 | nonZero AFTER GrabCut: 444
+[GC finalMask] final ratio: 0.0317001 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 473
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 100
- | Frame: 25 | nonZero AFTER GrabCut: 647
+[GC finalMask] final ratio: 0.0428241 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 663
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 81
- | Frame: 26 | nonZero AFTER GrabCut: 674
+[GC finalMask] final ratio: 0.0416667 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 646
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 131
- | Frame: 27 | nonZero AFTER GrabCut: 1092
+[GC finalMask] final ratio: 0.0688014 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1076
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 140
- | Frame: 28 | nonZero AFTER GrabCut: 1326
+[GC finalMask] final ratio: 0.0830761 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1294
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 185
- | Frame: 29 | nonZero AFTER GrabCut: 764
+[GC finalMask] final ratio: 0.0555556 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 877
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 168
- | Frame: 30 | nonZero AFTER GrabCut: 819
+[GC finalMask] final ratio: 0.0530478 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 838
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 139
- | Frame: 31 | nonZero AFTER GrabCut: 782
+[GC finalMask] final ratio: 0.0557485 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 869
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 79
- | Frame: 32 | nonZero AFTER GrabCut: 451
+[GC finalMask] final ratio: 0.0495113 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 764
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 86
- | Frame: 33 | nonZero AFTER GrabCut: 73
+[GC finalMask] final ratio: 0.0202546 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 303
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 91
- | Frame: 34 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0154964 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 232
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 29
- | Frame: 35 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00102881 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 14
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 36
  | Frame: 36 | nonZero AFTER GrabCut: 0
@@ -1551,7 +1907,7 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 417 | ratio: 0.0217187
 [MOG2] Frame: 39 | nonZero: 454 | ratio: 0.0236458
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person16_running_d2 =====
+===== SEQUENCE: data/sequences/person16_running_d2 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 92
  | Frame: 0 | nonZero AFTER GrabCut: 0
 ----------------------------------------
@@ -1619,58 +1975,76 @@ MediaPipe fallback used: 0
  | Frame: 21 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 174
- | Frame: 22 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0210905 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 252
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 210
- | Frame: 23 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00546553 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 74
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 212
- | Frame: 24 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00996656 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 152
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 222
- | Frame: 25 | nonZero AFTER GrabCut: 37
+[GC finalMask] final ratio: 0.0177469 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 250
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 236
- | Frame: 26 | nonZero AFTER GrabCut: 154
+[GC finalMask] final ratio: 0.0212191 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 307
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 237
- | Frame: 27 | nonZero AFTER GrabCut: 232
+[GC finalMask] final ratio: 0.0504115 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 711
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 235
- | Frame: 28 | nonZero AFTER GrabCut: 336
+[GC finalMask] final ratio: 0.0533693 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 748
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 220
- | Frame: 29 | nonZero AFTER GrabCut: 508
+[GC finalMask] final ratio: 0.047518 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 647
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 196
- | Frame: 30 | nonZero AFTER GrabCut: 568
+[GC finalMask] final ratio: 0.0509259 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 772
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 185
- | Frame: 31 | nonZero AFTER GrabCut: 624
+[GC finalMask] final ratio: 0.0498328 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 708
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 157
- | Frame: 32 | nonZero AFTER GrabCut: 244
+[GC finalMask] final ratio: 0.0502186 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 756
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 155
- | Frame: 33 | nonZero AFTER GrabCut: 457
+[GC finalMask] final ratio: 0.0549769 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 809
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 168
- | Frame: 34 | nonZero AFTER GrabCut: 282
+[GC finalMask] final ratio: 0.0211548 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 304
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 170
- | Frame: 35 | nonZero AFTER GrabCut: 575
+[GC finalMask] final ratio: 0.0431456 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 649
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 161
- | Frame: 36 | nonZero AFTER GrabCut: 314
+[GC finalMask] final ratio: 0.0214763 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 317
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 277
- | Frame: 37 | nonZero AFTER GrabCut: 414
+[GC finalMask] final ratio: 0.030607 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 456
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 307
- | Frame: 38 | nonZero AFTER GrabCut: 563
+[GC finalMask] final ratio: 0.0513117 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 766
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 328
- | Frame: 39 | nonZero AFTER GrabCut: 703
+[GC finalMask] final ratio: 0.0558128 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 850
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person16_running_d2
@@ -1719,126 +2093,165 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 73 | ratio: 0.00380208
 [MOG2] Frame: 39 | nonZero: 100 | ratio: 0.00520833
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person16_running_d3 =====
+===== SEQUENCE: data/sequences/person16_running_d3 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 11
- | Frame: 0 | nonZero AFTER GrabCut: 614
+[GC finalMask] final ratio: 0.0525977 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 806
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 11
- | Frame: 1 | nonZero AFTER GrabCut: 681
+[GC finalMask] final ratio: 0.053305 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 818
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 11
- | Frame: 2 | nonZero AFTER GrabCut: 779
+[GC finalMask] final ratio: 0.0574203 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 904
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 11
- | Frame: 3 | nonZero AFTER GrabCut: 863
+[GC finalMask] final ratio: 0.0616641 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 957
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 11
- | Frame: 4 | nonZero AFTER GrabCut: 903
+[GC finalMask] final ratio: 0.065072 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 1007
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 11
- | Frame: 5 | nonZero AFTER GrabCut: 950
+[GC finalMask] final ratio: 0.0684156 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 1049
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 11
- | Frame: 6 | nonZero AFTER GrabCut: 989
+[GC finalMask] final ratio: 0.070216 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 1079
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 11
- | Frame: 7 | nonZero AFTER GrabCut: 1000
+[GC finalMask] final ratio: 0.0708591 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 1087
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 11
- | Frame: 8 | nonZero AFTER GrabCut: 1037
+[GC finalMask] final ratio: 0.0725309 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1118
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 28
- | Frame: 9 | nonZero AFTER GrabCut: 1062
+[GC finalMask] final ratio: 0.0760031 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1175
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 45
- | Frame: 10 | nonZero AFTER GrabCut: 1026
+[GC finalMask] final ratio: 0.0743956 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1159
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 54
- | Frame: 11 | nonZero AFTER GrabCut: 1051
+[GC finalMask] final ratio: 0.0758102 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1161
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 43
- | Frame: 12 | nonZero AFTER GrabCut: 993
+[GC finalMask] final ratio: 0.0740741 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1147
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 43
- | Frame: 13 | nonZero AFTER GrabCut: 67
+[GC finalMask] final ratio: 0.0754244 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1175
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 116
  | Frame: 14 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 253
- | Frame: 15 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0843621 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1290
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 338
- | Frame: 16 | nonZero AFTER GrabCut: 51
+[GC finalMask] final ratio: 0.0316358 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 487
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 376
- | Frame: 17 | nonZero AFTER GrabCut: 455
+[GC finalMask] final ratio: 0.0433385 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 656
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 375
- | Frame: 18 | nonZero AFTER GrabCut: 507
+[GC finalMask] final ratio: 0.0434028 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 693
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 410
- | Frame: 19 | nonZero AFTER GrabCut: 665
+[GC finalMask] final ratio: 0.0450746 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 701
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 398
- | Frame: 20 | nonZero AFTER GrabCut: 795
+[GC finalMask] final ratio: 0.0551055 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 848
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 344
- | Frame: 21 | nonZero AFTER GrabCut: 948
+[GC finalMask] final ratio: 0.0632716 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 973
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 281
- | Frame: 22 | nonZero AFTER GrabCut: 1107
+[GC finalMask] final ratio: 0.070409 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1096
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 270
- | Frame: 23 | nonZero AFTER GrabCut: 1101
+[GC finalMask] final ratio: 0.0705376 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1110
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 269
- | Frame: 24 | nonZero AFTER GrabCut: 1215
+[GC finalMask] final ratio: 0.0783179 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1221
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 342
- | Frame: 25 | nonZero AFTER GrabCut: 1122
+[GC finalMask] final ratio: 0.0756173 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1168
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 373
- | Frame: 26 | nonZero AFTER GrabCut: 1229
+[GC finalMask] final ratio: 0.0754887 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1173
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 350
- | Frame: 27 | nonZero AFTER GrabCut: 1255
+[GC finalMask] final ratio: 0.080697 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1273
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 310
- | Frame: 28 | nonZero AFTER GrabCut: 1015
+[GC finalMask] final ratio: 0.0646862 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1008
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 251
- | Frame: 29 | nonZero AFTER GrabCut: 834
+[GC finalMask] final ratio: 0.0561343 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 853
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 311
- | Frame: 30 | nonZero AFTER GrabCut: 1023
+[GC finalMask] final ratio: 0.0645576 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1002
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 301
- | Frame: 31 | nonZero AFTER GrabCut: 1231
+[GC finalMask] final ratio: 0.0804398 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1268
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 326
- | Frame: 32 | nonZero AFTER GrabCut: 1536
+[GC finalMask] final ratio: 0.104681 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1627
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 293
- | Frame: 33 | nonZero AFTER GrabCut: 524
+[GC finalMask] final ratio: 0.112526 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1748
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 284
- | Frame: 34 | nonZero AFTER GrabCut: 427
+[GC finalMask] final ratio: 0.0332433 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 520
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 171
- | Frame: 35 | nonZero AFTER GrabCut: 34
+[GC finalMask] final ratio: 0.0277778 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 428
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 131
- | Frame: 36 | nonZero AFTER GrabCut: 32
+[GC finalMask] final ratio: 0.00630144 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 93
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 17
- | Frame: 37 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00199331 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 21
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 17
- | Frame: 38 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000771605 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 12
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 17
- | Frame: 39 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000835905 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 12
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person16_running_d3
@@ -1887,7 +2300,7 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 1383 | ratio: 0.0720313
 [MOG2] Frame: 39 | nonZero: 1162 | ratio: 0.0605208
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person16_running_d4 =====
+===== SEQUENCE: data/sequences/person16_running_d4 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 15
  | Frame: 0 | nonZero AFTER GrabCut: 0
 ----------------------------------------
@@ -1928,85 +2341,112 @@ MediaPipe fallback used: 0
  | Frame: 12 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 46
+[GC finalMask] final ratio: 6.43004e-05 | mode: PR_FGD
  | Frame: 13 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 173
- | Frame: 14 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00559414 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 81
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 310
- | Frame: 15 | nonZero AFTER GrabCut: 22
+[GC finalMask] final ratio: 0.0148534 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 222
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 480
- | Frame: 16 | nonZero AFTER GrabCut: 91
+[GC finalMask] final ratio: 0.036394 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 557
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 410
- | Frame: 17 | nonZero AFTER GrabCut: 237
+[GC finalMask] final ratio: 0.0572274 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 889
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 294
- | Frame: 18 | nonZero AFTER GrabCut: 408
+[GC finalMask] final ratio: 0.0688014 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1069
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 421
- | Frame: 19 | nonZero AFTER GrabCut: 759
+[GC finalMask] final ratio: 0.0790895 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1233
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 480
- | Frame: 20 | nonZero AFTER GrabCut: 965
+[GC finalMask] final ratio: 0.0825617 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1281
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 620
- | Frame: 21 | nonZero AFTER GrabCut: 1281
+[GC finalMask] final ratio: 0.102431 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1589
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 799
- | Frame: 22 | nonZero AFTER GrabCut: 1973
+[GC finalMask] final ratio: 0.135995 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 2115
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 796
- | Frame: 23 | nonZero AFTER GrabCut: 2132
+[GC finalMask] final ratio: 0.147762 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 2298
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 875
- | Frame: 24 | nonZero AFTER GrabCut: 2211
+[GC finalMask] final ratio: 0.146219 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 2278
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 896
- | Frame: 25 | nonZero AFTER GrabCut: 2041
+[GC finalMask] final ratio: 0.13053 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 2033
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 800
- | Frame: 26 | nonZero AFTER GrabCut: 1561
+[GC finalMask] final ratio: 0.10153 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1578
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 898
- | Frame: 27 | nonZero AFTER GrabCut: 1573
+[GC finalMask] final ratio: 0.100887 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1569
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1099
- | Frame: 28 | nonZero AFTER GrabCut: 1756
+[GC finalMask] final ratio: 0.111561 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1736
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1155
- | Frame: 29 | nonZero AFTER GrabCut: 1831
+[GC finalMask] final ratio: 0.117863 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1832
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 1204
- | Frame: 30 | nonZero AFTER GrabCut: 1833
+[GC finalMask] final ratio: 0.120113 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1870
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1235
- | Frame: 31 | nonZero AFTER GrabCut: 1860
+[GC finalMask] final ratio: 0.121721 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1891
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1296
- | Frame: 32 | nonZero AFTER GrabCut: 1876
+[GC finalMask] final ratio: 0.121592 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1890
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 1235
- | Frame: 33 | nonZero AFTER GrabCut: 1730
+[GC finalMask] final ratio: 0.113297 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1760
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 1047
- | Frame: 34 | nonZero AFTER GrabCut: 1516
+[GC finalMask] final ratio: 0.0994727 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 1548
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 1058
- | Frame: 35 | nonZero AFTER GrabCut: 1493
+[GC finalMask] final ratio: 0.0961291 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1492
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 1207
- | Frame: 36 | nonZero AFTER GrabCut: 1755
+[GC finalMask] final ratio: 0.117991 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1831
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 1327
- | Frame: 37 | nonZero AFTER GrabCut: 1189
+[GC finalMask] final ratio: 0.104488 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 1624
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 1334
- | Frame: 38 | nonZero AFTER GrabCut: 775
+[GC finalMask] final ratio: 0.0819187 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 1264
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 1138
- | Frame: 39 | nonZero AFTER GrabCut: 305
+[GC finalMask] final ratio: 0.0577418 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 892
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person16_running_d4
@@ -2055,126 +2495,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 970 | ratio: 0.0505208
 [MOG2] Frame: 39 | nonZero: 630 | ratio: 0.0328125
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person21_jogging_d1 =====
+===== SEQUENCE: data/sequences/person21_jogging_d1 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 368
- | Frame: 0 | nonZero AFTER GrabCut: 30
+[GC finalMask] final ratio: 0.0192258 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 293
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 368
- | Frame: 1 | nonZero AFTER GrabCut: 30
+[GC finalMask] final ratio: 0.0192258 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 293
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 368
- | Frame: 2 | nonZero AFTER GrabCut: 30
+[GC finalMask] final ratio: 0.0192901 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 294
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 368
- | Frame: 3 | nonZero AFTER GrabCut: 30
+[GC finalMask] final ratio: 0.0231481 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 355
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 368
- | Frame: 4 | nonZero AFTER GrabCut: 22
+[GC finalMask] final ratio: 0.0295782 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 456
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 368
- | Frame: 5 | nonZero AFTER GrabCut: 17
+[GC finalMask] final ratio: 0.0213477 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 315
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 357
- | Frame: 6 | nonZero AFTER GrabCut: 131
+[GC finalMask] final ratio: 0.0431456 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 673
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 343
- | Frame: 7 | nonZero AFTER GrabCut: 419
+[GC finalMask] final ratio: 0.0594136 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 924
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 324
- | Frame: 8 | nonZero AFTER GrabCut: 749
+[GC finalMask] final ratio: 0.0790252 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 1225
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 255
- | Frame: 9 | nonZero AFTER GrabCut: 1026
+[GC finalMask] final ratio: 0.085198 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1326
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 452
- | Frame: 10 | nonZero AFTER GrabCut: 1159
+[GC finalMask] final ratio: 0.0843621 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1317
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 425
- | Frame: 11 | nonZero AFTER GrabCut: 1225
+[GC finalMask] final ratio: 0.0862912 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1339
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 469
- | Frame: 12 | nonZero AFTER GrabCut: 1336
+[GC finalMask] final ratio: 0.086034 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1340
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 552
- | Frame: 13 | nonZero AFTER GrabCut: 1549
+[GC finalMask] final ratio: 0.0983796 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1533
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 609
- | Frame: 14 | nonZero AFTER GrabCut: 1731
+[GC finalMask] final ratio: 0.11124 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1736
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 806
- | Frame: 15 | nonZero AFTER GrabCut: 1504
+[GC finalMask] final ratio: 0.0975437 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1515
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 862
- | Frame: 16 | nonZero AFTER GrabCut: 1486
+[GC finalMask] final ratio: 0.0970936 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 1506
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 868
- | Frame: 17 | nonZero AFTER GrabCut: 1519
+[GC finalMask] final ratio: 0.0986368 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1529
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 877
- | Frame: 18 | nonZero AFTER GrabCut: 1520
+[GC finalMask] final ratio: 0.098894 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1535
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 887
- | Frame: 19 | nonZero AFTER GrabCut: 1441
+[GC finalMask] final ratio: 0.0940072 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1460
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 973
- | Frame: 20 | nonZero AFTER GrabCut: 1329
+[GC finalMask] final ratio: 0.0865484 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1348
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 909
- | Frame: 21 | nonZero AFTER GrabCut: 1302
+[GC finalMask] final ratio: 0.0840406 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1307
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 912
- | Frame: 22 | nonZero AFTER GrabCut: 1342
+[GC finalMask] final ratio: 0.0864198 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1348
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 972
- | Frame: 23 | nonZero AFTER GrabCut: 1410
+[GC finalMask] final ratio: 0.0909208 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 1420
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 1117
- | Frame: 24 | nonZero AFTER GrabCut: 1483
+[GC finalMask] final ratio: 0.0960648 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1491
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 1193
- | Frame: 25 | nonZero AFTER GrabCut: 1677
+[GC finalMask] final ratio: 0.108861 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1692
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 1178
- | Frame: 26 | nonZero AFTER GrabCut: 1570
+[GC finalMask] final ratio: 0.102302 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1586
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 1189
+[GC finalMask] final ratio: 0.102623 | mode: PR_FGD
  | Frame: 27 | nonZero AFTER GrabCut: 1590
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1285
- | Frame: 28 | nonZero AFTER GrabCut: 1590
+[GC finalMask] final ratio: 0.103074 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1606
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1315
- | Frame: 29 | nonZero AFTER GrabCut: 1546
+[GC finalMask] final ratio: 0.101016 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1570
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 1294
- | Frame: 30 | nonZero AFTER GrabCut: 1466
+[GC finalMask] final ratio: 0.096322 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1500
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1233
- | Frame: 31 | nonZero AFTER GrabCut: 1430
+[GC finalMask] final ratio: 0.0925926 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1436
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1103
- | Frame: 32 | nonZero AFTER GrabCut: 1307
+[GC finalMask] final ratio: 0.0844264 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1312
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 1012
- | Frame: 33 | nonZero AFTER GrabCut: 1178
+[GC finalMask] final ratio: 0.078768 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 1223
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 1039
- | Frame: 34 | nonZero AFTER GrabCut: 1067
+[GC finalMask] final ratio: 0.0823045 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 1279
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 1178
- | Frame: 35 | nonZero AFTER GrabCut: 1024
+[GC finalMask] final ratio: 0.089249 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 1390
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 1204
- | Frame: 36 | nonZero AFTER GrabCut: 624
+[GC finalMask] final ratio: 0.0754887 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 1165
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 1162
- | Frame: 37 | nonZero AFTER GrabCut: 297
+[GC finalMask] final ratio: 0.0515046 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 788
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 865
- | Frame: 38 | nonZero AFTER GrabCut: 222
+[GC finalMask] final ratio: 0.0308642 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 476
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 512
- | Frame: 39 | nonZero AFTER GrabCut: 164
+[GC finalMask] final ratio: 0.0199331 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 292
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person21_jogging_d1
@@ -2223,126 +2703,166 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 424 | ratio: 0.0220833
 [MOG2] Frame: 39 | nonZero: 511 | ratio: 0.0266146
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person21_jogging_d2 =====
+===== SEQUENCE: data/sequences/person21_jogging_d2 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 24
- | Frame: 0 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 24
- | Frame: 1 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 24
- | Frame: 2 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 24
- | Frame: 3 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000578704 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 24
- | Frame: 4 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000578704 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 24
- | Frame: 5 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 24
- | Frame: 6 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 24
- | Frame: 7 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000771605 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 24
- | Frame: 8 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000707305 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 24
- | Frame: 9 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000707305 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 24
- | Frame: 10 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000707305 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 24
- | Frame: 11 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000578704 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 24
- | Frame: 12 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000707305 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 24
- | Frame: 13 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000578704 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 24
- | Frame: 14 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 24
- | Frame: 15 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 24
- | Frame: 16 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000578704 | mode: PR_FGD
+ | Frame: 16 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 24
- | Frame: 17 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000707305 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 24
- | Frame: 18 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.000643004 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 5
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 43
- | Frame: 19 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00456533 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 53
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 94
- | Frame: 20 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00733025 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 109
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 123
- | Frame: 21 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00797325 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 115
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 138
- | Frame: 22 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0104167 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 160
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 117
- | Frame: 23 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0120885 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 188
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 127
- | Frame: 24 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.013053 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 201
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 125
- | Frame: 25 | nonZero AFTER GrabCut: 42
+[GC finalMask] final ratio: 0.0145962 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 229
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 105
- | Frame: 26 | nonZero AFTER GrabCut: 63
+[GC finalMask] final ratio: 0.0152392 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 239
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 107
- | Frame: 27 | nonZero AFTER GrabCut: 37
+[GC finalMask] final ratio: 0.014982 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 227
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 114
- | Frame: 28 | nonZero AFTER GrabCut: 75
+[GC finalMask] final ratio: 0.0155607 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 239
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 152
- | Frame: 29 | nonZero AFTER GrabCut: 76
+[GC finalMask] final ratio: 0.0172968 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 264
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 166
- | Frame: 30 | nonZero AFTER GrabCut: 159
+[GC finalMask] final ratio: 0.0172968 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 268
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 188
- | Frame: 31 | nonZero AFTER GrabCut: 225
+[GC finalMask] final ratio: 0.0192258 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 302
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 223
- | Frame: 32 | nonZero AFTER GrabCut: 226
+[GC finalMask] final ratio: 0.0196759 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 305
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 265
- | Frame: 33 | nonZero AFTER GrabCut: 288
+[GC finalMask] final ratio: 0.0217335 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 335
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 295
- | Frame: 34 | nonZero AFTER GrabCut: 339
+[GC finalMask] final ratio: 0.024177 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 374
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 279
- | Frame: 35 | nonZero AFTER GrabCut: 384
+[GC finalMask] final ratio: 0.0237912 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 366
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 265
- | Frame: 36 | nonZero AFTER GrabCut: 282
+[GC finalMask] final ratio: 0.0187757 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 290
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 230
- | Frame: 37 | nonZero AFTER GrabCut: 220
+[GC finalMask] final ratio: 0.0172968 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 264
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 259
- | Frame: 38 | nonZero AFTER GrabCut: 288
+[GC finalMask] final ratio: 0.0191615 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 295
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 300
- | Frame: 39 | nonZero AFTER GrabCut: 308
+[GC finalMask] final ratio: 0.0195473 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 302
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person21_jogging_d2
@@ -2391,122 +2911,161 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 117 | ratio: 0.00609375
 [MOG2] Frame: 39 | nonZero: 84 | ratio: 0.004375
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person21_jogging_d3 =====
+===== SEQUENCE: data/sequences/person21_jogging_d3 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 337
- | Frame: 0 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00334362 | mode: PR_FGD
+ | Frame: 0 | nonZero AFTER GrabCut: 29
 ----------------------------------------
  | Frame: 1 | nonZero BEFORE GrabCut: 337
- | Frame: 1 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00334362 | mode: PR_FGD
+ | Frame: 1 | nonZero AFTER GrabCut: 29
 ----------------------------------------
  | Frame: 2 | nonZero BEFORE GrabCut: 337
- | Frame: 2 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00334362 | mode: PR_FGD
+ | Frame: 2 | nonZero AFTER GrabCut: 29
 ----------------------------------------
  | Frame: 3 | nonZero BEFORE GrabCut: 337
- | Frame: 3 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00360082 | mode: PR_FGD
+ | Frame: 3 | nonZero AFTER GrabCut: 37
 ----------------------------------------
  | Frame: 4 | nonZero BEFORE GrabCut: 337
- | Frame: 4 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00334362 | mode: PR_FGD
+ | Frame: 4 | nonZero AFTER GrabCut: 29
 ----------------------------------------
  | Frame: 5 | nonZero BEFORE GrabCut: 337
- | Frame: 5 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00462963 | mode: PR_FGD
+ | Frame: 5 | nonZero AFTER GrabCut: 52
 ----------------------------------------
  | Frame: 6 | nonZero BEFORE GrabCut: 382
- | Frame: 6 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0268133 | mode: PR_FGD
+ | Frame: 6 | nonZero AFTER GrabCut: 381
 ----------------------------------------
  | Frame: 7 | nonZero BEFORE GrabCut: 452
- | Frame: 7 | nonZero AFTER GrabCut: 212
+[GC finalMask] final ratio: 0.0441744 | mode: PR_FGD
+ | Frame: 7 | nonZero AFTER GrabCut: 682
 ----------------------------------------
  | Frame: 8 | nonZero BEFORE GrabCut: 514
- | Frame: 8 | nonZero AFTER GrabCut: 515
+[GC finalMask] final ratio: 0.0522762 | mode: PR_FGD
+ | Frame: 8 | nonZero AFTER GrabCut: 823
 ----------------------------------------
  | Frame: 9 | nonZero BEFORE GrabCut: 536
- | Frame: 9 | nonZero AFTER GrabCut: 799
+[GC finalMask] final ratio: 0.0822402 | mode: PR_FGD
+ | Frame: 9 | nonZero AFTER GrabCut: 1284
 ----------------------------------------
  | Frame: 10 | nonZero BEFORE GrabCut: 733
- | Frame: 10 | nonZero AFTER GrabCut: 1256
+[GC finalMask] final ratio: 0.0914995 | mode: PR_FGD
+ | Frame: 10 | nonZero AFTER GrabCut: 1423
 ----------------------------------------
  | Frame: 11 | nonZero BEFORE GrabCut: 670
- | Frame: 11 | nonZero AFTER GrabCut: 1414
+[GC finalMask] final ratio: 0.106803 | mode: PR_FGD
+ | Frame: 11 | nonZero AFTER GrabCut: 1668
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 455
- | Frame: 12 | nonZero AFTER GrabCut: 1398
+[GC finalMask] final ratio: 0.091178 | mode: PR_FGD
+ | Frame: 12 | nonZero AFTER GrabCut: 1422
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 411
- | Frame: 13 | nonZero AFTER GrabCut: 1489
+[GC finalMask] final ratio: 0.0941358 | mode: PR_FGD
+ | Frame: 13 | nonZero AFTER GrabCut: 1477
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 553
- | Frame: 14 | nonZero AFTER GrabCut: 1562
+[GC finalMask] final ratio: 0.100051 | mode: PR_FGD
+ | Frame: 14 | nonZero AFTER GrabCut: 1564
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 750
- | Frame: 15 | nonZero AFTER GrabCut: 1703
+[GC finalMask] final ratio: 0.109825 | mode: PR_FGD
+ | Frame: 15 | nonZero AFTER GrabCut: 1712
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 810
+[GC finalMask] final ratio: 0.126672 | mode: PR_FGD
  | Frame: 16 | nonZero AFTER GrabCut: 1969
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 709
- | Frame: 17 | nonZero AFTER GrabCut: 1564
+[GC finalMask] final ratio: 0.101659 | mode: PR_FGD
+ | Frame: 17 | nonZero AFTER GrabCut: 1591
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 854
- | Frame: 18 | nonZero AFTER GrabCut: 1574
+[GC finalMask] final ratio: 0.102816 | mode: PR_FGD
+ | Frame: 18 | nonZero AFTER GrabCut: 1606
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 933
- | Frame: 19 | nonZero AFTER GrabCut: 1645
+[GC finalMask] final ratio: 0.103331 | mode: PR_FGD
+ | Frame: 19 | nonZero AFTER GrabCut: 1603
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 1144
- | Frame: 20 | nonZero AFTER GrabCut: 1711
+[GC finalMask] final ratio: 0.11079 | mode: PR_FGD
+ | Frame: 20 | nonZero AFTER GrabCut: 1728
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 1264
- | Frame: 21 | nonZero AFTER GrabCut: 1772
+[GC finalMask] final ratio: 0.115098 | mode: PR_FGD
+ | Frame: 21 | nonZero AFTER GrabCut: 1789
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 1072
- | Frame: 22 | nonZero AFTER GrabCut: 1680
+[GC finalMask] final ratio: 0.109311 | mode: PR_FGD
+ | Frame: 22 | nonZero AFTER GrabCut: 1698
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 981
+[GC finalMask] final ratio: 0.100373 | mode: PR_FGD
  | Frame: 23 | nonZero AFTER GrabCut: 1563
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 906
- | Frame: 24 | nonZero AFTER GrabCut: 1458
+[GC finalMask] final ratio: 0.094393 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1471
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 1024
- | Frame: 25 | nonZero AFTER GrabCut: 1598
+[GC finalMask] final ratio: 0.102816 | mode: PR_FGD
+ | Frame: 25 | nonZero AFTER GrabCut: 1604
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 1021
- | Frame: 26 | nonZero AFTER GrabCut: 1884
+[GC finalMask] final ratio: 0.121206 | mode: PR_FGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1889
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 1038
- | Frame: 27 | nonZero AFTER GrabCut: 1773
+[GC finalMask] final ratio: 0.114262 | mode: PR_FGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1782
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1132
- | Frame: 28 | nonZero AFTER GrabCut: 1818
+[GC finalMask] final ratio: 0.116898 | mode: PR_FGD
+ | Frame: 28 | nonZero AFTER GrabCut: 1825
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1172
- | Frame: 29 | nonZero AFTER GrabCut: 1804
+[GC finalMask] final ratio: 0.119663 | mode: PR_FGD
+ | Frame: 29 | nonZero AFTER GrabCut: 1864
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 1181
- | Frame: 30 | nonZero AFTER GrabCut: 1286
+[GC finalMask] final ratio: 0.120499 | mode: PR_FGD
+ | Frame: 30 | nonZero AFTER GrabCut: 1875
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1206
- | Frame: 31 | nonZero AFTER GrabCut: 882
+[GC finalMask] final ratio: 0.10751 | mode: PR_FGD
+ | Frame: 31 | nonZero AFTER GrabCut: 1676
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1313
- | Frame: 32 | nonZero AFTER GrabCut: 581
+[GC finalMask] final ratio: 0.0802469 | mode: PR_FGD
+ | Frame: 32 | nonZero AFTER GrabCut: 1250
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 1199
- | Frame: 33 | nonZero AFTER GrabCut: 169
+[GC finalMask] final ratio: 0.0529192 | mode: PR_FGD
+ | Frame: 33 | nonZero AFTER GrabCut: 825
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 885
- | Frame: 34 | nonZero AFTER GrabCut: 80
+[GC finalMask] final ratio: 0.0335005 | mode: PR_FGD
+ | Frame: 34 | nonZero AFTER GrabCut: 513
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 681
- | Frame: 35 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.0174254 | mode: PR_FGD
+ | Frame: 35 | nonZero AFTER GrabCut: 247
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 295
- | Frame: 36 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00713735 | mode: PR_FGD
+ | Frame: 36 | nonZero AFTER GrabCut: 102
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 138
- | Frame: 37 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.00392233 | mode: PR_FGD
+ | Frame: 37 | nonZero AFTER GrabCut: 57
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 94
+[GC finalMask] final ratio: 0.000450103 | mode: PR_FGD
  | Frame: 38 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 62
@@ -2559,7 +3118,7 @@ MediaPipe fallback used: 0
 [MOG2] Frame: 38 | nonZero: 1953 | ratio: 0.101719
 [MOG2] Frame: 39 | nonZero: 2023 | ratio: 0.105365
 ----------------------------------------
-===== NEW SEQUENCE: data/sequences/person21_jogging_d4 =====
+===== SEQUENCE: data/sequences/person21_jogging_d4 =====
  | Frame: 0 | nonZero BEFORE GrabCut: 89
  | Frame: 0 | nonZero AFTER GrabCut: 0
 ----------------------------------------
@@ -2597,88 +3156,116 @@ MediaPipe fallback used: 0
  | Frame: 11 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 12 | nonZero BEFORE GrabCut: 143
+[GC finalMask] final ratio: 0.23071 | mode: PR_BGD
  | Frame: 12 | nonZero AFTER GrabCut: 0
 ----------------------------------------
  | Frame: 13 | nonZero BEFORE GrabCut: 159
- | Frame: 13 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.522055 | mode: PR_BGD
+ | Frame: 13 | nonZero AFTER GrabCut: 44
 ----------------------------------------
  | Frame: 14 | nonZero BEFORE GrabCut: 185
- | Frame: 14 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.502122 | mode: PR_BGD
+ | Frame: 14 | nonZero AFTER GrabCut: 63
 ----------------------------------------
  | Frame: 15 | nonZero BEFORE GrabCut: 242
- | Frame: 15 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.492541 | mode: PR_BGD
+ | Frame: 15 | nonZero AFTER GrabCut: 175
 ----------------------------------------
  | Frame: 16 | nonZero BEFORE GrabCut: 299
- | Frame: 16 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.546553 | mode: PR_BGD
+ | Frame: 16 | nonZero AFTER GrabCut: 389
 ----------------------------------------
  | Frame: 17 | nonZero BEFORE GrabCut: 307
- | Frame: 17 | nonZero AFTER GrabCut: 0
+[GC finalMask] final ratio: 0.560378 | mode: PR_BGD
+ | Frame: 17 | nonZero AFTER GrabCut: 389
 ----------------------------------------
  | Frame: 18 | nonZero BEFORE GrabCut: 294
- | Frame: 18 | nonZero AFTER GrabCut: 26
+[GC finalMask] final ratio: 0.580311 | mode: PR_BGD
+ | Frame: 18 | nonZero AFTER GrabCut: 428
 ----------------------------------------
  | Frame: 19 | nonZero BEFORE GrabCut: 229
- | Frame: 19 | nonZero AFTER GrabCut: 123
+[GC finalMask] final ratio: 0.517233 | mode: PR_BGD
+ | Frame: 19 | nonZero AFTER GrabCut: 401
 ----------------------------------------
  | Frame: 20 | nonZero BEFORE GrabCut: 304
- | Frame: 20 | nonZero AFTER GrabCut: 227
+[GC finalMask] final ratio: 0.565329 | mode: PR_BGD
+ | Frame: 20 | nonZero AFTER GrabCut: 496
 ----------------------------------------
  | Frame: 21 | nonZero BEFORE GrabCut: 244
- | Frame: 21 | nonZero AFTER GrabCut: 281
+[GC finalMask] final ratio: 0.589892 | mode: PR_BGD
+ | Frame: 21 | nonZero AFTER GrabCut: 484
 ----------------------------------------
  | Frame: 22 | nonZero BEFORE GrabCut: 249
- | Frame: 22 | nonZero AFTER GrabCut: 351
+[GC finalMask] final ratio: 0.559799 | mode: PR_BGD
+ | Frame: 22 | nonZero AFTER GrabCut: 711
 ----------------------------------------
  | Frame: 23 | nonZero BEFORE GrabCut: 370
- | Frame: 23 | nonZero AFTER GrabCut: 465
+[GC finalMask] final ratio: 0.05009 | mode: PR_FGD
+ | Frame: 23 | nonZero AFTER GrabCut: 787
 ----------------------------------------
  | Frame: 24 | nonZero BEFORE GrabCut: 496
- | Frame: 24 | nonZero AFTER GrabCut: 610
+[GC finalMask] final ratio: 0.0977366 | mode: PR_FGD
+ | Frame: 24 | nonZero AFTER GrabCut: 1511
 ----------------------------------------
  | Frame: 25 | nonZero BEFORE GrabCut: 833
- | Frame: 25 | nonZero AFTER GrabCut: 757
+[GC finalMask] final ratio: 0.58314 | mode: PR_BGD
+ | Frame: 25 | nonZero AFTER GrabCut: 976
 ----------------------------------------
  | Frame: 26 | nonZero BEFORE GrabCut: 1082
- | Frame: 26 | nonZero AFTER GrabCut: 1000
+[GC finalMask] final ratio: 0.616255 | mode: PR_BGD
+ | Frame: 26 | nonZero AFTER GrabCut: 1578
 ----------------------------------------
  | Frame: 27 | nonZero BEFORE GrabCut: 1319
- | Frame: 27 | nonZero AFTER GrabCut: 1135
+[GC finalMask] final ratio: 0.612719 | mode: PR_BGD
+ | Frame: 27 | nonZero AFTER GrabCut: 1968
 ----------------------------------------
  | Frame: 28 | nonZero BEFORE GrabCut: 1466
- | Frame: 28 | nonZero AFTER GrabCut: 1405
+[GC finalMask] final ratio: 0.588542 | mode: PR_BGD
+ | Frame: 28 | nonZero AFTER GrabCut: 2249
 ----------------------------------------
  | Frame: 29 | nonZero BEFORE GrabCut: 1459
- | Frame: 29 | nonZero AFTER GrabCut: 8367
+[GC finalMask] final ratio: 0.588863 | mode: PR_BGD
+ | Frame: 29 | nonZero AFTER GrabCut: 2481
 ----------------------------------------
  | Frame: 30 | nonZero BEFORE GrabCut: 1464
- | Frame: 30 | nonZero AFTER GrabCut: 8719
+[GC finalMask] final ratio: 0.604938 | mode: PR_BGD
+ | Frame: 30 | nonZero AFTER GrabCut: 2493
 ----------------------------------------
  | Frame: 31 | nonZero BEFORE GrabCut: 1505
- | Frame: 31 | nonZero AFTER GrabCut: 8740
+[GC finalMask] final ratio: 0.600051 | mode: PR_BGD
+ | Frame: 31 | nonZero AFTER GrabCut: 4254
 ----------------------------------------
  | Frame: 32 | nonZero BEFORE GrabCut: 1453
- | Frame: 32 | nonZero AFTER GrabCut: 8095
+[GC finalMask] final ratio: 0.583591 | mode: PR_BGD
+ | Frame: 32 | nonZero AFTER GrabCut: 4079
 ----------------------------------------
  | Frame: 33 | nonZero BEFORE GrabCut: 1366
- | Frame: 33 | nonZero AFTER GrabCut: 4465
+[GC finalMask] final ratio: 0.315715 | mode: PR_BGD
+ | Frame: 33 | nonZero AFTER GrabCut: 4010
 ----------------------------------------
  | Frame: 34 | nonZero BEFORE GrabCut: 1295
- | Frame: 34 | nonZero AFTER GrabCut: 4730
+[GC finalMask] final ratio: 0.331276 | mode: PR_BGD
+ | Frame: 34 | nonZero AFTER GrabCut: 2443
 ----------------------------------------
  | Frame: 35 | nonZero BEFORE GrabCut: 1459
- | Frame: 35 | nonZero AFTER GrabCut: 5013
+[GC finalMask] final ratio: 0.333719 | mode: PR_BGD
+ | Frame: 35 | nonZero AFTER GrabCut: 3452
 ----------------------------------------
  | Frame: 36 | nonZero BEFORE GrabCut: 1480
- | Frame: 36 | nonZero AFTER GrabCut: 3178
+[GC finalMask] final ratio: 0.239583 | mode: PR_BGD
+ | Frame: 36 | nonZero AFTER GrabCut: 3573
 ----------------------------------------
  | Frame: 37 | nonZero BEFORE GrabCut: 1590
- | Frame: 37 | nonZero AFTER GrabCut: 3000
+[GC finalMask] final ratio: 0.205247 | mode: PR_BGD
+ | Frame: 37 | nonZero AFTER GrabCut: 2534
 ----------------------------------------
  | Frame: 38 | nonZero BEFORE GrabCut: 1592
- | Frame: 38 | nonZero AFTER GrabCut: 2513
+[GC finalMask] final ratio: 0.171168 | mode: PR_FGD
+ | Frame: 38 | nonZero AFTER GrabCut: 2695
 ----------------------------------------
  | Frame: 39 | nonZero BEFORE GrabCut: 1623
- | Frame: 39 | nonZero AFTER GrabCut: 2296
+[GC finalMask] final ratio: 0.157407 | mode: PR_FGD
+ | Frame: 39 | nonZero AFTER GrabCut: 2448
 ----------------------------------------
 =========== SUMMARY ===========
 Sequence: data/sequences/person21_jogging_d4
