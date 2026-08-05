@@ -3,10 +3,6 @@
 #include <opencv2/opencv.hpp>
 #include <vector>
 
-// bool isHumanLikeBox(
-//     const cv::Rect& box,
-//     const cv::Size& frameSize
-// );
 
 std::vector<cv::Rect> smoothBBoxes(
     const std::vector<cv::Rect>& bboxes,
@@ -16,5 +12,5 @@ std::vector<cv::Rect> smoothBBoxes(
 
 std::vector<cv::Rect> findBBox(
     const std::vector<cv::Mat>& masks,
-    int minContourArea = 20
+    int minContourArea = 1
 );

@@ -1,26 +1,5 @@
 #include "segmentation/BoundingBox.hpp"
 
-// // FILTRO: LA DIMENSIONE DELLA BBOX DEVE ESSERE DI GRANDEZZA UMANA
-// non è utile perchè la box puo avere qualsiasi dimensione.
-
-// bool isHumanLikeBox(const cv::Rect& box, const cv::Size& frameSize) {
-//     if (box.area() <= 0) return false;
-
-//     double imageArea = frameSize.width * frameSize.height;
-//     double areaRatio = static_cast<double>(box.area()) / imageArea;
-
-//     double aspect = static_cast<double>(box.width) / box.height;
-
-//     if (areaRatio < 0.002) return false;  // troppo piccolo
-//     if (areaRatio > 0.35) return false;   // troppo grande, probabile ombra/sfondo
-
-//     if (aspect < 0.15) return false;      // troppo stretto
-//     if (aspect > 0.90) return false;      // troppo largo per una persona verticale
-
-//     return true;
-// }
-
-// //--------------------------------------------------------------------------------------
 
 //--------------------------------------------------------------------------------------
 
@@ -154,6 +133,8 @@ std::vector<cv::Rect> findBBox(
         }
 
         // controllo se contorni sono validi, cioe area > 20
+        // per ora  ho quasi disattivato questo controllo perchè riprosto in removeShadow()
+        // ho messo controllo aarea >1
         cv::Rect finalBox;
         bool hasValidContour = false;
 

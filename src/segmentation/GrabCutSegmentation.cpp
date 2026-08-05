@@ -15,7 +15,7 @@
 cv::Rect getCentralROI(const cv::Mat& img)
 {
     int roiWidth  = static_cast<int>(img.cols * 0.9);
-    int roiHeight = static_cast<int>(img.rows * 0.9);
+    int roiHeight = static_cast<int>(img.rows * 0.99);
 
     int x = (img.cols - roiWidth) / 2;
     int y = (img.rows - roiHeight) / 2;

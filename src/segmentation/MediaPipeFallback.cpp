@@ -32,7 +32,7 @@ bool shouldUseMediaPipeForSequence(
 
 //--------------------------------------------------------------------------------------
 // USO MEDIAPIPE COME FALLBACK PER IL CASO DI CAMBIO DI SCALA (D2)
-// SE MOTION MASK NERA ALLORA USA MEDIAPIPE
+// SE numero MOTION MASK NERe nel folder > 10  ALLORA USA MEDIAPIPE
 
 cv::Rect getMediaPipeROI(const cv::Mat& frame)
 {
@@ -42,10 +42,10 @@ cv::Rect getMediaPipeROI(const cv::Mat& frame)
     cv::imwrite(imgPath, frame);
 
     std::string scriptPath =
-        "/home/roaming/gidomat18904/comp_vision/ActionRecognition/mp_roi.py";
+        "mp_roi.py";
 
     std::string modelPath =
-        "/home/roaming/gidomat18904/comp_vision/ActionRecognition/pose_landmarker_lite.task";
+        "pose_landmarker_lite.task";
 
     std::string command =
         "python3 " + scriptPath + " " + imgPath + " " + modelPath + " > " + outPath;

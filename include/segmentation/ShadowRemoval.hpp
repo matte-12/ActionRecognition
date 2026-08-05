@@ -2,5 +2,5 @@
 
 #include <opencv2/opencv.hpp>
 
-// cv::Mat createDarkMask(const cv::Mat& frame);
+cv::Mat removeShadow(const cv::Mat& mask);
 

@@ -63,6 +63,17 @@ void Segmentation::extractBBox( SequenceData& sequence) {
         useMediaPipeForSequence
         );
 
+    // pulisco la mask dalle ombre
+
+        for (cv::Mat& mask : finalImgsMask)
+    {
+        mask = removeShadow(mask);
+    }
+    
+    //applico ancora un fill temporale perchè alcune images sono diventate nere
+    // causa vincoli forti si removeShadow()
+    filteredImgs = fillEmptySeedsTemporal(filteredImgs);
+
     // Salvo nella struct sequences le final mask
 
     sequence.finalMasks = finalImgsMask;
