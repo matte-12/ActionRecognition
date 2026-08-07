@@ -10,20 +10,43 @@
 #include "segmentation/VisualizationTest.hpp"
 
 
-// NB HA ANCORA PROBLEMI CON OMBRE E CAMBI DI LUCE
+static bool removeTinyMasks(
+     std::vector<cv::Mat>& masks,
+    int minNonZero, std::string name)
+{
 
+    int count = 0;
+
+    for (size_t i = 0; i < masks.size(); i++)
+    {
+        int nonZero = cv::countNonZero(masks[i]);
+
+        if (nonZero > 0 && nonZero < minNonZero )
+        {
+            masks[i] = cv::Mat::zeros(masks[i].size(), CV_8UC1);
+            count++;
+        }
+    
+    }
+
+    std::cout << "[removeTinyMasks] removed tiny masks from" + name + ": "
+            << count << std::endl;
+
+    return count > 0;
+}
+
+//--------------------------------------------------------------------------------------
+
+// NB HA ANCORA PROBLEMI CON OMBRE E CAMBI DI LUCE
 // funzione public che estrae le BBox finali 
 
 void Segmentation::extractBBox( SequenceData& sequence) {
 
-
-
-    std::vector<cv::Mat> filteredImgs; //vettore con immagini che vengo modificate e filtrate
+    //vettore con immagini che vengo modificate e filtrate
+    std::vector<cv::Mat> filteredImgs; 
 
     // applico mog2 per ricavare foreground
-    
     filteredImgs = (filterMOG2(sequence.frames)) ; 
-
 
     //applico morphology
     // NB: HO NOTATO CHE CON KERNEL (3,3) PRENDE ANCHE HANDCLAPPING, CON KERNEL (5,5) NON CI RIESCE
@@ -31,9 +54,6 @@ void Segmentation::extractBBox( SequenceData& sequence) {
     // NB: CAMBIO LA THRESHOLD PER EFFETTI SULL'ILLUMINAZIONE
 
     filteredImgs = (filterMorphology(filteredImgs));
-
-
-    //  showMasks(filteredImgs); 
 
     // Salvo la motion mask (seeds) in sequence.motionMasks (utile per feature extraction)
 
@@ -51,9 +71,7 @@ void Segmentation::extractBBox( SequenceData& sequence) {
         filteredImgs = fillEmptySeedsTemporal(filteredImgs);
     }       
 
-
     // Cerco maschera finale: applico GrabCut, se maschera ancora nera uso GrabcutMediaPipe
-
     std::vector<cv::Mat> finalImgsMask; 
 
     finalImgsMask = getFinalMask(
@@ -74,26 +92,25 @@ void Segmentation::extractBBox( SequenceData& sequence) {
     // // causa vincoli forti si removeShadow()
     // filteredImgs = fillEmptySeedsTemporal(filteredImgs);
 
-    // // Salvo nella struct sequences le final mask
+    // se grabcut non è riuscito a ricostruire l'img da piccoli elementi (area<200)
+    // nota che soglia molto alta perche dal log dopo grabcut vanno quesi tutti a 1000 nonZero, tranne i casi in questione
+    // allora faccio fill temporale
+    bool flag = removeTinyMasks(finalImgsMask, 120, sequence.name);
 
+    if(flag)
+        filteredImgs = fillEmptySeedsTemporal(filteredImgs);
+
+    // // Salvo nella struct sequences la final mask
     sequence.finalMasks = finalImgsMask;
-
 
     //mostra se funziona maschera
     // showMasks(finalImgsMask);  
 
     // ritorna vettore di Rect
-
     std::vector<cv::Rect> bboxes = findBBox(finalImgsMask);
 
     // Salvo nella struct sequences le BBoxes
-    
     sequence.BBoxes = bboxes;
-
-    // SMOOTH BBOX
-    // lo smoothing non risponde benissimo quando i soggetti corrono
-
-    // bboxes = smoothBBoxes(bboxes, 0.50, 3);
 
     // mostra bbox
     //  showBBoxes(sequence.frames, bboxes);

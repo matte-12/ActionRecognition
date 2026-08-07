@@ -2,7 +2,10 @@
 
 #include "Types.hpp"
 
-class Classifier {
+class Classifier
+{
 public:
-    int predict();
+    int predict(const SequenceFeatures& features);
+
+
 };

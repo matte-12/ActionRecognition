@@ -50,6 +50,8 @@ pose_landmarker_lite.task
 shadow_switch_stats.txt
 temp_mediapipe_frame.jpg
 temp_mediapipe_roi.txt
+features_log.txt
+features_log.csv
 
 # IDE / editors
 .vscode/

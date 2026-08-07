@@ -3,23 +3,24 @@
 
 //SALVA LE MASK FINALI NELLA STESSA CARTELLA DELLE SEQUENZE (SEMPRE DENTRO RESULTS)
 
-void Visualizer::saveFinalMasks(
-    const SequenceData& sequence,
-    const std::string& outputFolder)
+void Visualizer::saveMasks(
+    const std::string& sequenceName,
+    const std::vector<cv::Mat>& maschera ,
+    const std::string& outputFolder,
+    const std::string lastFolderName)
 {
     namespace fs = std::filesystem;
 
-    fs::path sequenceOutputPath =
-        fs::path(outputFolder) / sequence.name / "masks";
+    fs::path sequenceOutputPath = fs::path(outputFolder) / sequenceName / lastFolderName;
 
     if (!fs::exists(sequenceOutputPath))
     {
         fs::create_directories(sequenceOutputPath);
     }
 
-    for (size_t i = 0; i < sequence.finalMasks.size(); i++)
+    for (size_t i = 0; i < maschera.size(); i++)
     {
-        const cv::Mat& mask = sequence.finalMasks[i];
+        const cv::Mat& mask = maschera[i];
 
         if (mask.empty())
             continue;
@@ -98,7 +99,7 @@ void Visualizer:: salvataggio (cv:: Mat& img, fs::path& sequenceOutputPath, int 
 
 //-------------------------------------------------------------------------------------------
 
-// UNISCO FRAME CON BBOX CON LABEL
+// UNISCO FRAME BBOX CON LABEL
 
 cv::Mat Visualizer :: unione (cv::Mat& frame, std::string& label, cv::Rect& bbox){
 
@@ -154,16 +155,16 @@ cv::Mat Visualizer :: unione (cv::Mat& frame, std::string& label, cv::Rect& bbox
 }
 
 //-------------------------------------------------------------------------------------------
-
+// 1= Boxing 2= handclapping 3= handwaving 4= jogging 5= running 6= walking
 std::string Visualizer :: conversione(int predictedLabel){
 
     switch(predictedLabel){
-         case 1: return "walking";
-        case 2: return "jogging";
-        case 3: return "running";
-        case 4: return "boxing";
-        case 5: return "handwaving";
-        case 6: return "handclapping";
+         case 1: return "boxing";
+        case 2: return "handclapping";
+        case 3: return "handwaving";
+        case 4: return "jogging";
+        case 5: return "running";
+        case 6: return "walking";
         default: return "unknown";
     }
 
@@ -191,7 +192,7 @@ void Visualizer::saveSequenceOutput(
     std::vector <cv::Mat> imgs; 
 
  // Cartella finale: results/nome_sequenza/
-    fs::path sequenceOutputPath = fs::path(outputFolder) / sequenza.name;
+    fs::path sequenceOutputPath = fs::path(outputFolder) / sequenza.name / "output";
 
     for(size_t i = 0; i< sequenza.frames.size(); i++){
 
@@ -207,8 +208,8 @@ void Visualizer::saveSequenceOutput(
 
 // salva le fianl masks
 
-    saveFinalMasks(sequenza, "results");
-
+    saveMasks(sequenza.name, sequenza.finalMasks, "results", "masks");
+    saveMasks(sequenza.name, sequenza.motionMasks, "results", "motion_masks");
 }
 
 //-------------------------------------------------------------------------------------------

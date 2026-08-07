@@ -1,100 +1,6 @@
 #include "segmentation/BoundingBox.hpp"
 
 
-//--------------------------------------------------------------------------------------
-
-// // FACENDO SMOOTH EVITA CHE CI SIANO CAMBI BRUSCHI NELLE BBOX
-// // (NON LA STO USANDO, NON MI HA CONVINTO)
-
-// std::vector<cv::Rect> smoothBBoxes(
-//     const std::vector<cv::Rect>& bboxes,
-//     double alpha ,
-//     int maxEmptyGap )
-// {
-//     std::vector<cv::Rect> smoothed;
-
-//     if (bboxes.empty())
-//         return smoothed;
-
-//     cv::Rect2d lastBox;
-//     bool hasLastBox = false;
-
-//     int emptyGap = 0;
-
-//     for (size_t i = 0; i < bboxes.size(); i++)
-//     {
-//         const cv::Rect& current = bboxes[i];
-
-//         // Caso bbox vuota
-//         if (current.area() <= 0)
-//         {
-//             emptyGap++;
-
-//             // Se mancano pochi frame, mantengo la bbox precedente
-//             if (hasLastBox && emptyGap <= maxEmptyGap)
-//             {
-//                 smoothed.push_back(cv::Rect(
-//                     static_cast<int>(lastBox.x),
-//                     static_cast<int>(lastBox.y),
-//                     static_cast<int>(lastBox.width),
-//                     static_cast<int>(lastBox.height)
-//                 ));
-//             }
-//             else
-//             {
-//                 smoothed.push_back(cv::Rect());
-//                 hasLastBox = false;
-//             }
-
-//             continue;
-//         }
-
-//         emptyGap = 0;
-
-//         cv::Rect2d currentBox(
-//             current.x,
-//             current.y,
-//             current.width,
-//             current.height
-//         );
-
-//         // Primo box valido
-//         if (!hasLastBox)
-//         {
-//             lastBox = currentBox;
-//             hasLastBox = true;
-
-//             smoothed.push_back(current);
-//             continue;
-//         }
-
-//         // Exponential smoothing
-//         cv::Rect2d newBox;
-
-//         newBox.x =
-//             alpha * currentBox.x + (1.0 - alpha) * lastBox.x;
-
-//         newBox.y =
-//             alpha * currentBox.y + (1.0 - alpha) * lastBox.y;
-
-//         newBox.width =
-//             alpha * currentBox.width + (1.0 - alpha) * lastBox.width;
-
-//         newBox.height =
-//             alpha * currentBox.height + (1.0 - alpha) * lastBox.height;
-
-//         lastBox = newBox;
-
-//         smoothed.push_back(cv::Rect(
-//             static_cast<int>(newBox.x),
-//             static_cast<int>(newBox.y),
-//             static_cast<int>(newBox.width),
-//             static_cast<int>(newBox.height)
-//         ));
-//     }
-
-//     return smoothed;
-// }
 
 //--------------------------------------------------------------------------------------
 //TROVA LA BBOX perogni MASCHERA FINALE. Prende i diversi contorni e li unisce in una unica BBox
@@ -134,7 +40,7 @@ std::vector<cv::Rect> findBBox(
 
         // controllo se contorni sono validi, cioe area > 20
         // per ora  ho quasi disattivato questo controllo perchè riprosto in removeShadow()
-        // ho messo controllo aarea >1
+        // ho messo controllo area >1
         cv::Rect finalBox;
         bool hasValidContour = false;
 

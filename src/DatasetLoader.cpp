@@ -138,7 +138,7 @@ std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath
 
     seq.name = path;
     seq.frames = getFrames(path);
-    sequenza.push_back(seq);
+    
 
 // funzione che imposta .trueLabel, .gtBBox20, .hasGT. Sempre che sia presente la gt.txt
 
@@ -146,6 +146,8 @@ std::vector<SequenceData> DatasetLoader::loadDataset(const std::string& rootPath
     if(!flag){
         std::cout<< "subfolder"<< seq.name << "non ha caricato correttamente la groundTruth" << std::endl;
     }
+
+    sequenza.push_back(seq);
 
 }
 

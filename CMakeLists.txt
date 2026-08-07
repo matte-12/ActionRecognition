@@ -22,6 +22,7 @@ add_executable(ActionRecognition
     src/segmentation/ShadowRemoval.cpp
     src/segmentation/MediaPipeFallback.cpp
     src/segmentation/VisualizationTest.cpp
+    src/SavedSegmentationLoader.cpp
     src/DatasetLoader.cpp
     src/Visualizer.cpp
     src/FeatureExtractor.cpp

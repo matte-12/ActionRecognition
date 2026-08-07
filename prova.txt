@@ -1,0 +1,61 @@
+#include "SavedSegmentationLoader.hpp"
+#include "segmentation/BoundingBox.hpp"
+
+#include <opencv2/opencv.hpp>
+
+#include <filesystem>
+#include <algorithm>
+#include <iostream>
+#include <vector>
+
+namespace fs = std::filesystem;
+
+//-------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------
+
+static std::vector<cv::Mat> loadSavedMasks(
+    const std::string& sequenceName,
+    const std::string& resultsRoot)
+{
+    std::vector<cv::Mat> masks;
+
+    fs::path maskFolder = buildMaskFolderPath(sequenceName, resultsRoot);
+
+    std::cout << "[SavedSegmentationLoader] Looking for masks in: "
+          << maskFolder << std::endl;
+
+    if (!fs::exists(maskFolder))
+    {
+        std::cerr << "[SavedSegmentationLoader] Mask folder does not exist: "
+                  << maskFolder << std::endl;
+        return masks;
+    }
+
+    std::vector<cv::String> files;
+
+    cv::glob((maskFolder / "*.png").string(), files, false);
+
+    std::vector<cv::String> jpgFiles;
+    cv::glob((maskFolder / "*.jpg").string(), jpgFiles, false);
+
+    files.insert(files.end(), jpgFiles.begin(), jpgFiles.end());
+
+    std::sort(files.begin(), files.end());
+    
+    for (const auto& file : files)
+    {
+        cv::Mat mask = cv::imread(file, cv::IMREAD_GRAYSCALE);
+
+        if (mask.empty())
+        {
+            std::cerr << "[SavedSegmentationLoader] Cannot read mask: "
+                      << file << std::endl;
+            continue;
+        }
+
+        masks.push_back(mask);
+    }
+
+    return masks;
+}

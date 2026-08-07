@@ -9,9 +9,9 @@ class FeatureExtractor
 {
 public:
     SequenceFeatures extract(const SequenceData& sequence);
-
-private:
-    double computeMean(const std::vector<double>& values);
-    double computeVariation(const std::vector<double>& values, double mean);
+    
+    void logFeatures(
+        const SequenceFeatures& features,
+        const std::string& logPath);
 };
 

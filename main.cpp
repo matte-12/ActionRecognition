@@ -2,24 +2,27 @@
 #include <vector>
 #include <string>
 #include <filesystem>
+#include <fstream>
+
 #include "DatasetLoader.hpp"
 #include "segmentation/Segmentation.hpp"
 #include "Visualizer.hpp"
 #include "Classifier.hpp"
 #include "FeatureExtractor.hpp"
 #include "Metrics.hpp"
+#include "SavedSegmentationLoader.hpp"
+
 
 //----------------------------------------------------------------------------------------
 //FUNZIONI DEL MAIN
 //-------------------------------------------------------------------------------------------
 
 
-
 //-------------------------------------------------------------------------------------------
-//-------------------------------------------------------------------------------------------
-
 
 int main(int argc, char** argv) {
+
+
     std::cout << "Action Recognition: " << std::endl;
 
     if (argc >= 3) {
@@ -28,9 +31,9 @@ int main(int argc, char** argv) {
     } else {
         std::cout << "Usage: ./ActionRecognition <dataset_path> <results_path>" << std::endl;
     }
+
 //-------------------------------------------------------------------------------------
 //controlli sull'argv -------------------------------------------------------------------
-//-------------------------------------------------------------------------------------
 
 // da fare...
 
@@ -46,10 +49,13 @@ int main(int argc, char** argv) {
     std::string sequencesPath = argv[1];
     //std::string sequencesPath = "local_sequences/";
 
+    std::string resultsPath = argv[2];
+    //std::string resultsPath = "results/";
+
     DatasetLoader loader;
     std::vector<SequenceData> sequenze = loader.loadDataset(sequencesPath);
         
-//-------------------------------------------------------------------------------------
+
 
 //-------------------------------------------------------------------------------------
 // carico tutti i SequenceData.frames, uno alla volta, in segmentation. 
@@ -59,54 +65,89 @@ int main(int argc, char** argv) {
 //
 // mostra le mask e bbox in tempo reale
 //-------------------------------------------------------------------------------------
-    
+ 
+
+//-------------------------------------------------------------------------------------
+// Segmentation / reload --> Feature extraction
+// Feature Extractor + non ricalcola le maschere con flag + log file
+
+    std::ofstream clearFeatureLog("features_log.csv", std::ios::trunc);
+    clearFeatureLog.close();
+
+    std::ofstream clearMotionLog("motion_mask_stats.txt", std::ios::trunc);
+    clearMotionLog.close();
+   
+
     Segmentation segment;
 
-    //seq ausiliario per usare Segmentation su tutti i SequenceData sequenze
-    for( auto& seq : sequenze){
-        segment.extractBBox(seq);
+    // trick per decidere se ricalcolare le mask o meno
+    bool haveSegments = true;
+
+    FeatureExtractor featureExt;
+    std::vector<SequenceFeatures> allFeatures;
+    std::vector<SequenceData*> validSequences;
+
+    Classifier classifier;
+    std::vector<int> predictedLabels;
+
+    Metrics metrics;
+
+    for (auto& seq : sequenze)
+    {
+        if (!haveSegments)
+        {
+            segment.extractBBox(seq);
+        }
+        else
+        {
+            bool loaded = loadSavedSegmentation(seq, resultsPath);
+
+            if (!loaded)
+            {
+                std::cerr << "Could not load saved segmentation for: "
+                        << seq.name << std::endl;
+                continue;
+            }
+        }
+
+        SequenceFeatures features = featureExt.extract(seq);
+        allFeatures.push_back(features);
+
+        int predictedLabel = classifier.predict(features);
+        predictedLabels.push_back(predictedLabel);
+
+        featureExt.logFeatures(features, "features_log.csv");
+
+        metrics.addResult(seq, predictedLabel);
+
+        validSequences.push_back(&seq);
     }
-
-
-//-------------------------------------------------------------------------------------
+        
 
 //-------------------------------------------------------------------------------------
-//Visualizer va messo per ultimo. Servono le predictedLabel estratte con FeatureExtraction
-// e classificate con Classifier!!
-
-//NB int predictedLabel: 1= Walking 2= jogging ... (da decidere)
-        // case 1: return "walking";
-        // case 2: return "jogging";
-        // case 3: return "running";
-        // case 4: return "boxing";
-        // case 5: return "handwaving";
-        // case 6: return "handclapping";
-        // default: return "unknown";
+//NB int predictedLabel: 1= Boxing 2= handclapping 3= handwaving 4= jogging 5= running 6= walking
 
 // Salvo frame unito  BBox unito predictedLabel nella cartella results/ 
-
-// DA MODIFICARE PREDICTEDLABEL !!!
 //-------------------------------------------------------------------------------------
+    if(!haveSegments){
+        Visualizer visualizer;
 
-    int predictedLabel = 1; // messo di prova
-
-    std::string resultsPath = argv[2];
-    //std::string resultsPath = "results/";
-
-    Visualizer visualizer;
-
-    for (const auto& seq : sequenze){
-
-        visualizer.saveSequenceOutput(
-            seq,
-            predictedLabel,
-            resultsPath
-        );
-
+        for (size_t i = 0; i < validSequences.size(); i++)
+        {
+            visualizer.saveSequenceOutput(
+                *validSequences[i],
+                predictedLabels[i],
+                resultsPath
+            );
+        }
     }
-    
+//-------------------------------------------------------------------------------------
+    // Metrics
 
-//---------------------------------------------------------------------------------------
+    metrics.printSummary();
+    metrics.saveResultsCSV(resultsPath + "/classification_results.csv");
+    metrics.saveSummaryCSV(resultsPath + "/metrics_summary.txt");
+
 //-------------------------------------------------------------------------------------
 
     return 0;
