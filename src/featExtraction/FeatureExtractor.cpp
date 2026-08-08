@@ -1,4 +1,6 @@
-#include "FeatureExtractor.hpp"
+#include "featExtraction/FeatureExtractor.hpp"
+#include "featExtraction/MotionStats.hpp"
+#include "featExtraction/OpticalFlow.hpp"
 
 #include <opencv2/opencv.hpp>
 
@@ -9,38 +11,6 @@
 #include <filesystem>
 
 namespace fs = std::filesystem;
-
-struct MotionStats
-{
-    double motionEnergy = 0.0;
-
-    double upper = 0.0;
-    double middle = 0.0;
-    double lower = 0.0;
-
-    double left = 0.0;
-    double right = 0.0;
-
-    double centerRatio = 0.0;
-};
-
-//------------------------------------------------------------
-//------------------------------------------------------------
-
-static double motionDensity(
-    const cv::Mat& mask,
-    const cv::Rect& roi)
-{
-    if (roi.area() <= 0)
-        return 0.0;
-
-    return static_cast<double>(
-               cv::countNonZero(mask(roi))
-           ) /
-           static_cast<double>(roi.area());
-}
-
-
 
 //------------------------------------------------------------
 
@@ -332,168 +302,8 @@ static double computePathLength(
     return totalPath;
 }
 
-// ------------------------------------------------------------
-// divide l'immagine in tre fasce, alta, media bassa.
-// Calcola il numero di pixel bianchi per ogni fascia.
-// Puo aiutare a distinguere il tipo di movimento, es. handwaving ha movimento in alto
-
-static MotionStats computeBodyMotion(
-    const std::vector<cv::Mat>& motionMasks,
-    const std::vector<cv::Rect>& boxes)
-{
-    MotionStats stats;
-
-    if (motionMasks.size() != boxes.size())
-    {
-        std::cerr
-            << "[computeBodyMotion] SIZE MISMATCH: masks="
-            << motionMasks.size()
-            << " boxes="
-            << boxes.size()
-            << std::endl;
-
-        return stats;
-    }
-
-
-    int validFrames = 0;
-
-    double totalLeftPixels = 0.0;
-    double totalCenterPixels = 0.0;
-    double totalRightPixels = 0.0;
-
-    for (size_t i = 0; i < boxes.size(); i++)
-    {
-        const cv::Mat& mask = motionMasks[i];
-        const cv::Rect& box = boxes[i];
-
-        if (mask.empty() || box.area() <= 0)
-            continue;
-
-        cv::Rect imageRect(
-            0,
-            0,
-            mask.cols,
-            mask.rows
-        );
-
-        // da rivedere questa intersezione
-        cv::Rect safeBox = box;
-
-        if (safeBox.width < 3 ||
-            safeBox.height < 3)
-        {
-            continue;
-        }
-
-        // ----------------------------
-        // Movimento totale nella bbox
-        // ----------------------------
-
-        stats.motionEnergy +=
-            motionDensity(mask, safeBox);
-
-        // ----------------------------
-        // Upper / Middle / Lower
-        // ----------------------------
-
-        int h1 = safeBox.height / 3;
-        int h2 = safeBox.height / 3;
-
-        cv::Rect upper(
-            safeBox.x,
-            safeBox.y,
-            safeBox.width,
-            h1
-        );
-
-        cv::Rect middle(
-            safeBox.x,
-            safeBox.y + h1,
-            safeBox.width,
-            h2
-        );
-
-        cv::Rect lower(
-            safeBox.x,
-            safeBox.y + h1 + h2,
-            safeBox.width,
-            safeBox.height - h1 - h2
-        );
-
-        stats.upper += motionDensity(mask, upper);
-        stats.middle += motionDensity(mask, middle);
-        stats.lower += motionDensity(mask, lower);
-
-        // ----------------------------
-        // Left / Center / Right
-        // ----------------------------
-
-        int w1 = safeBox.width / 3;
-        int w2 = safeBox.width / 3;
-
-        cv::Rect left(
-            safeBox.x,
-            safeBox.y,
-            w1,
-            safeBox.height
-        );
-
-        cv::Rect center(
-            safeBox.x + w1,
-            safeBox.y,
-            w2,
-            safeBox.height
-        );
-
-        cv::Rect right(
-            safeBox.x + w1 + w2,
-            safeBox.y,
-            safeBox.width - w1 - w2,
-            safeBox.height
-        );
-
-        stats.left += motionDensity(mask, left);
-        stats.right += motionDensity(mask, right);
-
-        totalLeftPixels += cv::countNonZero(mask(left));
-        totalCenterPixels += cv::countNonZero(mask(center));
-        totalRightPixels += cv::countNonZero(mask(right));
-
-        validFrames++;
-    }
-
-    if (validFrames == 0)
-        return stats;
-
-    stats.motionEnergy /= validFrames;
-
-    stats.upper /= validFrames;
-    stats.middle /= validFrames;
-    stats.lower /= validFrames;
-
-    stats.left /= validFrames;
-    stats.right /= validFrames;
-
-    double totalHorizontalMotion =
-        totalLeftPixels +
-        totalCenterPixels +
-        totalRightPixels;
-
-    if (totalHorizontalMotion > 0.0)
-    {
-        stats.centerRatio =
-            totalCenterPixels /
-            totalHorizontalMotion;
-    }
-
-    return stats;
-}
-
-
 
 // ------------------------------------------------------------
-
 // ------------------------------------------------------------
 // Main feature extraction 
 
@@ -578,11 +388,7 @@ SequenceFeatures FeatureExtractor::extract(const SequenceData& sequence)
 
     // calcolo motion del corpo dividendo la bbox in 9 blocchi
 
-    MotionStats motion =
-        computeBodyMotion(
-            sequence.motionMasks,
-            sequence.BBoxes
-        );
+    MotionStats motion = computeBodyMotion(sequence.motionMasks, sequence.BBoxes);
     // motion enegy solo su motionMask
     features.motionEnergySeed = motion.motionEnergy;
 
@@ -599,6 +405,34 @@ SequenceFeatures FeatureExtractor::extract(const SequenceData& sequence)
     features.leftRightDifference = std::abs(motion.left - motion.right);
 
     features.centerMotionRatio = motion.centerRatio;
+
+    //optical flow
+
+    OpticalFlow flow = computeOpticalFlow(sequence);
+
+    features.meanFlowMagnitude = flow.meanFlowMagnitude;
+
+    features.maxFlowMagnitude = flow.maxFlowMagnitude;
+
+    features.upperHorizontalFlow = flow.upperHorizontalFlow;
+
+    features.upperVerticalFlow = flow.upperVerticalFlow;
+
+    features.flowConvergence = flow.flowConvergence;
+
+    features.lowerFlowMagnitude = flow.lowerFlowMagnitude;
+
+    features.leftX = flow.leftX;
+
+    features.rightX = flow.rightX;
+
+    features.leftAbsX = flow.leftAbsX;
+
+    features.rightAbsX = flow.rightAbsX;
+
+    features.horizontalSymmetry = flow.horizontalSymmetry;
+
+    features.strideFrequency = flow.strideFrequency;
 
     return features;
 }
@@ -646,6 +480,18 @@ void FeatureExtractor::logFeatures(
         << "upper_motion,middle_motion,lower_motion,"
         << "left_motion,right_motion,left_right_difference,"
         << "center_motion_ratio"
+        << ",mean_flow_magnitude"
+        << ",max_flow_magnitude"
+        << ",upper_horizontal_flow"
+        << ",upper_vertical_flow"
+        << ",flow_convergence"
+        << ",lower_flow_magnitude"
+        << ",left_x"
+        << ",right_x"
+        << ",left_abs_x"
+        << ",right_abs_x"
+        << ",horizontal_symmetry"
+        << ",stride_frequency"
         << "\n";
     }
 
@@ -689,7 +535,30 @@ void FeatureExtractor::logFeatures(
         << features.rightMotion << ","
         << features.leftRightDifference << ","
 
-        << features.centerMotionRatio
+        << features.centerMotionRatio << ","
+        << features.meanFlowMagnitude
+        << ","
+        << features.maxFlowMagnitude
+        << ","
+        << features.upperHorizontalFlow
+        << ","
+        << features.upperVerticalFlow
+        << ","
+        << features.flowConvergence
+        << ","
+        << features.lowerFlowMagnitude
+        << ","
+        << features.leftX
+        << ","
+        << features.rightX
+        << ","
+        << features.leftAbsX
+        << ","
+        << features.rightAbsX
+        << ","
+        << features.horizontalSymmetry
+        << ","
+        << features.strideFrequency
         << "\n";
 
     file.close();

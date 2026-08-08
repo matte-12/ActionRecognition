@@ -62,4 +62,34 @@ struct SequenceFeatures
     double leftRightDifference = 0.0;
 
     double centerMotionRatio = 0.0;
+
+    // optical flow
+    // Intensità media del movimento
+    double meanFlowMagnitude = 0.0;
+
+    // Picco massimo di movimento nella sequenza
+    double maxFlowMagnitude = 0.0;
+
+    // Movimento orizzontale nella parte superiore del corpo
+    double upperHorizontalFlow = 0.0;
+
+    // Movimento verticale nella parte superiore del corpo
+    double upperVerticalFlow = 0.0;
+
+    // Quanto il movimento tende a convergere/divergere verso/da il centro del corpo
+    double flowConvergence = 0.0;
+
+    // Intensità del movimento nella parte inferiore del corpo
+    double lowerFlowMagnitude = 0.0;
+    // simmetria dell'azione
+    double leftX = 0.0;
+    double rightX = 0.0;
+
+    double leftAbsX = 0.0;
+    double rightAbsX = 0.0;
+
+    double horizontalSymmetry = 0.0;
+
+    // utile per jogging vs running
+    double strideFrequency = 0.0;
 };

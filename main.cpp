@@ -8,7 +8,7 @@
 #include "segmentation/Segmentation.hpp"
 #include "Visualizer.hpp"
 #include "Classifier.hpp"
-#include "FeatureExtractor.hpp"
+#include "featExtraction/FeatureExtractor.hpp"
 #include "Metrics.hpp"
 #include "SavedSegmentationLoader.hpp"
 
@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
     Segmentation segment;
 
     // trick per decidere se ricalcolare le mask o meno
-    bool haveSegments = false;
+    bool haveSegments = true;
 
     FeatureExtractor featureExt;
     std::vector<SequenceFeatures> allFeatures;
@@ -111,6 +111,7 @@ int main(int argc, char** argv) {
         }
 
         SequenceFeatures features = featureExt.extract(seq);
+
         allFeatures.push_back(features);
 
         int predictedLabel = classifier.predict(features);

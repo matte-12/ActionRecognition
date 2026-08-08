@@ -85,13 +85,11 @@ int Classifier::predict(const SequenceFeatures& features)
 
     if (isLocomotion(features))
     {
-        predictedLabel =
-            classifyLocomotion(features);
+        predictedLabel = classifyLocomotion(features);
     }
     else
     {
-        predictedLabel =
-            classifyStaticAction(features);
+        predictedLabel = classifyStaticAction(features);
     }
 
 

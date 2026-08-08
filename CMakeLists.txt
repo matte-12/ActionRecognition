@@ -25,9 +25,12 @@ add_executable(ActionRecognition
     src/SavedSegmentationLoader.cpp
     src/DatasetLoader.cpp
     src/Visualizer.cpp
-    src/FeatureExtractor.cpp
+    src/featExtraction/FeatureExtractor.cpp
     src/Classifier.cpp
     src/Metrics.cpp
+    src/featExtraction/OpticalFlow.cpp
+    src/featExtraction/MotionStats.cpp
+
 
 
 )
