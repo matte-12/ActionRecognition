@@ -83,10 +83,10 @@ void Segmentation::extractBBox( SequenceData& sequence) {
 
     // // pulisco la mask dalle ombre
 
-    //     for (cv::Mat& mask : finalImgsMask)
-    // {
-    //     mask = removeShadow(mask);
-    // }
+        for (cv::Mat& mask : finalImgsMask)
+    {
+        mask = removeShadow(mask);
+    }
     
     // //applico ancora un fill temporale perchè alcune images sono diventate nere
     // // causa vincoli forti si removeShadow()

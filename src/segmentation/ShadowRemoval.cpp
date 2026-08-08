@@ -102,7 +102,10 @@ cv::Mat removeShadow(const cv::Mat& mask)
 
         bool isVerticalBody = h > w;
 
-        if (isVerticalBody && area > bestBodyArea)
+        if (
+            // isVerticalBody &&
+             area > bestBodyArea
+            )
         {
             bestBodyArea = area;
             bodyLabel = label;

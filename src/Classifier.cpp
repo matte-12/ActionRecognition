@@ -12,60 +12,88 @@
 
 static bool isLocomotion(const SequenceFeatures& features)
 {
-    return std::abs(features.totalDisplacementX) > 40.0 ||
-           features.totalDisplacement > 45.0;
+    return features.motionEnergySeed > 0.09;
 }
+
 
 static int classifyLocomotion(const SequenceFeatures& features)
 {
-    if (features.meanVelocity < 2.0)
-        return 1; // walking
+    // displacement basso -> generalmente walking
+    if (features.displacementNorm <= 1.11)
+    {
+        // eccezione: molto movimento nella zona centrale
+        // tende più verso jogging
+        if (features.middleMotion > 0.28)
+        {
+            return 4; // jogging
+        }
 
-    if (features.meanVelocity < 5.0)
-        return 2; // jogging
+        return 6; // walking
+    }
 
-    return 3; // running
+    // displacement alto:
+    // velocity distingue abbastanza bene jogging/running
+    if (features.velocityNorm <= 0.06)
+    {
+        return 4; // jogging
+    }
+
+    return 5; // running
 }
 
-
-// ------------------------------------------------------------
 
 static int classifyStaticAction(const SequenceFeatures& features)
 {
-    bool upperDominant =
-        features.upperMotion > features.middleMotion &&
-        features.upperMotion > features.lowerMotion;
+    /*
+        Prima separazione:
+        boxing tende ad avere aspectRatioVariation più bassa.
+    */
+    if (features.aspectRatioVariation <= 0.10)
+    {
+        /*
+            Se la variazione geometrica è piccola ma anche
+            upperMotion è praticamente nullo, tende a essere
+            handclapping.
+        */
+        if (features.upperMotion <= 0.01)
+        {
+            return 2; // handclapping
+        }
 
-    bool middleDominant =
-        features.middleMotion >= features.upperMotion &&
-        features.middleMotion >= features.lowerMotion;
+        return 1; // boxing
+    }
 
-    bool highAreaVariation =
-        features.meanArea > 0.0 &&
-        features.areaVariation > features.meanArea * 0.25;
+    /*
+        Aspect ratio più variabile:
+        guardiamo dove si concentra il movimento.
 
-    bool highAspectRatio =
-        features.meanAspectRatio > 0.75;
+        Handwaving tende ad avere movimento più laterale,
+        quindi centerMotionRatio più basso.
+    */
+    if (features.centerMotionRatio <= 0.17)
+    {
+        return 3; // handwaving
+    }
 
-    if (upperDominant && highAreaVariation)
-        return 5; // handwaving
-
-    if (upperDominant && !highAreaVariation)
-        return 6; // handclapping
-
-    if (middleDominant || highAspectRatio)
-        return 4; // boxing
-
-    return 4; // fallback
+    return 2; // handclapping
 }
-
-// ------------------------------------------------------------
 
 
 int Classifier::predict(const SequenceFeatures& features)
 {
-    if (isLocomotion(features))
-        return classifyLocomotion(features);
+    int predictedLabel;
 
-    return classifyStaticAction(features);
+    if (isLocomotion(features))
+    {
+        predictedLabel =
+            classifyLocomotion(features);
+    }
+    else
+    {
+        predictedLabel =
+            classifyStaticAction(features);
+    }
+
+
+    return predictedLabel;
 }
