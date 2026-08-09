@@ -1,3 +1,6 @@
+
+# Action Recognition Project
+
 Dataset inside folder:
 
 local_sequences/data 
@@ -14,6 +17,7 @@ masks/ --> final masks
 motion_masks/  --> evaluated from mog2
 output/  --> final BBox and labels
 
+## Build
 From the project root, to make build and run:
 
 ```bash
@@ -26,11 +30,12 @@ cmake --build build
 ```md
 Usage:
 
-```bash
-./build/ActionRecognition <dataset_path> <results_path>
+
+'bash'./build/ActionRecognition <dataset_path> <results_path>
 
 
 '''md
 Code to eventually kill mediapipe execution:
+
 '''bash
  pkill -9 -f ActionRecognition
