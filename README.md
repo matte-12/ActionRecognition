@@ -7,15 +7,15 @@
 
 Inside folder /results we have:  
 
-- classification_results_loso.csv  
-- metrics_summary_loso.csv  
+- classification_results_loso.csv --> see to check classification results
+- metrics_summary_loso.csv  --> check metrics results
 - local_sequences/  
 
 Inside results/local_sequences/.../ folder:
 
 -masks/ --> final masks  
 -motion_masks/  --> evaluated from mog2  
--output/  --> final BBox and labels  
+-output/  --> final BBox and labels --> check bbox results  
 
 ## Build
 -From the project root, to make build and run:
