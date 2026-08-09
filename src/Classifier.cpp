@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "Classifier.hpp"
 
 #include <opencv2/opencv.hpp>
@@ -42,7 +46,7 @@ static cv::Mat vectorToRow(
 }
 //------------------------------------------------------------
 
-static std::vector<float> getLocomotionFeatureVector(
+static std::vector<float> getDynamicFeature(
     const SequenceFeatures& f)
 {
     return {
@@ -63,7 +67,7 @@ static std::vector<float> getLocomotionFeatureVector(
 }
 //------------------------------------------------------------
 
-static std::vector<float> getStaticFeatureVector(const SequenceFeatures& f)
+static std::vector<float> getStaticFeature(const SequenceFeatures& f)
 {
     return {
         static_cast<float>(f.aspectRatioVariation),
@@ -85,14 +89,14 @@ static std::vector<float> getStaticFeatureVector(const SequenceFeatures& f)
 }
 
 //------------------------------------------------------------
-// separa locomotion / non-locomotion
-static bool isLocomotion(const SequenceFeatures& features)
+// separa dynamic / non-dynamic
+static bool isDynamic(const SequenceFeatures& features)
 {
-    return features.motionEnergySeed > 0.09;
+    return features.motionEnergySeed > 0.04;
 }
 
 //------------------------------------------------------------
-// static int classifyLocomotion(const SequenceFeatures& features)
+// static int classifydynamic(const SequenceFeatures& features)
 // {
 //     // displacement basso -> generalmente walking
 //     if (features.displacementNorm <= 1.11)
@@ -238,14 +242,14 @@ void Classifier::train(const std::vector<SequenceFeatures>& trainingFeatures)
     std::vector<int> staticLabels;
 
 
-    // Locomotion
+    // dynamic
 
-    std::vector<std::vector<float>> locomotionSamples;
+    std::vector<std::vector<float>> dynamicSamples;
 
-    std::vector<int> locomotionLabels;
+    std::vector<int> dynamicLabels;
 
 
-    // Dividi i campioni nei due gruppi
+    // divido i campioni nei due gruppi
 
     for (const SequenceFeatures& f : trainingFeatures)
     {
@@ -255,15 +259,15 @@ void Classifier::train(const std::vector<SequenceFeatures>& trainingFeatures)
         }
 
 
-        if (isLocomotion(f))
+        if (isDynamic(f))
         {
-            locomotionSamples.push_back(getLocomotionFeatureVector(f));
+            dynamicSamples.push_back(getDynamicFeature(f));
 
-            locomotionLabels.push_back(f.trueLabel);
+            dynamicLabels.push_back(f.trueLabel);
         }
         else
         {
-            staticSamples.push_back(getStaticFeatureVector(f));
+            staticSamples.push_back(getStaticFeature(f));
 
             staticLabels.push_back(f.trueLabel);
         }
@@ -281,10 +285,10 @@ void Classifier::train(const std::vector<SequenceFeatures>& trainingFeatures)
         return;
     }
 
-    if (locomotionSamples.empty())
+    if (dynamicSamples.empty())
     {
         std::cerr
-            << "[Classifier] No locomotion training samples."
+            << "[Classifier] No dynamic training samples."
             << std::endl;
 
         return;
@@ -304,14 +308,14 @@ void Classifier::train(const std::vector<SequenceFeatures>& trainingFeatures)
     );
 
 
-    cv::Mat locomotionData;
-    cv::Mat locomotionResponses;
+    cv::Mat dynamicData;
+    cv::Mat dynamicResponses;
 
     buildTrainingMatrices(
-        locomotionSamples,
-        locomotionLabels,
-        locomotionData,
-        locomotionResponses
+        dynamicSamples,
+        dynamicLabels,
+        dynamicData,
+        dynamicResponses
     );
 
 
@@ -326,17 +330,17 @@ void Classifier::train(const std::vector<SequenceFeatures>& trainingFeatures)
         );
 
 
-    // Training Random Forest locomotion
+    // Training Random Forest dynamic
 
-    bool locomotionOk =
-        locomotionForest->train(
-            locomotionData,
+    bool dynamicOk =
+        dynamicForest->train(
+            dynamicData,
             cv::ml::ROW_SAMPLE,
-            locomotionResponses
+            dynamicResponses
         );
 
 
-    trained = staticOk && locomotionOk;
+    trained = staticOk && dynamicOk;
 
 
     // Debug
@@ -347,8 +351,8 @@ void Classifier::train(const std::vector<SequenceFeatures>& trainingFeatures)
         << std::endl;
 
     std::cout
-        << "[Classifier] Locomotion samples: "
-        << locomotionSamples.size()
+        << "[Classifier] dynamic samples: "
+        << dynamicSamples.size()
         << std::endl;
 
     std::cout
@@ -364,10 +368,10 @@ Classifier::Classifier()
 {
     staticForest = cv::ml::RTrees::create();
 
-    locomotionForest = cv::ml::RTrees::create();
+    dynamicForest = cv::ml::RTrees::create();
 
     configureForest(staticForest);
-    configureForest(locomotionForest);
+    configureForest(dynamicForest);
 }
 
 //------------------------------------------------------------
@@ -387,22 +391,22 @@ int Classifier::predict(
     }
 
 
-    // Locomotion
+    // Dynamic
 
-    if (isLocomotion(features))
+    if (isDynamic(features))
     {
-        std::vector<float> values = getLocomotionFeatureVector(features);
+        std::vector<float> values = getDynamicFeature(features);
 
         cv::Mat sample = vectorToRow(values);
 
-        float prediction = locomotionForest->predict(sample);
+        float prediction = dynamicForest->predict(sample);
 
         int label = static_cast<int> (std::round(prediction));
 
         // std::cout
         //     << "[Classifier] "
         //     << features.sequenceName
-        //     << " | group=locomotion"
+        //     << " | group=dynamic"
         //     << " | true=" << features.trueLabel
         //     << " | predicted=" << label
         //     << std::endl;
@@ -413,7 +417,7 @@ int Classifier::predict(
 
     // Static action
 
-    std::vector<float> values = getStaticFeatureVector(features);
+    std::vector<float> values = getStaticFeature(features);
 
     cv::Mat sample = vectorToRow(values);
 

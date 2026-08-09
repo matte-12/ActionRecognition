@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "featExtraction/FeatureExtractor.hpp"
 #include "featExtraction/MotionStats.hpp"
 #include "featExtraction/OpticalFlow.hpp"

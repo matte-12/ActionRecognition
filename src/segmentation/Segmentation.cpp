@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "segmentation/Segmentation.hpp"
 #include <fstream>
 #include <cstdlib>
@@ -29,8 +33,8 @@ static bool removeTinyMasks(
     
     }
 
-    std::cout << "[removeTinyMasks] removed tiny masks from" + name + ": "
-            << count << std::endl;
+    // std::cout << "[removeTinyMasks] removed tiny masks from" + name + ": "
+    //         << count << std::endl;
 
     return count > 0;
 }

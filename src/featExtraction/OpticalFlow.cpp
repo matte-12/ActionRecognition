@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "featExtraction/OpticalFlow.hpp"
 
 #include <opencv2/opencv.hpp>

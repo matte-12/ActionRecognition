@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "segmentation/MediaPipeFallback.hpp"
 #include <fstream>
 #include <cstdlib>

@@ -37,7 +37,7 @@ datasets/
 results/
 output/
 outputs/
-local_sequences/
+
 
 # Logs and temporary files
 *.log
@@ -52,6 +52,8 @@ temp_mediapipe_frame.jpg
 temp_mediapipe_roi.txt
 features_log.txt
 features_log.csv
+.~lock.features_log.csv#
+
 
 # IDE / editors
 .vscode/

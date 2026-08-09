@@ -1,5 +1,8 @@
-#include "segmentation/BoundingBox.hpp"
+/*
+Matteo Gidoni
+*/
 
+#include "segmentation/BoundingBox.hpp"
 
 
 //--------------------------------------------------------------------------------------

@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "segmentation/GrabCutSegmentation.hpp"
 #include "segmentation/ShadowRemoval.hpp"
 #include "segmentation/MotionMask.hpp"

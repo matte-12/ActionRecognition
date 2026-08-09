@@ -16,7 +16,7 @@ public:
 
 private:
     cv::Ptr<cv::ml::RTrees> staticForest;
-    cv::Ptr<cv::ml::RTrees> locomotionForest;
+    cv::Ptr<cv::ml::RTrees> dynamicForest;
 
     bool trained = false;
 };

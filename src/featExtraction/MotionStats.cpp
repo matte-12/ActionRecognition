@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "featExtraction/MotionStats.hpp"
 
 //------------------------------------------------------------

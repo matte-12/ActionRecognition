@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "SavedSegmentationLoader.hpp"
 #include "segmentation/BoundingBox.hpp"
 

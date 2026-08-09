@@ -1,3 +1,7 @@
+/*
+Matteo Gidoni
+*/
+
 #include "segmentation/VisualizationTest.hpp"
 
 //--------------------------------------------------------------------------------------
