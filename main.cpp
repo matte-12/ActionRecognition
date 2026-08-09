@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
     Segmentation segment;
 
     // trick per decidere se ricalcolare le mask o meno
-    bool haveSegments = true;
+    bool haveSegments = false;
 
     FeatureExtractor featureExt;
     std::vector<SequenceFeatures> allFeatures;
