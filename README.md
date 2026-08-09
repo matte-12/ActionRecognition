@@ -1,24 +1,41 @@
-Place the dataset inside:
 
-data/sequences/
+# Action Recognition Project
 
-NB: il dataset andrebbe messo in locale, siccome però non è ancora stato caricato dal prof. allora ne ho fatto un mio. 
-    Tolgo da .gitignore il dataset, cosi carico le cartelle.
+ Dataset inside folder:
 
-Codici che uso per runnare:
+- local_sequences/data 
 
-> motion_mask_stats.txt
+Inside folder /results we have:  
+
+- classification_results_loso.csv --> see to check classification results
+- metrics_summary_loso.csv  --> check metrics results
+- local_sequences/  
+
+Inside results/local_sequences/.../ folder:
+
+-masks/ --> final masks  
+-motion_masks/  --> evaluated from mog2  
+-output/  --> final BBox and labels --> check bbox results  
+
+## Build
+-From the project root, to make build and run:
+
+```bash
 rm -rf build
-mkdir build
-cd build
+cmake -S . -B build
+cmake --build build
 
-cmake ..
-make
+./build/ActionRecognition local_sequences results
+```
+```md
+Usage:
 
-cd ..
-./build/ActionRecognition data/sequences results
 
+./build/ActionRecognition <dataset_path> <results_path>
+```
 
-Codice da usare per killare mediapipe:
+```md
+Code to eventually kill mediapipe execution:
 
-pkill -9 -f ActionRecognition
+ pkill -9 -f ActionRecognition
+```

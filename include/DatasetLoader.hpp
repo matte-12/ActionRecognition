@@ -12,5 +12,5 @@ public:
 private: 
     std::vector<std::string> getSubfolderPath(const std::string& datasetPath);
     std::vector<cv::Mat> getFrames(const std::string& datasetPath);
-    bool getGroundTruth (const std::string& datasetPath, SequenceData& sequence );
+    bool getGroundTruth ( SequenceData& sequence );
 };

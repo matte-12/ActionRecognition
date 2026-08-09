@@ -5,7 +5,7 @@ cmake-build-release/
 cmake-build-relwithdebinfo/
 cmake-build-minsizerel/
 
-# CMake generated files
+# CMake 
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
@@ -31,17 +31,29 @@ compile_commands.json
 *.ilk
 
 # Dataset and generated results
-# data/
+
 dataset/
 datasets/
 results/
 output/
 outputs/
 
+
 # Logs and temporary files
 *.log
 *.tmp
 *.temp
+
+# txt da escludere
+motion_mask_stats.txt
+pose_landmarker_lite.task
+shadow_switch_stats.txt
+temp_mediapipe_frame.jpg
+temp_mediapipe_roi.txt
+features_log.txt
+features_log.csv
+.~lock.features_log.csv#
+prova.txt
 
 # IDE / editors
 .vscode/
@@ -54,7 +66,7 @@ outputs/
 .DS_Store
 Thumbs.db
 
-# Python optional experiments
+# Python opzionali
 __pycache__/
 *.pyc
 .venv/
