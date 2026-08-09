@@ -1,7 +1,9 @@
 
-# Action Recognition Project
+# Action Recognition Project  
+Requirements:  
+- c++  
 
- Dataset inside folder:
+Dataset inside folder:
 
 - local_sequences/data 
 
