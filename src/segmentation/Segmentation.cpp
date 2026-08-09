@@ -101,8 +101,8 @@ void Segmentation::extractBBox( SequenceData& sequence) {
     // allora faccio fill temporale
     bool flag = removeTinyMasks(finalImgsMask, 120, sequence.name);
 
-    if(flag)
-        filteredImgs = fillEmptySeedsTemporal(filteredImgs);
+    //if(flag)
+        finalImgsMask = fillEmptySeedsTemporal(finalImgsMask);
 
     // // Salvo nella struct sequences la final mask
     sequence.finalMasks = finalImgsMask;
