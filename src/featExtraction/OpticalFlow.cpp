@@ -291,8 +291,7 @@ OpticalFlow computeOpticalFlow( const SequenceData& sequence)
 
         if (maxValue > globalMaxMagnitude)
         {
-            globalMaxMagnitude =
-                maxValue;
+            globalMaxMagnitude = maxValue;
         }
 
     
@@ -363,11 +362,9 @@ OpticalFlow computeOpticalFlow( const SequenceData& sequence)
         totalRightAbsX += rightAbsX;
 
         // Upper horizontal motion
-        cv::Mat upperFlowX =
-            flowX(upperBox);
+        cv::Mat upperFlowX = flowX(upperBox);
 
-        cv::Mat upperFlowY =
-            flowY(upperBox);
+        cv::Mat upperFlowY = flowY(upperBox);
 
         cv::Mat absUpperX;
         cv::Mat absUpperY;
@@ -448,17 +445,6 @@ OpticalFlow computeOpticalFlow( const SequenceData& sequence)
 
     features.strideFrequency =  computeStrideFrequency(lowerMotionSignal);
 
-    // check
-    std::cout
-    << "[OpticalFlow] "
-    << sequence.name
-    << " | mean=" << features.meanFlowMagnitude
-    << " | max=" << features.maxFlowMagnitude
-    << " | upperH=" << features.upperHorizontalFlow
-    << " | upperV=" << features.upperVerticalFlow
-    << " | convergence=" << features.flowConvergence
-    << " | lower=" << features.lowerFlowMagnitude
-    << std::endl;
 
     return features;
 }

@@ -44,11 +44,11 @@ static bool loadMasksFromFolder(
         }
     }
 
-    std::cout << "[SavedSegmentationLoader] Loaded "
-              << masks.size()
-              << " masks from: "
-              << folder
-              << std::endl;
+    // std::cout << "[SavedSegmentationLoader] Loaded "
+    //           << masks.size()
+    //           << " masks from: "
+    //           << folder
+    //           << std::endl;
 
     return !masks.empty();
 }
@@ -65,10 +65,10 @@ bool loadSavedSegmentation(
 
     fs::path motionMaskFolder = sequenceFolder / "motion_masks";
 
-    std::cout
-        << "[SavedSegmentationLoader] Looking for final masks in: "
-        << finalMaskFolder
-        << std::endl;
+    // std::cout
+    //     << "[SavedSegmentationLoader] Looking for final masks in: "
+    //     << finalMaskFolder
+    //     << std::endl;
 
     bool finalMasksLoaded =
         loadMasksFromFolder(
@@ -76,10 +76,10 @@ bool loadSavedSegmentation(
             sequence.finalMasks
         );
 
-    std::cout
-        << "[SavedSegmentationLoader] Looking for motion masks in: "
-        << motionMaskFolder
-        << std::endl;
+    // std::cout
+    //     << "[SavedSegmentationLoader] Looking for motion masks in: "
+    //     << motionMaskFolder
+    //     << std::endl;
 
     bool motionMasksLoaded =
         loadMasksFromFolder(

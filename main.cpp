@@ -32,13 +32,6 @@ int main(int argc, char** argv) {
         std::cout << "Usage: ./ActionRecognition <dataset_path> <results_path>" << std::endl;
     }
 
-//-------------------------------------------------------------------------------------
-//controlli sull'argv -------------------------------------------------------------------
-
-// da fare...
-
-
-//-------------------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------------------
 // passo da DatasetLoader per creare vettore di SequenceData
@@ -54,20 +47,9 @@ int main(int argc, char** argv) {
 
     DatasetLoader loader;
     std::vector<SequenceData> sequenze = loader.loadDataset(sequencesPath);
-        
-
 
 //-------------------------------------------------------------------------------------
 // carico tutti i SequenceData.frames, uno alla volta, in segmentation. 
-//
-// NB: SALVO I BBOXES OTTENUTI IN seq.BBoxes. Le mask finali in seq.finalMask.
-//  le motion masks in seq.motionMasks (potrebbe essere utile per feature extraction)!!! 
-//
-// mostra le mask e bbox in tempo reale
-//-------------------------------------------------------------------------------------
- 
-
-//-------------------------------------------------------------------------------------
 // Segmentation / reload --> Feature extraction
 // Feature Extractor + non ricalcola le maschere con flag + log file
 
@@ -88,9 +70,6 @@ int main(int argc, char** argv) {
     std::vector<SequenceData*> validSequences;
 
     Classifier classifier;
-    std::vector<int> predictedLabels;
-
-    Metrics metrics;
 
     for (auto& seq : sequenze)
     {
@@ -114,41 +93,201 @@ int main(int argc, char** argv) {
 
         allFeatures.push_back(features);
 
-        int predictedLabel = classifier.predict(features);
-        predictedLabels.push_back(predictedLabel);
-
         featureExt.logFeatures(features, "features_log.csv");
-
-        metrics.addResult(seq, predictedLabel);
 
         validSequences.push_back(&seq);
     }
-        
+
+
 
 //-------------------------------------------------------------------------------------
-//NB int predictedLabel: 1= Boxing 2= handclapping 3= handwaving 4= jogging 5= running 6= walking
+//
+// LEAVE-ONE-SUBJECT-OUT
+//
+// Fold 1: train person02 + person03 -> test person01
+// Fold 2: train person01 + person03 -> test person02
+// Fold 3: train person01 + person02 -> test person03
+//
 
-// Salvo frame unito  BBox unito predictedLabel nella cartella results/ 
+std::vector<std::string> testPersons = {
+    "person01",
+    "person02",
+    "person03"
+};
+
+Metrics metrics;
+
+std::vector<int> allPredictedLabels(
+    allFeatures.size(),
+    -1
+);
+
+
+// ---------------------
+// Esegui i 3 fold
+// ---------------------
+
+
+for (const std::string& testPerson : testPersons)
+{
+    std::cout
+        << "\n===================================="
+        << std::endl;
+
+    std::cout
+        << "[Main] Test subject: "
+        << testPerson
+        << std::endl;
+
+    std::cout
+        << "===================================="
+        << std::endl;
+
+
+    std::vector<SequenceFeatures> trainFeatures;
+    std::vector<size_t> testIndices;
+
+
+    // ---------------------
+    // Split train / test
+    // ---------------------
+
+    for (size_t i = 0; i < allFeatures.size(); i++)
+    {
+        const SequenceFeatures& features = allFeatures[i];
+
+        if (features.sequenceName.find(testPerson)!= std::string::npos)
+        {
+            testIndices.push_back(i);
+        }
+        else
+        {
+            trainFeatures.push_back(features);
+        }
+    }
+
+
+    std::cout
+        << "[Main] Training samples: "
+        << trainFeatures.size()
+        << std::endl;
+
+    std::cout
+        << "[Main] Test samples: "
+        << testIndices.size()
+        << std::endl;
+
+
+    if (trainFeatures.empty() ||testIndices.empty())
+    {
+        std::cerr
+            << "[Main] Invalid split for "
+            << testPerson
+            << std::endl;
+
+        continue;
+    }
+
+
+    // -------------------------------
+    // Nuovo classifier per ogni fold
+    // -------------------------------
+
+    Classifier classifier;
+
+    classifier.train(trainFeatures);
+
+
+    // ----------------------------
+    // Test
+    // ----------------------------
+
+    int foldCorrect = 0;
+
+
+    for (size_t index : testIndices)
+    {
+        const SequenceFeatures& features = allFeatures[index];
+
+        SequenceData& sequence = *validSequences[index];
+
+
+        int predictedLabel = classifier.predict(features);
+
+
+        allPredictedLabels[index] = predictedLabel;
+
+
+        if (predictedLabel == features.trueLabel)
+        {
+            foldCorrect++;
+        }
+
+
+        // IMPORTANTE:
+        // accumuliamo tutte le sequenze di test
+        // dentro lo stesso Metrics
+        metrics.addResult(
+            sequence,
+            predictedLabel
+        );
+    }
+
+
+    double foldAccuracy = static_cast<double>(foldCorrect) /static_cast<double>(testIndices.size());
+
+
+    std::cout
+        << "[Main] Accuracy "
+        << testPerson
+        << ": "
+        << foldAccuracy
+        << std::endl;
+}
+
+
 //-------------------------------------------------------------------------------------
+
+// METRICHE AGGREGATE
+//
+// Ogni sequenza è stata usata come test una sola volta.
+
+
+std::cout << "\n\n====================================" << std::endl;
+
+std::cout << "LOSO METRICS" << std::endl;
+
+std::cout << "====================================" << std::endl;
+
+
+metrics.printSummary();
+
+metrics.saveResultsCSV(resultsPath+ "/classification_results_loso.csv");
+
+metrics.saveSummaryCSV(resultsPath  + "/metrics_summary_loso.csv");
+
+
+//-------------------------------------------------------------------------------------
+// Visualizzazione
+//
+// Ora ogni sequenza ha una predizione ottenuta
+// quando quella persona era nel test set.
+
     if(!haveSegments){
         Visualizer visualizer;
 
         for (size_t i = 0; i < validSequences.size(); i++)
         {
+            if (allPredictedLabels[i] == -1)
+                continue;
+
             visualizer.saveSequenceOutput(
                 *validSequences[i],
-                predictedLabels[i],
+                allPredictedLabels[i],
                 resultsPath
             );
         }
     }
-//-------------------------------------------------------------------------------------
-    // Metrics
-
-    metrics.printSummary();
-    metrics.saveResultsCSV(resultsPath + "/classification_results.csv");
-    metrics.saveSummaryCSV(resultsPath + "/metrics_summary.txt");
-
 //-------------------------------------------------------------------------------------
 
     return 0;

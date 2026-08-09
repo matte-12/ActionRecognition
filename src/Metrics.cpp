@@ -324,6 +324,7 @@ void Metrics::addResult(
                 sequence.BBoxes[19],
                 sequence.gtBBox20
             );
+         result.hasIoU = true;
     }
 
     results.push_back(result);
@@ -386,15 +387,12 @@ void Metrics::saveSummaryCSV(
 
     if (validLabels > 0)
     {
-        accuracy =
-            static_cast<double>(correct) /
-            static_cast<double>(validLabels);
+        accuracy = static_cast<double>(correct) / static_cast<double>(validLabels);
     }
 
     if (validIoU > 0)
     {
-        meanIoU /=
-            static_cast<double>(validIoU);
+        meanIoU /= static_cast<double>(validIoU);
     }
 
     file << "metric,value\n";
@@ -409,14 +407,11 @@ void Metrics::saveSummaryCSV(
 
     for (int classId = 1; classId <= 6; classId++)
     {
-        double precision =
-            computePrecision(confusionMatrix, classId);
+        double precision = computePrecision(confusionMatrix, classId);
 
-        double recall =
-            computeRecall(confusionMatrix, classId);
+        double recall = computeRecall(confusionMatrix, classId);
 
-        double f1 =
-            computeF1Score(precision, recall);
+        double f1 = computeF1Score(precision, recall);
 
         file << classId << ","
              << precision << ","
@@ -475,7 +470,7 @@ void Metrics::saveSummaryCSV(
                 confusionMatrix[result.trueLabel][result.predictedLabel]++;
             }
 
-            if (result.iouFrame20 > 0.0)
+            if (result.hasIoU)
             {
                 meanIoU += result.iouFrame20;
                 validIoU++;
@@ -486,15 +481,12 @@ void Metrics::saveSummaryCSV(
 
         if (validLabels > 0)
         {
-            accuracy =
-                static_cast<double>(correct) /
-                static_cast<double>(validLabels);
+            accuracy = static_cast<double>(correct) /static_cast<double>(validLabels);
         }
 
         if (validIoU > 0)
         {
-            meanIoU /=
-                static_cast<double>(validIoU);
+            meanIoU /= static_cast<double>(validIoU);
         }
 
         std::cout << "========== METRICS ==========" << std::endl;

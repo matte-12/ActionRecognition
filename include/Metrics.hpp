@@ -25,6 +25,7 @@ private:
         int trueLabel = -1;
         int predictedLabel = -1;
         double iouFrame20 = 0.0;
+        bool hasIoU = false;
     };
 
     std::vector<Result> results;
