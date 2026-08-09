@@ -31,7 +31,7 @@ compile_commands.json
 *.ilk
 
 # Dataset and generated results
-data/
+
 dataset/
 datasets/
 results/
@@ -53,7 +53,7 @@ temp_mediapipe_roi.txt
 features_log.txt
 features_log.csv
 .~lock.features_log.csv#
-
+prova.txt
 
 # IDE / editors
 .vscode/
