@@ -1,7 +1,7 @@
 
 # Action Recognition Project
 
-## Requirements
+ Requirements:  
 - c++  
 
  Dataset inside folder:
