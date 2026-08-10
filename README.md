@@ -1,10 +1,9 @@
 
-# Action Recognition Project
-
- Requirements:  
+# Action Recognition Project  
+Requirements:  
 - c++  
 
- Dataset inside folder:
+Dataset inside folder:
 
 - local_sequences/data 
 
@@ -16,12 +15,12 @@ Inside folder /results we have:
 
 Inside results/local_sequences/.../ folder:
 
--masks/ --> final masks  
--motion_masks/  --> evaluated from mog2  
--output/  --> final BBox and labels --> check bbox results  
+- masks/ --> final masks  
+- motion_masks/  --> evaluated from mog2  
+- output/  --> final BBox and labels --> check bbox results  
 
 ## Build
--From the project root, to make build and run:
+From the project root, to make build and run:
 
 ```bash
 rm -rf build
