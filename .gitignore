@@ -37,7 +37,7 @@ datasets/
 results/
 output/
 outputs/
-
+tools/
 
 # Logs and temporary files
 *.log
