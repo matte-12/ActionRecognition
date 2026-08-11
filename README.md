@@ -2,7 +2,7 @@
 # Action Recognition Project  
 Requirements:  
 - c++  
-
+- python
 Dataset inside folder:
 
 - local_sequences/data 
