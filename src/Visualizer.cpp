@@ -212,8 +212,8 @@ void Visualizer::saveSequenceOutput(
 
 // salva le fianl masks
 
-    saveMasks(sequenza.name, sequenza.finalMasks, "results", "masks");
-    saveMasks(sequenza.name, sequenza.motionMasks, "results", "motion_masks");
+    saveMasks(sequenza.name, sequenza.finalMasks, outputFolder, "masks");
+    saveMasks(sequenza.name, sequenza.motionMasks, outputFolder, "motion_masks");
 }
 
 //-------------------------------------------------------------------------------------------
